@@ -1,0 +1,25 @@
+﻿<nav class="tp-nav">
+    <a class="tp-nav-logo" href="/Home/Index">
+        <img ng-src="{{param.param.logo}}" />
+    </a>
+    <ul class="tp-nav-nav">
+        <li ng-repeat="n in param.nav">
+            <a href="{{n.mode==0?(n.url==null||n.url==''?'javascript:void(0);':n.url):n.mode==1?'/Home/Page?id='+n.page_id:'javascript:void(0);'}}" ng-bind="n.title"></a>
+            <ul ng-if="n.mode==2" class="tp-nav-subnav">
+                <li ng-repeat="sn in n.subnav"><a href="{{sn.mode==0?(sn.url==null||sn.url==''?'javascript:void(0);':sn.url):sn.mode==1?'/Home/Page?id='+sn.page_id:'javascript:void(0);'}}" ng-bind="sn.title"></a></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="tp-nav-account">
+        <div class="tp-nav-in" ng-if="param.member!=null">
+            <a href="/Member/Index" class="glyphicon glyphicon-envelope"><span class="badge tp-badge-right-top" ng-if="param.member_messageCount!=0" ng-bind="param.member_messageCount"></span></a>
+            <a href="/Member/Index" ng-bind="(param.member.real_name==null||param.member.real_name=='')?param.member.phone:param.member.real_name"></a>，
+            <a href="/Member/Logout">注销</a>
+        </div>
+        <div class="tp-nav-out" ng-if="param.member==null">
+            <span class="glyphicon glyphicon-user"></span>
+            <a href="/Member/Login">登陆</a>&nbsp;/&nbsp;
+            <a href="/Member/Register">注册</a>
+        </div>
+    </div>
+</nav>

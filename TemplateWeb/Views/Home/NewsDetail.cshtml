@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "NewsDetail";
+    Layout = "~/Views/Shared/_Layout_Home.cshtml";
+}
+
+<div class="tp-news-detail" ng-controller="newsDetail">
+    <ul class="tp-index-nav">
+        <li ng-class="{'tp-index-nav-active':nt.id==news.type_id}" ng-repeat="nt in newsType"><a ng-bind="nt.name" href="/Home/NewsList?id={{nt.id}}"></a></li>
+    </ul>
+    <div class="tp-news-right">
+        <div class="tp-news-title" ng-bind="news.title"></div>
+        <div class="tp-news-bottom">
+            <span class="glyphicon glyphicon-time"></span>&nbsp;
+            <span ng-bind="news.datetime"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
+            <span ng-bind="news.views"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="glyphicon glyphicon-user"></span>&nbsp;
+            <span ng-bind="news.author"></span>
+        </div>
+        <div class="tp-page-content" ng-bind-html="news.content"></div>
+    </div>
+</div>

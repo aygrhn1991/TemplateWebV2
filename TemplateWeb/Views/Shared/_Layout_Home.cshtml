@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link id="favicon-icon" type="favicon" rel="shortcut icon" />
+    <title></title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <link href="~/Plugin/limarquee/css/liMarquee.css" rel="stylesheet" />
+    <script src="~/Plugin/limarquee/js/liMarquee.js"></script>
+
+    <link href="~/Content/home/home-public.css" rel="stylesheet" />
+    <script src="~/Scripts/home/home-public.js"></script>
+    <link href="~/Content/home/home-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/home/home-index.js"></script>
+</head>
+<body ng-app="app" ng-controller="layout">
+    @Html.Partial("_Partial_Home_Header")
+    @RenderBody()
+    @Html.Partial("_Partial_Home_Footer")
+</body>
+</html>

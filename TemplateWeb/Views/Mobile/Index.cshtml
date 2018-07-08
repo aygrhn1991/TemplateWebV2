@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout_Mobile.cshtml";
+}
+
+<marquee class="tpm-notice" direction="left" ng-if="param.notice.length!=0">通知：<span ng-repeat="n in param.notice" ng-bind="($index+1)+'.'+n.content+'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'"></span></marquee>
+<div id="tpm-banner" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#tpm-banner" data-slide-to="{{$index}}" ng-class="{'active':$index==0}" ng-repeat="b in param.banner"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item" ng-class="{'active':$index==0}" ng-repeat="b in param.banner">
+            <a href="{{b.mode==0?(b.url==null||b.url==''?'javascript:void(0);':b.url):'/Home/Page?id='+b.page_id}}">
+                <img ng-src="{{b.path}}" />
+            </a>
+        </div>
+    </div>
+    <a class="left carousel-control" data-target="#tpm-banner" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" data-target="#tpm-banner" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+<div ng-controller="index">
+    <br />
+    <div class="tpm-index" ng-repeat="pt in content.product">
+        <div class="tpm-index-title">
+            <span ng-bind="pt.name"></span>
+            <a class="tpm-index-more">
+                更多<span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+        </div>
+        <ul class="tpm-product">
+            <li ng-repeat="p in pt.product">
+                <a class="tpm-product-item">
+                    <div class="tpm-product-top" ng-if="p.top==true">推荐</div>
+                    <div class="tpm-product-img">
+                        <img ng-src="{{p.path}}" />
+                    </div>
+                    <div class="tpm-product-title" ng-bind="p.name"></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tpm-index" ng-repeat="nt in content.news">
+        <div class="tpm-index-title">
+            <span ng-bind="nt.name"></span>
+            <a class="tpm-index-more">
+                更多<span class="glyphicon glyphicon-menu-right"></span>
+            </a>
+        </div>
+        <ul class="tpm-news">
+            <li ng-repeat="n in nt.news">
+                <a class="tpm-news-item">
+                    <div class="tpm-news-top" ng-if="n.top==true">推荐</div>
+                    <div class="tpm-news-img">
+                        <img ng-src="{{n.path}}" />
+                    </div>
+                    <div class="tpm-news-content">
+                        <div class="tpm-news-title" ng-bind="n.title"></div>
+                        <div class="tpm-news-description" ng-bind="n.description"></div>
+                        <div class="tpm-news-bottom">
+                            <span class="glyphicon glyphicon-time"></span>&nbsp;
+                            <span ng-bind="n.datetime"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;
+                            <span ng-bind="n.views"></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="tpm-partner">
+    <a class="tpm-partner-item" href="{{p.url==null||p.url==''?'javascript:void(0);':p.url}}" ng-repeat="p in param.partner">
+        <img ng-src="{{p.path}}" />
+        <div ng-bind="p.title"></div>
+    </a>
+</div>
+

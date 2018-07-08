@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Plugin/easyupload/css/easy-upload.css" rel="stylesheet" />
+<script src="~/Plugin/easyupload/js/easyUpload.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-partner.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="partnerAdd">
+    <form>
+        <div class="form-group tp-form-half">
+            <label>标题：</label>
+            <input type="text" class="form-control" placeholder="请输入标题..." ng-model="partnerModel.title">
+        </div>
+        <div class="form-group tp-form-half">
+            <label>链接：</label>
+            <input type="text" class="form-control" placeholder="请以 http:// 或 https:// 起始..." ng-model="partnerModel.url">
+        </div>
+        <div class="form-group">
+            <label>图片：</label>
+            <div id="easyContainer"></div>
+        </div>
+        <div class="form-group tp-form-half text-center">
+            <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+        </div>
+    </form>
+
+</div>

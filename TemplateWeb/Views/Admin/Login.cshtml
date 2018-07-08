@@ -1,0 +1,48 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>admin - 登陆</title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <script src="~/Plugin/layer/layer.js"></script>
+
+    <link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+    <script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+    <link href="~/Plugin/pace/css/themes/black/pace-theme-minimal.css" rel="stylesheet" />
+    <script src="~/Plugin/pace/js/pace.js"></script>
+
+    <link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+    <script src="~/Scripts/admin/admin-public.js"></script>
+    <link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/admin/admin-account.js"></script>
+</head>
+<body ng-app="app" ng-controller="login" style="background-color:#f3f3f3;">
+    <div class="tp-account-block">
+        <div class="page-header">
+            <h3>admin - 登陆</h3>
+        </div>
+        <div>
+            <div class="form-group">
+                <label>手机号：</label>
+                <input type="text" class="form-control" placeholder="手机号" ng-model="account.phone">
+            </div>
+            <div class="form-group">
+                <label>密码：</label>
+                <input type="password" class="form-control" placeholder="密码" ng-model="account.password">
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-sm btn-success" ng-click="Login()">登陆</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

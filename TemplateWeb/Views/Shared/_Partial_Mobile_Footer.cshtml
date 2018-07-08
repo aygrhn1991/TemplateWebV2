@@ -1,0 +1,25 @@
+﻿<nav class="tpm-nav">
+    <ul class="tpm-nav-nav">
+        <li>
+            <a href="/Home/Index"><span class="glyphicon glyphicon-home"></span>&nbsp;首页</a>
+        </li>
+        <li>
+            <div class="dropup">
+                <div data-toggle="dropdown">
+                    <span class="glyphicon glyphicon-send"></span>&nbsp;网站导航
+                </div>
+                <ul class="dropdown-menu tpm-nav-subnav">
+                    <li ng-repeat="n in param.nav" ng-hide="n.title=='首页'">
+                        <a href="{{n.mode==0?(n.url==null||n.url==''?'javascript:void(0);':n.url):n.mode==1?'/Home/Page?id='+n.page_id:'javascript:void(0);'}}" ng-bind="n.title"></a>
+                        <ul ng-if="n.mode==2" class="tpm-nav-subnav-item">
+                            <li ng-repeat="sn in n.subnav"><a href="{{sn.mode==0?(sn.url==null||sn.url==''?'javascript:void(0);':sn.url):sn.mode==1?'/Home/Page?id='+sn.page_id:'javascript:void(0);'}}" ng-bind="sn.title"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li>
+            <a><span class="glyphicon glyphicon-user"></span>&nbsp;我的</a>
+        </li>
+    </ul>
+</nav>

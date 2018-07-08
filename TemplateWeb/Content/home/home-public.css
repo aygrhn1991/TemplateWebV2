@@ -1,0 +1,18 @@
+﻿body {
+    min-width: 1000px;
+    font-family: 'Microsoft YaHei';
+}
+
+* {
+    outline: none !important;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none !important;
+    text-decoration: none;
+}

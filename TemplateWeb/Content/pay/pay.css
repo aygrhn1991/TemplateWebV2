@@ -1,0 +1,106 @@
+﻿html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: 'Microsoft YaHei';
+}
+
+.tp-pay-header {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tp-pay-header-logo {
+    display: inline-block;
+    float: left;
+}
+
+    .tp-pay-header-logo img {
+        height: 60px;
+    }
+
+.tp-pay-header-sitename {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 60px;
+}
+
+.tp-pay-order {
+    background-color: #f2f2f2;
+}
+
+.tp-pay-order-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tp-pay-order-productname {
+    display: inline-block;
+    line-height: 100px;
+}
+
+.tp-pay-order-productprice {
+    display: inline-block;
+    margin-right: 60px;
+    line-height: 100px;
+    float: right;
+}
+
+.tp-pay-paymethod {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tp-pay-paymethod-method {
+    display: block;
+    margin: 0 100px;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+    .tp-pay-paymethod-method:hover {
+        border: 3px solid #ff6600;
+        border-radius: 3px;
+    }
+
+    .tp-pay-paymethod-method img {
+        height: 40px;
+    }
+
+.tp-pay-footer {
+    position: fixed;
+    top: 500px;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+}
+
+.tp-pay-wxpay {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tp-pay-wxpay-logo {
+    padding: 10px;
+}
+
+    .tp-pay-wxpay-logo img {
+        height: 40px;
+    }
+
+.tp-pay-wxpay-qr img {
+    width: 200px;
+    height: 200px;
+}
+
+.tp-pay-wxpay-tip {
+    padding: 10px;
+}
+
+    .tp-pay-wxpay-tip img {
+        height: 50px;
+    }

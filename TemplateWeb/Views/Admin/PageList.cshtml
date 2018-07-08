@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-page.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="pageList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">{{d.id}}</td>
+                <td title="'标题'" sortable="'title'" filter="{title:'text'}">{{d.title}}</td>
+                <td title="'操作'">
+                    <a class="label label-primary" href="/Admin/PageAdd?id={{d.id}}"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览&nbsp;/&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp;编辑</a>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,126 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-link.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="linkContent">
+    <form>
+        <div class="form-group">
+            <label>链接标题：【{{linkModel.title}}】</label>
+        </div>
+        <div class="form-group">
+            <label>模式选择：</label>
+            <div class="btn-group">
+                <button class="btn btn-default" ng-class="{'btn-success':m.key==linkModel.mode}" ng-repeat="m in modeType" ng-click="SetMode(m)">{{m.value}}</button>
+            </div>
+        </div>
+    </form>
+    <hr />
+    <form ng-show="linkModel.mode==0">
+        <div class="form-group">
+            <label>Url：</label>
+            <input type="text" class="form-control" placeholder="请以 http:// 或 https:// 起始..." ng-model="linkModel.url">
+        </div>
+    </form>
+    <form ng-show="linkModel.mode==1">
+        <div class="form-group">
+            <label>已选择单页：【{{linkModelPageTitle}}】</label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button disabled class="btn btn-default" type="button">&nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;</button>
+                </span>
+                <input type="text" class="form-control" placeholder="请输入标题关键字..." ng-model="pageKeyWord">
+            </div>
+            <div class="tp-table-wrapper">
+                <table class="table table-bordered table-condensed table-striped table-hover">
+                    <tbody>
+                        <tr ng-repeat="p in pageList | filter:pageKeyWord">
+                            <td>{{$index+1}}</td>
+                            <td>{{p.title}}</td>
+                            <td>
+                                <label class="label label-success" ng-click="SetPage(p)">选择</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    <table class="table table-condensed table-bordered table-striped table-hover" ng-controller="sublinkList" ng-show="linkModel.mode==2">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>标题</th>
+                <th>状态</th>
+                <th>排序</th>
+                <th>
+                    <label class="label label-success" data-toggle="modal" data-target="#sublink-add">
+                        <i class="glyphicon glyphicon-plus"></i>&nbsp;新增
+                    </label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="s in sublinkList">
+                <td>{{$index+1}}</td>
+                <td>
+                    <input type="text" ng-model="s.title" />
+                    <a class="tp-table-a" ng-click="Save(s)">修改</a>
+                </td>
+                <td>
+                    <label class="label label-success" ng-if="s.enable">已启用</label>
+                    <label class="label label-danger" ng-if="!s.enable">已停用</label>
+                    <a class="tp-table-a" ng-if="s.enable" ng-click="SetEnable(s)">点击停用</a>
+                    <a class="tp-table-a" ng-if="!s.enable" ng-click="SetEnable(s)">点击启用</a>
+                </td>
+                <td>
+                    <label class="label label-info" ng-click="SetSort(s,sortType.up)"><i class="glyphicon glyphicon-arrow-up tp-lable-glyphicon"></i></label>
+                    <label class="label label-warning" ng-click="SetSort(s,sortType.down)"><i class="glyphicon glyphicon-arrow-down tp-lable-glyphicon"></i></label>
+                </td>
+                <td>
+                    <a class="label label-primary" href="/Admin/LinksubContent?id={{s.id}}"><i class="glyphicon glyphicon-edit"></i>&nbsp;内容管理</a>
+                    <label class="label label-danger" ng-click="Delete(s)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="sublink-add" tabindex="-1" ng-controller="sublinkAdd">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">子链接添加</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">标题：</label>
+                            <input type="text" class="form-control" placeholder="请输入子链接标题..." ng-model="sublinkModel.title">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-click="Save()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+    </div>
+</div>

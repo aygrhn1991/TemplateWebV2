@@ -1,0 +1,68 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-product.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="productTypeList">
+    <table class="table table-condensed table-bordered table-striped table-hover">
+        <thead>
+            <tr>
+                <th>序号</th>
+                <th>名称</th>
+                <th>
+                    <label class="label label-success" data-toggle="modal" data-target="#product-add">
+                        <i class="glyphicon glyphicon-plus"></i>&nbsp;新增
+                    </label>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="d in data">
+                <td>{{$index+1}}</td>
+                <td>
+                    <input type="text" ng-model="d.name" />
+                    <a class="tp-table-a" ng-click="Save(d)">修改</a>
+                </td>
+                <td>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="product-add" tabindex="-1" ng-controller="productTypeAdd">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">产品分类添加</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>名称：</label>
+                            <input type="text" class="form-control" placeholder="请输入分类名称..." ng-model="productTypeModel.name">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-sm btn-success" ng-click="Save()">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

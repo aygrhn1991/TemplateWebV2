@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/member/member-public.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-public.js"></script>
+<link href="~/Content/member/member-layout.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-product.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="productList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">{{d.id}}</td>
+                <td title="'产品名称'" sortable="'name'" filter="{name:'text'}">{{d.name}}</td>
+                <td title="'购买价格'" sortable="'price'" filter="{price:'number'}">{{d.price|number:2}}</td>
+                <td title="'购买时间'" sortable="'pay_time'" filter="{pay_time:'text'}">{{d.pay_time}}</td>
+                <td title="'附件'"><a href="{{d.attachment}}">附件下载</a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

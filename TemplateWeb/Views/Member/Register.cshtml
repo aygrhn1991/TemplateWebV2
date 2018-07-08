@@ -1,0 +1,61 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>member - 注册</title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <script src="~/Plugin/layer/layer.js"></script>
+
+    <link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+    <script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+    <link href="~/Plugin/pace/css/themes/black/pace-theme-minimal.css" rel="stylesheet" />
+    <script src="~/Plugin/pace/js/pace.js"></script>
+
+    <link href="~/Content/member/member-public.css" rel="stylesheet" />
+    <script src="~/Scripts/member/member-public.js"></script>
+    <link href="~/Content/member/member-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/member/member-account.js"></script>
+</head>
+<body ng-app="app" ng-controller="register" style="background-color:#f3f3f3;">
+    <div class="tp-account-block">
+        <div class="page-header">
+            <h3>member - 注册</h3>
+        </div>
+        <div>
+            <div class="form-group">
+                <label>手机号：</label>
+                <input type="text" class="form-control" placeholder="手机号" ng-model="account.phone">
+            </div>
+            <div class="form-group">
+                <label>密码：</label>
+                <input type="password" class="form-control" placeholder="密码" ng-model="account.password">
+            </div>
+            <div class="form-group">
+                <label>确认密码：</label>
+                <input type="password" class="form-control" placeholder="确认密码" ng-model="account.confirmPassword">
+            </div>
+            <div class="form-group">
+                <label>验证码：</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="验证码" ng-model="account.code">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" id="codeBtn" ng-click="SendCode()">获取验证码</button>
+                    </span>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-sm btn-success" ng-click="Register()">注册</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

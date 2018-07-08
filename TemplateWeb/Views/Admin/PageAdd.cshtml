@@ -1,0 +1,43 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Plugin/summernote/css/summernote.css" rel="stylesheet" />
+<script src="~/Plugin/summernote/js/summernote.js"></script>
+<script src="~/Plugin/summernote/js/lang/summernote-zh-CN.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-page.js"></script>
+
+<style>
+    .btn-sm {
+        line-height: 0;
+    }
+</style>
+
+<div class="tp-content" ng-app="app" ng-controller="pageAdd">
+    <form>
+        <div class="form-group">
+            <label>标题：</label>
+            <input type="text" class="form-control" placeholder="请输入单页标题..." ng-model="pageModel.title">
+        </div>
+        <div class="form-group">
+            <label>正文：</label>
+            <div id="summernote"></div>
+        </div>
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+        </div>
+    </form>
+</div>

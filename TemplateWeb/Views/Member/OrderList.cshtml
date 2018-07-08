@@ -1,0 +1,77 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/member/member-public.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-public.js"></script>
+<link href="~/Content/member/member-layout.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-order.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="orderList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">
+                    {{d.id}}
+                </td>
+                <td title="'订单号'" sortable="'number'" filter="{number:'text'}">{{d.number}}</td>
+                <td title="'产品名称'" sortable="'name'" filter="{name:'text'}">{{d.name}}</td>
+                <td title="'购买价格'" sortable="'price'" filter="{price:'number'}">{{d.price|number:2}}</td>
+                <td title="'购买时间'" sortable="'pay_time'" filter="{pay_time:'text'}">{{d.pay_time}}</td>
+                <td title="'操作'">
+                    <label class="label label-primary" ng-click="SetData(d)"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览</label>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="order-read" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">订单内容</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-condensed table-bordered table-striped table-hover tp-table-modal">
+                        <tbody>
+                            <tr>
+                                <td class="text-right"><strong>订单号：</strong></td>
+                                <td>{{tempOrder.number}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>支付方式：</strong></td>
+                                <td>{{tempOrder.pay_method}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>下单时间：</strong></td>
+                                <td>{{tempOrder.sys_datetime}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>支付时间：</strong></td>
+                                <td>{{tempOrder.pay_time}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>购买价格：</strong></td>
+                                <td>{{tempOrder.price|number:2}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

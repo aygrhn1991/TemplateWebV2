@@ -1,0 +1,38 @@
+﻿<div class="tp-sidebar-wrapper">
+    <nav class="sidebar-nav">
+        <ul class="metismenu" id="menu">
+            <li>
+                <a class="has-arrow" href=""><span class="fa fa-fw fa-cog"></span>&nbsp;设置</a>
+                <ul>
+                    <li><a href="/Member/Info">个人信息</a></li>
+                    <li><a href="/Member/Password">密码修改</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow" href="">
+                    <span class="fa fa-fw fa-envelope"></span>&nbsp;消息
+                    <span class="badge tp-badge-right" ng-if="param.member_messageCount!=0" ng-bind="param.member_messageCount"></span>
+                </a>
+                <ul>
+                    <li><a href="/Member/MessageList">消息</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow" href="">
+                    <span class="fa fa-fw fa-tags"></span>&nbsp;订单
+                </a>
+                <ul>
+                    <li><a href="/Member/OrderList">订单</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="has-arrow" href="">
+                    <span class="fa fa-fw fa-diamond"></span>&nbsp;产品
+                </a>
+                <ul>
+                    <li><a href="/Member/ProductList">产品</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>

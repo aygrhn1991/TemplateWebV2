@@ -1,0 +1,91 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-messageboard.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="messageBoardList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">
+                    {{d.id}}
+                </td>
+                <td title="'标注'" sortable="'state_mark'">
+                    <i class="fa fa-fw fa-flag tp-table-fa tp-table-fa-select" ng-if="d.state_mark" ng-click="SetMark(d)"></i>
+                    <i class="fa fa-fw fa-flag-o tp-table-fa" ng-if="!d.state_mark" ng-click="SetMark(d)"></i>
+                </td>
+                <td title="'读取'" sortable="'state_read'">
+                    <label class="label label-success" ng-if="d.state_read">已读</label>
+                    <label class="label label-danger" ng-if="!d.state_read">未读</label>
+                </td>
+                <td title="'留言内容'" sortable="'content'" filter="{content:'text'}">{{d.content|limitTo:20}}...</td>
+                <td title="'留言时间'" sortable="'sys_datetime'" filter="{sys_datetime:'text'}">{{d.sys_datetime}}</td>
+                <td title="'处理状态'" sortable="'state_solve'">
+                    <label class="label label-success" ng-if="d.state_solve">已处理</label>
+                    <label class="label label-danger" ng-if="!d.state_solve" ng-click="SetSolve(d)">标记为已处理</label>
+                </td>
+                <td title="'操作'">
+                    <label class="label label-primary" ng-click="SetRead(d)"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览</label>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="messageboard-read" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">留言内容</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-condensed table-bordered table-striped table-hover tp-table-modal">
+                        <tbody>
+                            <tr>
+                                <td class="text-right"><strong>ID：</strong></td>
+                                <td>{{tempMessageBoard.id}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>联系人：</strong></td>
+                                <td>{{tempMessageBoard.contact_name}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>联系电话：</strong></td>
+                                <td>{{tempMessageBoard.contact_phone}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>其他联系方式：</strong></td>
+                                <td>{{tempMessageBoard.contact_other}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>留言时间：</strong></td>
+                                <td>{{tempMessageBoard.sys_datetime}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>留言内容：</strong></td>
+                                <td><p>{{tempMessageBoard.content}}</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

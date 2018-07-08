@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>admin - 后台</title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <script src="~/Plugin/layer/layer.js"></script>
+
+    <link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+    <script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+    <link href="~/Plugin/pace/css/themes/black/pace-theme-minimal.css" rel="stylesheet" />
+    <script src="~/Plugin/pace/js/pace.js"></script>
+
+    <link href="~/Plugin/metismenu/css/metisMenu.css" rel="stylesheet" />
+    <link href="~/Plugin/metismenu/css/style.css" rel="stylesheet" />
+    <script src="~/Plugin/metismenu/js/metisMenu.js"></script>
+
+    <script src="~/Plugin/slimscroll/js/jquery.slimscroll.js"></script>
+
+    <link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+    <script src="~/Scripts/admin/admin-public.js"></script>
+    <link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/admin/admin-layout.js"></script>
+</head>
+<body>
+    @Html.Partial("_Partial_Admin_Sidebar")
+    @RenderBody()
+</body>
+</html>

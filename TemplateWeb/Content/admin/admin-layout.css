@@ -1,0 +1,96 @@
+﻿.tp-sidebar-wrapper {
+    position: fixed;
+    width: 220px !important;
+    height: 100%;
+}
+
+.tp-content-wrapper {
+    height: 100%;
+    margin: 0 0 0 220px;
+}
+
+.tp-iframe {
+    width: 100%;
+    height: 99%;
+    border: none;
+}
+
+.tp-content {
+    padding: 15px;
+}
+
+.tp-lable-glyphicon {
+    top: 3px;
+}
+
+.tp-form-half {
+    width: 600px;
+}
+
+.tp-table-wrapper {
+    width: 100%;
+    height: 40%;
+    overflow-y: scroll;
+}
+
+.tp-table-a {
+    font-size: 12px;
+}
+
+.tp-table-img {
+    max-width: 100%;
+    height: 45px;
+    transition: .1s;
+}
+
+    .tp-table-img:hover {
+        transform: scale(1.5,1.5);
+    }
+
+.tp-table-input {
+    display: inline-block !important;
+}
+
+.tp-table-fa {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tp-table-fa-select {
+    color: red;
+}
+
+.tp-table-modal > tbody > tr > td:first-child {
+    width: 120px;
+}
+
+.tp-input-margin-bottom {
+    margin-bottom: 3px;
+}
+
+.tp-img-small {
+    max-width: 100%;
+    height: 60px;
+}
+
+.tp-account-block {
+    width: 300px;
+    margin: 50px auto;
+    padding: 0 20px 20px 20px;
+    border: 1px solid #b3b3b3;
+    border-radius: 5px;
+    background-color: white;
+}
+.tp-badge-right-top {
+    position: relative;
+    top: -10px;
+    left: -5px;
+    padding: 0 5px 4px 5px;
+    background-color: #ff4c4c;
+}
+.tp-badge-right {
+    position: relative;
+    top: -1px;
+    padding: 3px 5px 2px 4px;
+    background-color: #ff4c4c;
+}

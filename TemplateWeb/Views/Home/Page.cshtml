@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Page";
+    Layout = "~/Views/Shared/_Layout_Home.cshtml";
+}
+
+<div class="tp-index" ng-controller="page">
+    <div class="tp-index-title">
+        <span ng-bind="page.title"></span>
+    </div>
+    <div class="tp-page-content" ng-bind-html="page.content"></div>
+</div>
+

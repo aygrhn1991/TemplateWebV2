@@ -1,0 +1,69 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-banner.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="bannerContent">
+    <form>
+        <div class="form-group">
+            <label>轮播标题：【{{bannerModel.title}}】</label>
+        </div>
+        <div class="form-group">
+            <label>图片预览：<img ng-src="{{bannerModel.path}}" class="tp-img-small" /></label>
+        </div>
+        <div class="form-group">
+            <label>模式选择：</label>
+            <div class="btn-group">
+                <button class="btn btn-default" ng-class="{'btn-success':m.key==bannerModel.mode}" ng-repeat="m in modeType" ng-click="SetMode(m)">{{m.value}}</button>
+            </div>
+        </div>
+    </form>
+    <hr />
+    <form ng-show="bannerModel.mode==0">
+        <div class="form-group">
+            <label>Url：</label>
+            <input type="text" class="form-control" placeholder="请以 http:// 或 https:// 起始..." ng-model="bannerModel.url">
+        </div>
+    </form>
+    <form ng-show="bannerModel.mode==1">
+        <div class="form-group">
+            <label>已选择单页：【{{bannerModelPageTitle}}】</label>
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button disabled class="btn btn-default" type="button">&nbsp;<i class="glyphicon glyphicon-search"></i>&nbsp;</button>
+                </span>
+                <input type="text" class="form-control" placeholder="请输入标题关键字..." ng-model="pageKeyWord">
+            </div>
+            <div class="tp-table-wrapper">
+                <table class="table table-bordered table-condensed table-striped table-hover">
+                    <tbody>
+                        <tr ng-repeat="p in pageList | filter:pageKeyWord">
+                            <td>{{$index+1}}</td>
+                            <td>{{p.title}}</td>
+                            <td>
+                                <label class="label label-success" ng-click="SetPage(p)">选择</label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+    <div class="form-group text-center">
+        <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+    </div>
+</div>
+

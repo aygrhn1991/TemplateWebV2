@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>预支付</title>
+    <link href="~/Content/pay/pay.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="tp-pay-header">
+        <a href="/Home/Index" class="tp-pay-header-logo">
+            <img src="@ViewBag.logo" />
+        </a>
+        <div class="tp-pay-header-sitename">
+            @ViewBag.sitename 收银台
+        </div>
+    </div>
+    <div class="tp-pay-order">
+        <div class="tp-pay-order-wrapper">
+            <div class="tp-pay-order-productname">购买产品：@ViewBag.name</div>
+            <div class="tp-pay-order-productprice">应付金额：￥@ViewBag.price</div>
+        </div>
+    </div>
+    <div class="tp-pay-paymethod">
+        <a href="/Pay/WxPay?productId=@ViewBag.productId&payMethod=微信" class="tp-pay-paymethod-method">
+            <img src="~/Component/PayLogo/wxpay/logo.png" />
+        </a>
+        <a href="/Pay/AliPay?productId=@ViewBag.productId&payMethod=支付宝" class="tp-pay-paymethod-method">
+            @*<a class="tp-pay-paymethod-method" onclick="alert('支付宝支付功能暂未开通！');">*@
+            <img src="~/Component/PayLogo/alipay/logo.png" />
+        </a>
+    </div>
+    <div class="tp-pay-footer"></div>
+</body>
+</html>

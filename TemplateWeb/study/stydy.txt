@@ -1,0 +1,1 @@
+var query = entity.pay_order.Where(p => p.member_id == id && p.delete == false).OrderByDescending(p => p.id).ToArray().Join(entity.module_product, a => a.product_id, b => b.id, (a, b) => new { a, b }).Join(entity.module_product_type, a => a.b.type_id, b => b.id, (a, b) => new { b.name });

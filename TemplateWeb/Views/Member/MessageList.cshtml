@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/member/member-public.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-public.js"></script>
+<link href="~/Content/member/member-layout.css" rel="stylesheet" />
+<script src="~/Scripts/member/member-message.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="messageList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">
+                    {{d.id}}
+                </td>
+                <td title="'读取'" sortable="'state_read'">
+                    <label class="label label-success" ng-if="d.state_read">已读</label>
+                    <label class="label label-danger" ng-if="!d.state_read">未读</label>
+                </td>
+                <td title="'标题'" sortable="'title'" filter="{title:'text'}">{{d.title}}</td>
+                <td title="'内容'" sortable="'content'" filter="{content:'text'}">{{d.content|limitTo:20}}...</td>
+                <td title="'时间'" sortable="'sys_datetime'" filter="{sys_datetime:'text'}">{{d.sys_datetime}}</td>
+                <td title="'操作'">
+                    <label class="label label-primary" ng-click="SetRead(d)"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览</label>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="message-read" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">消息内容</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-condensed table-bordered table-striped table-hover tp-table-modal">
+                        <tbody>
+                            <tr>
+                                <td class="text-right"><strong>ID：</strong></td>
+                                <td>{{tempMessage.id}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>标题：</strong></td>
+                                <td>{{tempMessage.title}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>时间：</strong></td>
+                                <td>{{tempMessage.sys_datetime}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>内容：</strong></td>
+                                <td><p>{{tempMessage.content}}</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

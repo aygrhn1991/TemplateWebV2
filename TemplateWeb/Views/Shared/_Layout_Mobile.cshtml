@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link id="favicon-icon" type="favicon" rel="shortcut icon" />
+    <title></title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <link href="~/Plugin/limarquee/css/liMarquee.css" rel="stylesheet" />
+    <script src="~/Plugin/limarquee/js/liMarquee.js"></script>
+
+    <link href="~/Content/mobile/mobile-public.css" rel="stylesheet" />
+    <script src="~/Scripts/mobile/mobile-public.js"></script>
+    <link href="~/Content/mobile/mobile-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/mobile/mobile-index.js"></script>
+</head>
+<body ng-app="app" ng-controller="layout">
+    @RenderBody()
+    @Html.Partial("_Partial_Mobile_Footer")
+</body>
+</html>

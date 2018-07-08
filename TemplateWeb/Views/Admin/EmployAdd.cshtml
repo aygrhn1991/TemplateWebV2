@@ -1,0 +1,92 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-employ.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="employAdd">
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>分类：</label>
+                <select class="form-control" ng-options="t.id as t.name for t in employType" ng-model="employModel.type_id"></select>
+            </div>
+            <div class="form-group">
+                <label>职位名称：</label>
+                <input type="text" class="form-control" placeholder="请输入职位名称..." ng-model="employModel.position_name">
+            </div>
+            <div class="form-group">
+                <label>招聘数量：</label>
+                <input type="text" class="form-control" placeholder="请输入招聘数量..." ng-model="employModel.employ_number">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>薪资水平：</label>
+                <input type="text" class="form-control" placeholder="请输入薪资水平..." ng-model="employModel.salary">
+            </div>
+            <div class="form-group">
+                <label>工作地点：</label>
+                <input type="text" class="form-control" placeholder="请输入工作地点..." ng-model="employModel.work_place">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>学历要求：</label>
+                <input type="text" class="form-control" placeholder="请输入学历要求..." ng-model="employModel.education">
+            </div>
+            <div class="form-group">
+                <label>工作经验：</label>
+                <input type="text" class="form-control" placeholder="请输入工作经验..." ng-model="employModel.experience">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>职位描述：</label>
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="1、" ng-model="employModel.position_description_1">
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="2、" ng-model="employModel.position_description_2">
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="3、" ng-model="employModel.position_description_3">
+                <input type="text" class="form-control" placeholder="4、" ng-model="employModel.position_description_4">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>任职要求：</label>
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="1、" ng-model="employModel.position_requirement_1">
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="2、" ng-model="employModel.position_requirement_2">
+                <input type="text" class="form-control tp-input-margin-bottom" placeholder="3、" ng-model="employModel.position_requirement_3">
+                <input type="text" class="form-control" placeholder="4、" ng-model="employModel.position_requirement_4">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>福利待遇：</label>
+                <input type="text" class="form-control" placeholder="请输入福利待遇..." ng-model="employModel.benefit">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>备注：</label>
+                <input type="text" class="form-control" placeholder="HR邮箱，联系方式，截止时间，备注信息等..." ng-model="employModel.remark">
+            </div>
+        </div>
+        <div class="form-group text-center">
+            <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+        </div>
+    </div>
+</div>
+

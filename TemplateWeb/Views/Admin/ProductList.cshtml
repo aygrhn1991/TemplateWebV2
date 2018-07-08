@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-product.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="productList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">{{d.id}}</td>
+                <td title="'置顶'" sortable="'top'">
+                    <i class="fa fa-fw fa-send tp-table-fa tp-table-fa-select" ng-if="d.top" ng-click="SetTop(d)"></i>
+                    <i class="fa fa-fw fa-send-o tp-table-fa" ng-if="!d.top" ng-click="SetTop(d)"></i>
+                </td>
+                <td title="'图片'"><img ng-src="{{d.path}}" class="tp-table-img" /></td>
+                <td title="'产品分类'" sortable="'type'" filter="{type:'text'}">{{d.type}}</td>
+                <td title="'产品名称'" sortable="'name'" filter="{name:'text'}">{{d.name}}</td>
+                <td title="'价格'" sortable="'price'">{{d.price}}</td>
+                <td title="'操作'">
+                    <a class="label label-primary" href="/Admin/ProductAdd?id={{d.id}}"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览&nbsp;/&nbsp;<i class="glyphicon glyphicon-edit"></i>&nbsp;编辑</a>
+                    <label class="label label-danger" ng-click="Delete(d)"><i class="glyphicon glyphicon-trash"></i>&nbsp;删除</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

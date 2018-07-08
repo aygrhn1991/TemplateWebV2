@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>member - 后台</title>
+    @Styles.Render("~/bundles/css-lib")
+    @Scripts.Render("~/bundles/script-lib")
+
+    <script src="~/Plugin/layer/layer.js"></script>
+
+    <link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+    <script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+    <link href="~/Plugin/pace/css/themes/black/pace-theme-minimal.css" rel="stylesheet" />
+    <script src="~/Plugin/pace/js/pace.js"></script>
+
+    <link href="~/Plugin/metismenu/css/metisMenu.css" rel="stylesheet" />
+    <link href="~/Plugin/metismenu/css/style.css" rel="stylesheet" />
+    <script src="~/Plugin/metismenu/js/metisMenu.js"></script>
+
+    <script src="~/Plugin/slimscroll/js/jquery.slimscroll.js"></script>
+
+    <link href="~/Content/member/member-public.css" rel="stylesheet" />
+    <script src="~/Scripts/member/member-public.js"></script>
+    <link href="~/Content/member/member-layout.css" rel="stylesheet" />
+    <script src="~/Scripts/member/member-layout.js"></script>
+    <script src="~/Scripts/member/member-index.js"></script>
+</head>
+<body ng-app="app" ng-controller="layout">
+    @Html.Partial("_Partial_Member_Sidebar")
+    @RenderBody()
+</body>
+</html>

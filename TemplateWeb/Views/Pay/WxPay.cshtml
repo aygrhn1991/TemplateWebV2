@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>微信支付</title>
+    <link href="~/Content/pay/pay.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-2.2.4.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.3.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script>
+        $(function () {
+            var wxPayHub = $.connection.wxPayHub;
+            wxPayHub.client.payResult = function (result) {
+                if (result == 'success') {
+                    location.href = '/Member/Index';
+                } else {
+                    alert('支付过程出现问题，请重新操作！');
+                }
+            };
+            $.connection.hub.start().done(function () { });
+        })
+    </script>
+</head>
+<body>
+    <div class="tp-pay-header">
+        <a href="/Home/Index" class="tp-pay-header-logo">
+            <img src="@ViewBag.logo" />
+        </a>
+        <div class="tp-pay-header-sitename">
+            @ViewBag.sitename 收银台
+        </div>
+    </div>
+    <div class="tp-pay-order">
+        <div class="tp-pay-order-wrapper">
+            <div class="tp-pay-order-productname">购买产品：@ViewBag.name</div>
+            <div class="tp-pay-order-productprice">应付金额：￥@ViewBag.price</div>
+        </div>
+    </div>
+    <div class="tp-pay-wxpay">
+        <div class="tp-pay-wxpay-logo">
+            <img src="~/Component/PayLogo/wxpay/logo.png" />
+        </div>
+        <div class="tp-pay-wxpay-qr">
+            <img src="@ViewBag.url" />
+        </div>
+        <div class="tp-pay-wxpay-tip">
+            <img src="~/Component/PayLogo/wxpay/tip.png" />
+        </div>
+    </div>
+    <div class="tp-pay-footer"></div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-member.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="memberList">
+    <table ng-table="dt" class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr ng-repeat="d in $data">
+                <td title="'ID'" sortable="'id'">{{d.id}}</td>
+                <td title="'姓名'" sortable="'real_name'" filter="{real_name:'text'}">{{d.real_name}}</td>
+                <td title="'电话'" sortable="'phone'" filter="{phone:'text'}">{{d.phone}}</td>
+                <td title="'备注'" sortable="'remark'" filter="{remark:'text'}">{{d.remark}}</td>
+                <td title="'状态'" sortable="'enable'">
+                    <label class="label label-success" ng-if="d.enable">已启用</label>
+                    <label class="label label-danger" ng-if="!d.enable">已停用</label>
+                    <a class="tp-table-a" ng-if="d.enable" ng-click="SetEnable(d)">点击停用</a>
+                    <a class="tp-table-a" ng-if="!d.enable" ng-click="SetEnable(d)">点击启用</a>
+                </td>
+                <td title="'操作'">
+                    <label class="label label-primary" ng-click="SetData(d)"><i class="glyphicon glyphicon-list-alt"></i>&nbsp;浏览</label>
+                    <label class="label label-danger" ng-click="Reset(d)"><i class="glyphicon glyphicon-repeat"></i>&nbsp;重置密码</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--Modal-->
+    <div class="modal fade" id="member-read" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span></button>
+                    <h4 class="modal-title">会员信息</h4>
+                </div>
+                <div class="modal-body">
+                    <table class="table table-condensed table-bordered table-striped table-hover tp-table-modal">
+                        <tbody>
+                            <tr>
+                                <td class="text-right"><strong>ID：</strong></td>
+                                <td>{{tempMember.id}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>姓名：</strong></td>
+                                <td>{{tempMember.real_name}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>电话：</strong></td>
+                                <td>{{tempMember.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>身份证号：</strong></td>
+                                <td>{{tempMember.idcard_number}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>邮箱：</strong></td>
+                                <td>{{tempMember.email}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>注册时间：</strong></td>
+                                <td><p>{{tempMember.sys_datetime}}</p></td>
+                            </tr>
+                            <tr>
+                                <td class="text-right"><strong>备注：</strong></td>
+                                <td><p>{{tempMember.remark}}</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

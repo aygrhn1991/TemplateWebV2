@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_Layout_Home.cshtml";
+}
+
+<div class="tp-product-detail" ng-controller="productDetail">
+    <div class="tp-product-img-big">
+        <div class="tp-product-top" ng-if="product.top==true">推荐</div>
+        <img ng-src="{{product.path}}" />
+    </div>
+    <div class="tp-product-right">
+        <div class="tp-product-title-big" ng-bind="product.name"></div>
+        <div class="tp-product-price-big">￥:<span ng-bind="product.price|number:2"></span></div>
+        <div class="tp-product-description-big" ng-bind="product.description"></div>
+        <a class="tp-product-buy-btn" href="/Pay/PrePay?productId={{product.id}}">立刻购买</a>
+    </div>
+    <div class="tp-index-title">
+        <span>介绍</span>
+    </div>
+    <div class="tp-page-content" ng-bind-html="product.content"></div>
+</div>
+

@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Plugin/easyupload/css/easy-upload.css" rel="stylesheet" />
+<script src="~/Plugin/easyupload/js/easyUpload.js"></script>
+
+<link href="~/Plugin/summernote/css/summernote.css" rel="stylesheet" />
+<script src="~/Plugin/summernote/js/summernote.js"></script>
+<script src="~/Plugin/summernote/js/lang/summernote-zh-CN.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-product.js"></script>
+
+<style>
+    .btn-sm {
+        line-height: 0;
+    }
+</style>
+
+<div class="tp-content" ng-app="app" ng-controller="productAdd">
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>分类：</label>
+                <select class="form-control" ng-options="t.id as t.name for t in productType" ng-model="productModel.type_id"></select>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>产品名称：</label>
+                <input type="text" class="form-control" placeholder="请输入产品名称..." ng-model="productModel.name">
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>价格：</label>
+                <input type="text" class="form-control" placeholder="请输入价格..." ng-model="productModel.price">
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>图片：<img ng-src="{{productModel.path}}" class="tp-img-small" ng-if="productModel.path!=null" /></label>
+                <div id="easyContainer"></div>
+            </div>
+        </div>
+        <div class="col-xs-6">
+            <input type="file" id="att" /><button ng-click="uploadAtt()">上传附件</button>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <label>描述：</label>
+                <textarea class="form-control" rows="3" ng-model="productModel.description"></textarea>
+            </div>
+            <div class="form-group">
+                <label>正文：</label>
+                <div id="summernote"></div>
+            </div>
+            <div class="form-group text-center">
+                <button type="button" class="btn btn-success" ng-click="Save()">保&nbsp;存</button>
+            </div>
+        </div>
+    </div>
+</div>
+

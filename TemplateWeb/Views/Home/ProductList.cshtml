@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "ProductList";
+    Layout = "~/Views/Shared/_Layout_Home.cshtml";
+}
+
+<div class="tp-product-list" ng-controller="productList">
+    <ul class="tp-index-nav">
+        <li ng-class="{'tp-index-nav-active':pt.id==id}" ng-repeat="pt in productType"><a ng-bind="pt.name" href="/Home/ProductList?id={{pt.id}}"></a></li>
+    </ul>
+    <ul class="tp-product">
+        <li ng-repeat="p in productList">
+            <a class="tp-product-item" href="/Home/ProductDetail?id={{p.id}}">
+                <div class="tp-product-top" ng-if="p.top==true">推荐</div>
+                <div class="tp-product-img">
+                    <img ng-src="{{p.path}}" />
+                </div>
+                <div class="tp-product-title" ng-bind="p.name"></div>
+            </a>
+        </li>
+    </ul>
+</div>
+

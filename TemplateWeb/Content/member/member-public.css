@@ -1,0 +1,37 @@
+﻿html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    outline: none !important;
+}
+
+a {
+    cursor: pointer;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+th, td {
+    vertical-align: middle !important;
+    font-size: 14px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+table input,
+table textarea {
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    width: 60%;
+}
+
+textarea {
+    resize: none;
+}

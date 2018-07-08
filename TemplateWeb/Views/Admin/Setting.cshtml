@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundles/css-lib")
+@Scripts.Render("~/bundles/script-lib")
+
+<script src="~/Plugin/layer/layer.js"></script>
+
+<link href="~/Plugin/ngtable/css/ng-table.css" rel="stylesheet" />
+<script src="~/Plugin/ngtable/js/ng-table.js"></script>
+
+<link href="~/Content/admin/admin-public.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-public.js"></script>
+<link href="~/Content/admin/admin-layout.css" rel="stylesheet" />
+<script src="~/Scripts/admin/admin-setting.js"></script>
+
+<div class="tp-content" ng-app="app" ng-controller="setting">
+    <table class="table table-condensed table-bordered table-striped table-hover">
+        <tbody>
+            <tr>
+                <td class="text-right"><strong>logo：</strong></td>
+                <td>
+                    <input id="logo" type="file" class="tp-table-input" /><a class="tp-table-a" ng-click="Upload(fileType.logo)">上传</a>
+                    <img ng-src="{{data.logo}}" class="tp-table-img" ng-show="data.logo!=null" />
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>favicon：</strong></td>
+                <td>
+                    <input id="favicon" type="file" class="tp-table-input" /><a class="tp-table-a" ng-click="Upload(fileType.favicon)">上传</a>
+                    <img ng-src="{{data.favicon}}" class="tp-table-img" ng-show="data.favicon!=null" />
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>二维码：</strong></td>
+                <td>
+                    <input id="qr" type="file" class="tp-table-input" /><a class="tp-table-a" ng-click="Upload(fileType.qr)">上传</a>
+                    <img ng-src="{{data.qr}}" class="tp-table-img" ng-show="data.qr!=null" />
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>站点名：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.sitename" /><a class="tp-table-a" ng-click="Save('sitename',data.sitename)">修改</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>版权：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.copyright" /><a class="tp-table-a" ng-click="Save('copyright',data.copyright)">修改</a>
+                    <br /><small>推荐格式（中）：&copy; 2018 网站名称 版权所有</small>
+                    <br /><small>推荐格式（英）：Copyright &copy; 2018 网站名称 All rights reserved</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>ICP备案：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.icp" /><a class="tp-table-a" ng-click="Save('icp',data.icp)">修改</a>
+                    <br /><small>推荐格式：京ICP备******号</small>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>腾讯SMS AppId：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.qcloudesms_appid" /><a class="tp-table-a" ng-click="Save('qcloudesms_appid',data.qcloudesms_appid)">修改</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>腾讯SMS AppKey：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.qcloudesms_appkey" /><a class="tp-table-a" ng-click="Save('qcloudesms_appkey',data.qcloudesms_appkey)">修改</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="text-right"><strong>腾讯SMS 验证码过期时间（分钟）：</strong></td>
+                <td>
+                    <input type="text" ng-model="data.qcloudesms_expiretime" /><a class="tp-table-a" ng-click="Save('qcloudesms_expiretime',data.qcloudesms_expiretime)">修改</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

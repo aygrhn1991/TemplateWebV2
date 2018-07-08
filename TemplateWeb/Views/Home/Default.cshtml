@@ -1,0 +1,2493 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>同歌教育</title>
+    <meta name="description" content="爱学堂是国内领先的K12教育、中小学MOOC平台,教育部在线教育研究中心基础教育频道，打造一种中小学在线“同步教材+趣味+动漫+个性”的学习视频，给孩子优质的在线学习体验，从此让学习更美好！咨询：4009106555" />
+    <meta name="keywords" content="爱学堂,爱学堂教育,网络教育,同步课程，初中、高中课程在线学习，学堂在线，在线免费学习，趣味学习，动漫视频，中小学教育，中小学MOOC" />
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta content="webkit|ie-comp|ie-stand" name="renderer">
+    <meta content="" name="protocol">
+    <link rel="shortcut icon" href="/images/newIndex/ico.png">
+    <script type="text/javascript" src='/js/common/jquery-1.8.0.js'></script>
+    <script type="text/javascript" src='/js/common/jquery.slimscroll.js'></script>
+
+    <link href="/css/newIndex/favicon.ico" rel="shortcut icon">
+    <link href="/css/newIndex/banner.css" rel="stylesheet" type="text/css" />
+    <link href="/css/newIndex/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/css/knowledgeCard/index.css">
+    <link rel="stylesheet" href="/css/newIndex/load.css" />
+
+    <style>
+        .pop_up2 {
+            width: 400px;
+            height: 60px;
+            border-radius: 10px;
+            position: fixed;
+            left: 50%;
+            margin-left: -200px;
+            top: 45%;
+            font-size: 16px;
+            color: #fff;
+            text-align: center;
+            line-height: 60px;
+            z-index: 99999999;
+        }
+
+
+
+        .h-phone {
+            position: absolute;
+            top: 10px !important;
+            right: -94px !important;
+            z-index: 1000;
+            width: 362px;
+            height: 291px !important;
+            background: url("../../images/new/phonebg.png") no-repeat;
+        }
+
+        .head-right span {
+            display: inline-block;
+        }
+
+        .h-phone h1 {
+            padding-bottom: 15px !important;
+            padding-top: 50px !important;
+            font-size: 14px;
+            color: #474e5d;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        .alert_dd {
+            margin-top: -11px !important;
+        }
+
+        .header_alert .alert_dd h4 a {
+            font-size: 1px !important;
+        }
+
+        .header_alert .alert_b {
+            height: 83px;
+            margin-top: -17px;
+            background: #f5f5f5;
+        }
+
+        .header_alert .alert_c h3 {
+            font-size: 12px;
+            color: #ea544a;
+            text-align: center;
+            margin-top: 10px !important;
+            padding-bottom: 0 !important;
+            margin-bottom: -3px !important;
+            height: 35px;
+        }
+
+        .header_alert .alert_dd h4 a {
+            font-size: 14px !important;
+            color: #428bca !important;
+            text-decoration: none;
+        }
+
+            .header_alert .alert_dd h4 a:hover {
+                text-decoration: none;
+                color: red !important
+            }
+
+        .header_alert .alert_b ol li span {
+            margin-bottom: 13px !important;
+        }
+
+        .header_alert .alert_dd h4 a {
+            display: block;
+            width: 80px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+        .header_alert .alert_dd h4 .close {
+            right: 45px !important;
+        }
+
+        .header_alert .alert_b ol li:hover a {
+            text-decoration: none;
+        }
+
+        .header_alert .alert_b {
+            height: 83px;
+            background: #f5f5f5;
+            margin-top: -5px !important;
+        }
+
+        .head-right .cart {
+            margin: 12px 7px;
+        }
+
+        .header_alert .sanjiao {
+            right: 45px !important;
+        }
+
+        .icons {
+            margin-top: -1px;
+        }
+
+        .header_alert .alert_c ul li span {
+            font-size: 14px;
+        }
+
+        .header_alert .alert_c button.lingqu span {
+            font-size: 14px;
+        }
+
+        .index-main dl dt span a, .index-jp dl dt .bt a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .xinfen {
+            position: relative;
+        }
+
+        .index-news li {
+            height: 200px !important;
+        }
+
+            .index-news li span {
+                display: inline-block;
+                margin-top: 5px !important;
+                line-height: 20px;
+                font-size: 16px;
+            }
+
+                .index-news li span:hover {
+                    color: #f75d5d;
+                }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .zt_top {
+            cursor: pointer;
+            width: 100%;
+            min-width: 1100px;
+            height: 80px;
+            background: #3d9bff url("/images/ad/tbgg.jpg") no-repeat center center;
+        }
+
+        .z_close {
+            cursor: pointer;
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: url("/images/ad/close.png") no-repeat center center;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+        }
+
+            .z_close:hover {
+                background: url("/images/ad/close_hover.png") no-repeat center center;
+            }
+
+        .head-right .cart {
+            margin: 12px 5px;
+        }
+
+        .index-news li {
+            height: 175px;
+        }
+
+            .index-news li a {
+                text-decoration: none;
+                display: block;
+                width: 204px;
+                height: 139px;
+                color: #565a5c;
+                font-size: 16px;
+                cursor: default;
+            }
+
+            .index-news li span {
+                font-size: 16px;
+            }
+
+            .index-news li a img {
+                width: 100% !important;
+                height: 100%;
+            }
+
+        .nav-link-nav-third {
+            width: auto;
+        }
+
+        .nav-li {
+            height: 59px
+        }
+
+        .nav-link-nav-first {
+            padding-top: 6px;
+        }
+
+        .nav-hot {
+            padding-top: 3px
+        }
+
+        .nav-side-li {
+            padding: 22px 0 7px;
+        }
+
+        .logo {
+            height: 46px;
+            margin-top: 15px;
+            width: 276px;
+        }
+
+        .search {
+            margin-left: 100px !important;
+        }
+
+        .tab {
+            float: left;
+            width: 204px;
+            height: 465px;
+            overflow: hidden;
+        }
+    </style>
+    <!-- <script type="text/javascript" src="/js/newIndex/jquery.js"></script> -->
+    <script src="/js/newIndex/arrow.js"></script>
+    <script type="text/javascript" src="/js/newIndex/lrtk.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/common/indexNew.css">
+    <link rel="stylesheet" type="text/css" href="/css/padAlert/pad.css">
+    <script>
+
+$(function()
+{
+
+	$('.z_close').on("click",function(){
+        $(".zt_top").hide();
+        $('.z_close').hide();
+    });
+    $('.zt_top').on("click",function(){
+        //window.location.href="/zhuanti.html";
+        window.open("/zhuanti.html");
+    });
+
+
+	$('.js-mod-category').hover(
+	function(){
+		$(this).addClass('current');
+		$(this).find('.onmouseover').css({'display':'block'});
+	},
+	function(){
+
+		$(this).removeClass('current');
+		$(this).find('.onmouseover').css({'display':'none'});
+	});
+
+
+	//二维码的切换
+ 	$('.h-xiazai button').on('mousemove',function(){
+ 		var i=$(this).index();
+		$(this).addClass('highBtn').siblings('button').removeClass('highBtn');
+		if(i==0 || i==1){
+			 $('.appCode1').attr("src","/images/appimg/mobile.png")
+		}else if(i==2 || i==3)
+		{
+			 $('.appCode1').attr("src","/images/appimg/pad.png")
+		}
+	});
+})
+
+    </script>
+    <!-- 公用页面 -->
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+	var hm = document.createElement("script");
+	hm.src = "//hm.baidu.com/hm.js?786936dbda745d752e560137bc25b8fe";
+	var s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(hm, s);
+	})();
+    </script>
+</head>
+<body>
+    <!--头部广告-->
+    <!--   <div class="zt_top"> -->
+    <!--   </div> -->
+    <!--   <span class="z_close"></span> -->
+    <!--头部广告End-->
+    <div class="header">
+        <div class="head">
+            <input type="hidden" id="vipIsUser" value="">
+            <input type="hidden" id="vipIsOver" value="">
+            <img style="cursor: pointer;" onclick="gotoFirstPage()" src="/images/newIndex/logo.png" class="logo">
+            <div class="search"><input id="searchContext" onkeydown="keyDown(event)" name="keywords" type="text" value="搜索你感兴趣的课程～～" onFocus="if(this.value == this.defaultValue) this.value = ''" onBlur="if(this.value == '') this.value = this.defaultValue"><i class="ss" onclick="search1()"></i></div>
+            <div class="head-right">
+                <span class="cart cart1">
+                    <a href="/order/cart"><img class="gouwu" style="width:18px;height:18px;" src="/images/new/gouwu.png"></a>
+                    <b id="redpoint" style="display:none;right:-1px;top:-1px;"></b>
+                </span>
+                <span class="cart cart1">
+                    <a href="javascript:void(0)"><img id="phone" class="phone" style="width:18px;height:18px;" src="/images/new/phone.png" /></a>
+                    <b id="redpointP" style="display:none;"></b>
+
+                    <!--phone浮窗 -->
+                    <!--             <div class="h-phone" style="display:none;"> -->
+                    <!--                 <h1>下载APP，缓存视频随身学</h1> -->
+                    <!--                 <div class="h-code"> -->
+                    <!--                 </div> -->
+                    <!--                 <div class="h-xiazai"> -->
+                    <!--                     <button class="iPhone_load" onclick="window.open('https://appsto.re/cn/kqph8.i')">iPhone下载</button> -->
+                    <!--                     <button class="iPad_load" onclick="window.open('https://appsto.re/cn/kqph8.i')">iPad下载</button> -->
+                    <!--                     <button class="Android_load" onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.aixuetang.online')">Android下载</button> -->
+                    <!--                 </div> -->
+                    <!--             </div> -->
+                    <!--app下载-->
+                    <div class="h-phone" style="display: none;">
+                        <h1>下载APP，缓存视频随身学</h1>
+                        <div class="h-code">
+                            <img src="/images/appimg/mobile.png" alt="" class="appCode1">
+                            <img src="/images/appimg/pad.png" alt="" style="display:none;" class="appCode2" />
+                        </div>
+                        <div class="h-xiazai">
+                            <button class="iPhone_load highBtn" onclick="window.open('https://itunes.apple.com/cn/app/ai-xue-tang/id1008530442?l=en&mt=8')">iPhone下载</button>
+                            <button class="Android_load" onclick="window.open('http://a.app.qq.com/o/simple.jsp?pkgname=com.aixuetang.online')">Android下载</button>
+                            <button class="iPad_load" onclick="window.open('https://itunes.apple.com/cn/app/ai-xue-tanghd/id1034192958?l=en&mt=8')">iPad下载</button>
+                            <button class="Pad_load" onclick="window.open('http://android.myapp.com/myapp/detail.htm?apkName=com.aixuetang.tablet')"> Pad下载</button>
+                        </div>
+                    </div>
+                    <!--app下载End-->
+                    <!--phone浮窗 end-->
+                </span>
+
+                <!-- <span class="app">
+                    <a href="#">&nbsp;</a>
+                    <div class="plinfo">
+                        <div class="arrow2"></div>
+                        <div class="layer">
+                            <span class="wb100 f14 tc bt dis-ib">下载APP，缓存视频随身学</span>
+                            <div class="wb100 mt16 dis-ib">
+                                <div class="fl code"><i></i></div>
+                                <div class="fr">
+                                    <a href="#" class="phone"></a>
+                                    <a href="#" class="ipad2"></a>
+                                    <a href="#" class="android"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </span> -->
+                <div class='header_main' style="width:180px; margin-top:13px;margin-left:-95px;">
+                    <a href="/ywxtStudent/tologin">登录&nbsp;</a>
+                    /<a href="/ywxtStudent/toregister">&nbsp;&nbsp;注册</a>
+                </div>
+                <input type="hidden" value="" id="admin_user_id">
+
+                <!-- 已登录 -->
+                <!-- 已登录 end-->
+            </div>
+            <div style="background: #fff;height:318px;width: 268px;border-top: 20px solid #fff; display: none; position: absolute;top: 67px;right: 2px;" id="header_alert">
+                <div class="header_alert">
+                    <span class="sanjiao"></span>
+                    <div class="alert_h">
+                        <dl>
+                            <dt>
+                                <img style='width:50px;height:50px;border-radius:50%;' src="/images/head/man.png" onerror="javascript:this.src='/images/head/man.png'">
+                            </dt>
+                            <dd class="alert_dd">
+                                <h4><em class="close" onclick="myTui()">退出</em><a>新学员</a></h4>
+                                <p class="icons">
+                                    <span><img src="/images/new/huangguans.png" class="huang" onclick="showBuyVip();" /></span>
+                                    <span>
+                                        <img src="/images/new/phone.jpg" alt="" class="shouji" onclick="myUserGe()" style="cursor: pointer;" />
+                                    </span>
+                                    <span>
+                                        <img src="/images/new/xf.jpg" alt="" class="xf" onclick="myUserGe()" style="cursor: pointer;" />
+                                    </span>
+                                </p>
+                            </dd>
+
+                        </dl>
+                        <span style="clear: both"></span>
+                        <h6>立即开通会员， 精品课程任你学！</h6>
+                    </div>
+                    <div class="alert_c">
+                        <ul>
+                            <li>余额：<span id="money" onclick="myRecharge()" style="cursor: pointer;">0</span></li>
+                            <li style="color:#ccc;">|</li>
+                            <li style="padding-right: 0px;">学币：<span id="studyCoin" onclick="getCoinDetil()" style="cursor: pointer;">0</span></li>
+                            <span style="clear: both"></span>
+                        </ul>
+
+                        <button class='lingqu' id="weiLing" onclick="signIn()">今日可领 <span style="color: #fde7ac" id="vipNumber"></span> 学币 <img src="/images/new/bi.png" height="30" width="38" alt="" style="margin-top: -10px"></button>
+                        <button class='ylingqu' id="yiLing" style="display: none; cursor: default;">已成功领取 <span style="color: #e96158" id="vipNumberYi">5</span> 学币 </button>
+                        <h3>开通会员，签到学币翻倍</h3>
+                    </div>
+                    <div class="alert_b">
+                        <ol>
+                            <li class="myClass" onclick="myCourse()" style="cursor: pointer;"><span></span><a onclick="myCourse()">个人中心</a></li>
+                            <li class="myOrder" onclick="myOrder()" style="cursor: pointer;"><span></span><a onclick="myOrder()">我的订单</a></li>
+                            <li class="myPay" onclick="myRecharge()" style="cursor: pointer;"><span></span><a onclick="myRecharge()">我的账户</a></li>
+                            <li class="mySelf" onclick="myUser()" style="cursor: pointer;"><span></span><a onclick="myUser()">个人档案</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 导航 焦点图 -->
+    <div class="wrap-banner">
+        <div class="wrap-little-banner">
+            <div jump-end="true" class="wrap-activity-list">
+                <a class="nav-current" href="/indexNew">首页</a>
+                <a class="wrap-activity-item" href="/jyxtCourse/getCourseByGrade">课程</a>
+                <a class="wrap-activity-item" href="http://cloud.aixuetang.com" target="_blank">爱学云</a>
+                <a class="wrap-activity-item" href="http://qcban.aixuetang.com/" target="_blank">未来课堂</a>
+                <a class="wrap-activity-item" href="/bbs/index.html" target="_blank">学堂社区</a>
+                <a class="wrap-activity-item" href="http://js.aixuetang.com/" target="_blank">教师登录</a>
+                <a class="wrap-activity-item" href="/zxxtStudentVip/index" target="_blank">开通会员</a>
+            </div>
+        </div>
+        <div style="background: rgb(223, 226, 231) none repeat scroll 0% 0%;" id="js-wrap-banner-bg" class="wrap-banner-bg">
+            <div class="wrap-banner-core clearfix">
+                <div class="wrap-nav">
+                    <div class="mod-nav">
+                        <ul class="nav-list">
+                            <!-- 左侧年级学科导航 begin -->
+                            <div class="nav-li-first"><a class="nav-course-all" href="#" id="js-course-list"><span>全部课程</span></a></div>
+                            <!-- 左侧年级学科导航 end -->
+                            <!--左侧新导航 start-->
+                            <li class="nav-li js-mod-category ">
+                                <div class="nav-first">
+                                    <a class="nav-link-nav-first" style="text-decoration: none;">小低</a>
+                                </div>
+                                <div class="nav-hot">
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&courseFlag=true">一年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&courseFlag=true">二年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&courseFlag=true">三年级</a>
+                                </div>
+                                <div class="nav-side">
+                                    <ul class="nav-side-list">
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">一年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=20&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">二年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=21&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">三年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=22&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-li js-mod-category ">
+                                <div class="nav-first">
+                                    <a class="nav-link-nav-first" style="text-decoration: none;">小高</a>
+                                </div>
+                                <div class="nav-hot">
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&courseFlag=true">四年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&courseFlag=true">五年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&courseFlag=true">六年级</a>
+                                </div>
+                                <div class="nav-side">
+                                    <ul class="nav-side-list">
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">四年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=23&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">五年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=24&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">六年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=26&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">科学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=21&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">体育</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=22&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">音乐</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=31&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">思想品德</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-li js-mod-category ">
+                                <div class="nav-first">
+                                    <a class="nav-link-nav-first" style="text-decoration: none;">初中</a>
+                                </div>
+                                <div class="nav-hot">
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26">七年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&courseFlag=true">八年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&courseFlag=true">九年级</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=&versionId=42&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">鲁教六年级</a>
+                                </div>
+                                <div class="nav-side">
+                                    <ul class="nav-side-list">
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">七年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=16&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">政治</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=14&versionId=&sosort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">八年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=11&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">物理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=12&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">化学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=16&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">政治</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=27&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">九年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=11&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">物理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=12&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">化学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=16&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">政治</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=28&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">鲁教六年级</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=9&versionId=42&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=25&subjectId=10&versionId=42&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-li js-mod-category ">
+                                <div class="nav-first">
+                                    <a class="nav-link-nav-first" style="text-decoration: none;">高中</a>
+                                </div>
+                                <div class="nav-hot">
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&courseFlag=true">高一</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&courseFlag=true">高二</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&courseFlag=true">高三</a>
+                                </div>
+                                <div class="nav-side">
+                                    <ul class="nav-side-list">
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">高一</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=11&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">物理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=12&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">化学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=16&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">政治</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=15&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">地理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=13&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">生物</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=29&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">高二</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=11&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">物理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=12&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">化学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=15&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">地理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=13&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">生物</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=30&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">高三</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=8&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">语文</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=11&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">物理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=12&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">化学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=15&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">地理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=13&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">生物</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=31&subjectId=23&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">美术</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-li js-mod-category ">
+                                <div class="nav-first">
+                                    <a class="nav-link-nav-first" style="text-decoration: none;">大学先修课</a>
+                                </div>
+                                <div class="nav-hot">
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000001X+2017T1/about">大学化学</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000002X+2017_T1/about">大学物理</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000004X+2016-2/about">大学数学</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+10450034_2X+2016-T2/about">普通生物学</a>
+                                    <a class="nav-link-nav-hot" target="_blank" href="http://www.aixuetang.com/">其他</a>
+                                </div>
+                                <div class="nav-side">
+                                    <ul class="nav-side-list">
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">大学化学</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000001X+2017T1/about">先修课</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">大学物理</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000002X+2017_T1/about">力学</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP201601X+2017_T1/about">电磁学</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">大学数学</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000005X+2017T1/about">微积分</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000004X+2017T1/about">线性代数</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000003X+2017_T1/about">概率论与数理统计 </a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">普通生物学</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+10450034_2X+2017_T1/about">植物与动物</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+10450034_1X+2017_T1/about">细胞和分子</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-side-li">
+                                            <a class="nav-link-nav-second" href="#">其他</a>
+                                            <div class="nav-third">
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:RUCX+AP000010X+2017_T1/about">微观经济学原理</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.xuetangx.com/courses/course-v1:TsinghuaX+AP000008X+2017T1/about">通用学术英语</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!--左侧新导航 end-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 漂浮菜单 end-->
+            <!-- 滚动图 -->
+            <!-- 焦点图 -->
+            <div class="example" luara="yes" width="100%" height="300" select="seleted" onbg="true">
+                <ul>
+                    <li style="cursor: pointer;" onclick="window.open('http://js.aixuetang.com/')"><img src="/pic//courseAndGuide/course/2017-06-14/cdd4378bfea94a4a9a05b1a78b57fed1.jpg" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('http://qhfx.aixuetang.com')"><img src="/pic//courseAndGuide/course/2016-10-18/09e076a66ce74c75944a95ef98d42466.jpg" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('http://www.aixuetang.com/fupin/index.html')"><img src="/pic//courseAndGuide/course/2016-12-26/ac334117995e42c9969fc3adca5fef06.jpg" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('http://p.bokecc.com/flash/single/883A94E338D275CB_D1BDDA35674D147C9C33DC5901307461_false_A3265E402243F35A_1/player.swf')"><img src="/pic//courseAndGuide/course/2016-12-26/35a113fcd7314687863d663579a2a377.jpg" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('http://learning.sohu.com/20170308/n482682189.shtml')"><img src="/pic//courseAndGuide/course/2017-07-04/de8a709c9e034d058ba5d1c603e88a47.jpg" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('http://www.xuetangx.com/event/moocap_five')"><img src="/pic//courseAndGuide/course/2018-06-11/70b05c0dc3bf4212b5d8b700887a4bcd.png" /></li>
+                    <li style="cursor: pointer;" onclick="window.open('https://mp.weixin.qq.com/s/9BdkSMlT5uNAmS6eJxCG4Q')"><img src="/pic//courseAndGuide/course/2018-02-28/b61959143fe64055939fa4f213dc6765.jpg" /></li>
+                </ul>
+                <ol>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
+                </ol>
+            </div>
+            <script>
+$(function(){
+	<!--调用Luara示例-->
+ 	/* $(".example").luara({width:"100%",height:"300",interval:5000,selected:"seleted"}); */
+});
+            </script>
+            <!-- 滚动图 end -->
+        </div>
+    </div>
+    <div class="bg-f5f5f5 wb100">
+        <div class="wrap-activities">
+            <a class="activity-card-link" href="http://www.rcoe.edu.cn" target="_blank"><img class="activity-card-img" alt="" src="/images/newIndex/hz-jyb.png"></a>
+            <a class="activity-card-link" href="http://www.moocap.org.cn/" target="_blank"><img class="activity-card-img" alt="" src="/images/newIndex/hz-xt.png"></a>
+            <a class="activity-card-link" href="http://qhfx.aixuetang.com" target="_blank"><img class="activity-card-img" alt="" src="/images/newIndex/hz-edx.png"></a>
+        </div>
+    </div>
+
+    <!-- 课程体验 -->
+    <div class="content">
+        <div class="index_video">
+            <h1>课程体验</h1>
+            <div class="index-main">
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/dd52b6e2dade41709b75236f8afc5ca1.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('DD365EF6DFD86F809C33DC5901307461');" style="cursor: pointer;">认识生词“袅袅”</a></span>
+                        <i></i><p>19582</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('DD365EF6DFD86F809C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/a1bec60052094b489cd002a88b54816e.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('37145134141409EF9C33DC5901307461');" style="cursor: pointer;"> 有趣的歇后语</a></span>
+                        <i></i><p>14129</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('37145134141409EF9C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/fe86cf33df824771b88e63e5fabb4408.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('231CF7EEF2CD4D479C33DC5901307461');" style="cursor: pointer;"> 比较意义下的减法</a></span>
+                        <i></i><p>12694</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('231CF7EEF2CD4D479C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/897e6bb46e4540a6a8dc181186d12db6.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('6F247D3811BA8A2E9C33DC5901307461');" style="cursor: pointer;">“图书馆”在哪？</a></span>
+                        <i></i><p>12184</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('6F247D3811BA8A2E9C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/861583cf1e63402cbbb633009114bf9f.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('526B2C1C2C6C8C8A9C33DC5901307461');" style="cursor: pointer;"> 好玩的字母歌</a></span>
+                        <i></i><p>21015</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('526B2C1C2C6C8C8A9C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/2dd32427288d49fea3975e68648aaf1e.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('1AA569B60FFDAA399C33DC5901307461');" style="cursor: pointer;">咖啡那些事</a></span>
+                        <i></i><p>30012</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('1AA569B60FFDAA399C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/f29e77ab064e4906ac3f0f35e96f4267.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('0402B35679FDE1109C33DC5901307461');" style="cursor: pointer;">陋室奇谈</a></span>
+                        <i></i><p>35614</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('0402B35679FDE1109C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2018-01-10/129e0e90b5ad47689a25cd875b68820b.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('2B6A1456FEB81D689C33DC5901307461');" style="cursor: pointer;">化学式的书写</a></span>
+                        <i></i><p>26897</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('2B6A1456FEB81D689C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/f061f7f046e441cdb7ad28840da6e994.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('46C75088011DD0C39C33DC5901307461');" style="cursor: pointer;">带电现象</a></span>
+                        <i></i><p>28801</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('46C75088011DD0C39C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/d9641deac1214a2fb249a88caecc5d65.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('4E306F712F26F0539C33DC5901307461');" style="cursor: pointer;">一元一次不等式组</a></span>
+                        <i></i><p>29012</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('4E306F712F26F0539C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/5a345b98de604d7abfa8c7924467d3c8.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('DE4717C03A37C1059C33DC5901307461');" style="cursor: pointer;">你喜欢收到礼物么</a></span>
+                        <i></i><p>34119</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('DE4717C03A37C1059C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/e04c565e38364d10a02bab339ac066ae.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('C44AF48329B2F41F9C33DC5901307461');" style="cursor: pointer;">什么是礼仪</a></span>
+                        <i></i><p>35262</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('C44AF48329B2F41F9C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/3350da075db14bf6bf1f93aa9bc3673b.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('D9F39F04C29BCD2F9C33DC5901307461');" style="cursor: pointer;">安培力及其应用</a></span>
+                        <i></i><p>10449</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('D9F39F04C29BCD2F9C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><img src="/pic///courseAndGuide/course/2016-10-31/156842bbae6b450d981a28918763f218.jpg"></dd>
+                    <dt>
+                        <span><a onclick="javascript:playVideo('75DCA75F2CBF8A629C33DC5901307461');" style="cursor: pointer;">足球趣闻之红黄牌</a></span>
+                        <i></i><p>30114</p>
+                    </dt>
+                    <div class="mengban"><span class="video" onclick="javascript:playVideo('75DCA75F2CBF8A629C33DC5901307461');"></span></div>
+                </dl>
+                <dl>
+                    <dd><a style="cursor: pointer;" href="http://www.aixuetang.com/fupin/index.html" target="_blank"><img src="/pic///courseAndGuide/course/2016-10-31/04c65cda34fc4e4c8b7ec26cd5a4cd4a.jpg"></a></dd>
+                    <dt>
+                        <span style="width: 186px;"><a href="http://www.aixuetang.com/fupin/index.html" style="cursor: pointer;" target="_blank">清华教育扶贫在线学习共同体</a></span>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <!-- 课程体验 end-->
+    <!-- 真实数据开始 -->
+    <div style=" width:100%;background: #f5f5f5">
+        <div class="index_jpin">
+            <div class="index-jp">
+                <h1>小学精品</h1>
+                <div style="min-height:430px">
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2017-10-17/be220a0f6f314cd388f0696abb16b65b.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(889)" target="_blank">清华附小阅读类课程赏析</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>85852</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(889)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2016-10-31/45fc736ccc0d476eb0803500bce00c2f.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(893)" target="_blank">语文二年级下册（苏教版）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>34764</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(893)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-20/37607748995648b1ae3cbf4d47b6ab47.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(908)" target="_blank">数学三年级下册（人教版）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>42795</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(908)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/4bed6e669a034e69b817dd7067e72c7b.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(860)" target="_blank">英语四年级下册（人教版·三年级起点）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>35231</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(860)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2016-05-18/54387cea444542499ec6145041426ed8.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(821)" target="_blank">数学四年级上册（北师版）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>44909</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(821)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/a786b63e79fa48e2a9f7ecb13f6f0cb8.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(862)" target="_blank">英语五年级下册（人教版·三年级起点）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>35300</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(862)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2017-11-08/d55c47dc1dd04e479c84f23b2d1a5f2c.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(977)" target="_blank">语文五年级上册（北师版）</a></div>
+                            <span>小学动画</span>
+                            <i></i><p>39378</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(977)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2016-06-30/487238931b174d0dbbc0935c860d138a.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(854)" target="_blank">F博士足球大讲堂（第一学期）</a></div>
+                            <span>足球动画</span>
+                            <i></i><p>32221</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(854)" type="button"></div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="tab">
+                <ul id="tabs">
+                    <li id="t_li_1_5"><a onClick="selectTagReal('5',this,'1')" href="javascript:void(0)">周排行</a></li>
+                    <li id="t_li_2_5" class="selectTag2"><a onClick="selectTagReal('5',this,'2')" href="javascript:void(0)">月排行</a></li>
+                </ul>
+                <div id="tagContents">
+                    <div id="tagContents1_5" style="display:none;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1135')">小学语文传统文化系列</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('1135')"><img class="course-img" src="/pic//courseAndGuide/course/2018-06-01/c857e910a29f44d994157eb881eb96a5.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">5630人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
+                                    <span class="rank-agency-name">82456人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('854')">F博士足球大讲堂（第一学期）</a>
+                                    <span class="rank-agency-name">32221人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1067')">清华附小经典名师课程之科学</a>
+                                    <span class="rank-agency-name">34279人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1134')">小学语文写作小灵通系列</a>
+                                    <span class="rank-agency-name">5732人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1133')">小学语文妙解古诗文系列</a>
+                                    <span class="rank-agency-name">5636人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('855')">F博士足球大讲堂（第二学期）</a>
+                                    <span class="rank-agency-name">37007人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1132')">小学语文妙解成语系列</a>
+                                    <span class="rank-agency-name">10193人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1130')">小学语文汉字系列</a>
+                                    <span class="rank-agency-name">10238人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selectTag2" id="tagContents2_5" style="display:block;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1135')">小学语文传统文化系列</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('1135')"><img class="course-img" src="/pic//courseAndGuide/course/2018-06-01/c857e910a29f44d994157eb881eb96a5.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">5630人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('855')">F博士足球大讲堂（第二学期）</a>
+                                    <span class="rank-agency-name">37007人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1134')">小学语文写作小灵通系列</a>
+                                    <span class="rank-agency-name">5732人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1067')">清华附小经典名师课程之科学</a>
+                                    <span class="rank-agency-name">34279人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('854')">F博士足球大讲堂（第一学期）</a>
+                                    <span class="rank-agency-name">32221人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
+                                    <span class="rank-agency-name">82456人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1133')">小学语文妙解古诗文系列</a>
+                                    <span class="rank-agency-name">5636人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1132')">小学语文妙解成语系列</a>
+                                    <span class="rank-agency-name">10193人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('728')">语文四年级下册（人教版）</a>
+                                    <span class="rank-agency-name">34295人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style=" width:100%;">
+        <div class="index_jpin">
+            <div class="index-jp">
+                <h1>初中精品</h1>
+                <div style="min-height:430px">
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-12-23/b6e8897cba8e4b8c9e047c1e417cc0fb.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(648)" target="_blank">英语六年级下册（鲁教新版）</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>81775</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(648)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2016-01-14/7cca13e8db854c97957d620d47196252.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(675)" target="_blank">数学七年级下册网络版（华师版） </a></div>
+                            <span>初中动画</span>
+                            <i></i><p>84333</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(675)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/9fce47f1ea6b4b938f99ab560d2a1937.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(310)" target="_blank">英语七年级下册（人教版）</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>118057</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(310)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-10-13/16f82e5f2da9469db80c226aa01589d0.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(579)" target="_blank">数学八年级下册网络版（青岛版）</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>85715</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(579)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-12-09/4a25201d2708472492da3b5513f4bb2e.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(632)" target="_blank">物理八年级下册（北师版） </a></div>
+                            <span>物理动画</span>
+                            <i></i><p>113023</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(632)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/8285d46914464222b341a7ff83ce8e31.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(312)" target="_blank">英语九年级全一册（人教版）</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>118325</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(312)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-11-02/221d4bbe81104b7cae9e7562d1e52c82.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(590)" target="_blank">化学九年级下册（人教版）</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>112191</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(590)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-10-27/b032942f05c842e9b8a6758777249e0c.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(588)" target="_blank">初中语文专题精选课程</a></div>
+                            <span>初中动画</span>
+                            <i></i><p>99616</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(588)" type="button"></div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="tab">
+                <ul id="tabs">
+                    <li id="t_li_1_1"><a onClick="selectTagReal('1',this,'1')" href="javascript:void(0)">周排行</a></li>
+                    <li id="t_li_2_1" class="selectTag2"><a onClick="selectTagReal('1',this,'2')" href="javascript:void(0)">月排行</a></li>
+                </ul>
+                <div id="tagContents">
+                    <div id="tagContents1_1" style="display:none;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('363')"><img class="course-img" src="/pic//courseAndGuide/course/2015-08-27/37fdf0f6585245fcb429ddae8a10dd9f.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">126631人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">159343人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('556')">化学九年级上册（人教版）  </a>
+                                    <span class="rank-agency-name">125578人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('484')">物理九年级全一册（人教版）</a>
+                                    <span class="rank-agency-name">119529人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('698')">数学九年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">95972人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('359')">英语八年级上册（仁爱版）</a>
+                                    <span class="rank-agency-name">113342人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('606')">英语八年级上册（仁爱新版）</a>
+                                    <span class="rank-agency-name">80993人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('588')">初中语文专题精选课程</a>
+                                    <span class="rank-agency-name">99611人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('697')">数学八年级下册网络版（人教版）</a>
+                                    <span class="rank-agency-name">111571人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selectTag2" id="tagContents2_1" style="display:block;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('696')"><img class="course-img" src="/pic//courseAndGuide/course/2016-01-18/e1861fe5f56142c8b1e6b93d05201e47.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">159343人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
+                                    <span class="rank-agency-name">126631人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('556')">化学九年级上册（人教版）  </a>
+                                    <span class="rank-agency-name">125578人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('484')">物理九年级全一册（人教版）</a>
+                                    <span class="rank-agency-name">119529人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('698')">数学九年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">95972人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('695')">数学七年级下册网络版（人教版） </a>
+                                    <span class="rank-agency-name">166874人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('359')">英语八年级上册（仁爱版）</a>
+                                    <span class="rank-agency-name">113342人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('697')">数学八年级下册网络版（人教版）</a>
+                                    <span class="rank-agency-name">111571人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('588')">初中语文专题精选课程</a>
+                                    <span class="rank-agency-name">99611人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style=" width:100%;">
+        <div class="index_jpin">
+            <div class="index-jp">
+                <h1>高中精品</h1>
+                <div style="min-height:430px">
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0b6b43689abb42acbbce966ca8260e05.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(154)" target="_blank">高一历史人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>81322</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(154)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/8090d9b96f814005ad11f1c3c6cbea04.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(158)" target="_blank">高一政治人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>68270</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(158)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-08-14/1df59d07cb934e64aea44a3c6dec6920.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(182)" target="_blank">高一语文通用版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>76198</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(182)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0ca023edb37f4288b4cde8a12b3bc41a.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(163)" target="_blank">高二地理人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>79922</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(163)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0eb7e489f8124262807773d8e1c34d9c.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(167)" target="_blank">高二化学人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>100094</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(167)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/b860417dc21842db8b1dcc1195983011.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(174)" target="_blank">高二物理人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>91204</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(174)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/c43ddc5e415e4352ba1d81989e4018a2.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(189)" target="_blank">高三数学人教版全年班（理）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>71558</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(189)" type="button"></div>
+                    </dl>
+                    <dl>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/f733a5f3e13e4824aeefa594babcdf2b.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dt>
+                            <div class="bt"><a onclick="gotoCoursePage(168)" target="_blank">高三化学人教版（全年班）</a></div>
+                            <span>爱学堂（初高中录播课）</span>
+                            <i></i><p>90168</p>
+                        </dt>
+                        <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(168)" type="button"></div>
+                    </dl>
+                </div>
+            </div>
+
+            <div class="tab">
+                <ul id="tabs">
+                    <li id="t_li_1_4"><a onClick="selectTagReal('4',this,'1')" href="javascript:void(0)">周排行</a></li>
+                    <li id="t_li_2_4" class="selectTag2"><a onClick="selectTagReal('4',this,'2')" href="javascript:void(0)">月排行</a></li>
+                </ul>
+                <div id="tagContents">
+                    <div id="tagContents1_4" style="display:none;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('186')">高一数学人教版（全年班）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">62368人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('166')">高一化学人教版（全年班）</a>
+                                    <span class="rank-agency-name">100259人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
+                                    <span class="rank-agency-name">81922人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('150')">高一生物人教版(全年班)</a>
+                                    <span class="rank-agency-name">60912人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
+                                    <span class="rank-agency-name">76198人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('178')">高一英语人教版（全年班）</a>
+                                    <span class="rank-agency-name">62129人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
+                                    <span class="rank-agency-name">89253人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
+                                    <span class="rank-agency-name">81322人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('158')">高一政治人教版（全年班）</a>
+                                    <span class="rank-agency-name">68270人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="selectTag2" id="tagContents2_4" style="display:block;">
+                        <ul class="list-current2">
+                            <li class="rank-item rank-item_fi">
+                                <span class="rank-number rank-number1">1</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('186')">高一数学人教版（全年班）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <div class="course-des">
+                                        <span class="course-price">62368人在学</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number2">2</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
+                                    <span class="rank-agency-name">76198人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number3">3</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
+                                    <span class="rank-agency-name">81922人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number4">4</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('178')">高一英语人教版（全年班）</a>
+                                    <span class="rank-agency-name">62129人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number5">5</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('166')">高一化学人教版（全年班）</a>
+                                    <span class="rank-agency-name">100259人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number6">6</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('150')">高一生物人教版(全年班)</a>
+                                    <span class="rank-agency-name">60912人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number7">7</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
+                                    <span class="rank-agency-name">89253人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number8">8</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('158')">高一政治人教版（全年班）</a>
+                                    <span class="rank-agency-name">68270人在学</span>
+                                </div>
+                            </li>
+                            <li class="rank-item rank-item_first">
+                                <span class="rank-number rank-number9">9</span>
+                                <div class="rank-content">
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
+                                    <span class="rank-agency-name">81322人在学</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 真实数据结束 -->
+    <!-- 知识卡 start -->
+    <div class="cardMain bg-f5f5f5">
+        <div class="cardMainBox">
+            <h2>学堂知识卡</h2>
+            <div class="dlBox">
+                <dl onclick="showCourse(77);">
+                    <span>九年级化学</span>
+                    <dt><img src="/pic//courseAndGuide/course/2016-07-08/5f6b4db57f034f09a92046c4f56f1570.jpg" alt=""></dt>
+                    <dd>
+                        <h6>酒精灯的使用</h6>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2240</p>
+                    </dd>
+                </dl>
+                <dl onclick="showCourse(80);">
+                    <span>六年级英语</span>
+                    <dt><img src="/pic//courseAndGuide/course/2016-07-22/26c8c3539515475e92178195a96f1214.jpg" alt=""></dt>
+                    <dd>
+                        <h6>语法：名词所有格</h6>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1501</p>
+                    </dd>
+                </dl>
+                <dl onclick="showCourse(85);">
+                    <span>七年级英语</span>
+                    <dt><img src="/pic//courseAndGuide/course/2017-01-03/ed006434a65e4834912d703541b81c74.jpg" alt=""></dt>
+                    <dd>
+                        <h6>名词辨析</h6>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1714</p>
+                    </dd>
+                </dl>
+                <dl onclick="showCourse(88);">
+                    <span>九年级数学</span>
+                    <dt><img src="/pic//courseAndGuide/course/2017-01-03/060770ad44914559bc7145bc4f81a336.jpg" alt=""></dt>
+                    <dd>
+                        <h6>图形变换专题</h6>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1655</p>
+                    </dd>
+                </dl>
+                <dl onclick="showCourse(93);">
+                    <span>九年级数学</span>
+                    <dt><img src="/pic//courseAndGuide/course/2017-02-23/00fb2c26e1544e12a9f26a6c125fc7d0.jpg" alt=""></dt>
+                    <dd>
+                        <h6>中考圆不可不知的那些事儿</h6>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2000</p>
+                    </dd>
+                </dl>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+
+    </div>
+    <!-- 知识卡 end -->
+    <!-- 学堂新闻 -->
+    <div class="wb100">
+        <div class="index_video">
+            <h1>学堂新闻</h1>
+            <ul class="index-news">
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.hscbw.com/a/zonghe/2018/0523/90457.html?1527047920">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/2e640ea4a01e4d2c8a940ce2eda4eb26.png">
+                        <span style="margin-top:12px">
+                            大理州副州长郭春鸣访问清华 希望慕华爱学堂教育资源覆盖全州
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://news.xinxunwang.com/china/syzx/149466.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/88cf8c01a5c0458fbcd63c33f071e95b.png">
+                        <span style="margin-top:12px">
+                            慕华成志“未来教育行动计划示范校”又添一员：浙江最好的学校之一
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.senn.com.cn/sx/2018/05/14/248868.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/0f5bcd77de1f4669a9a8646ab9134f1d.png">
+                        <span style="margin-top:12px">
+                            河南开封市委书记侯红会见清华大学张凤昌教授和慕华成志一行
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.scxxb.com.cn/html/2018/wenhuajiaoyu_0425/503449.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/f1509afd098f4fc5a600b381b9f16234.png">
+                        <span style="margin-top:12px">
+                            清华大学与河南新乡签署全面合作协议，慕华成志提供优质教育资源服务
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://edu.shangduw.com/rdzt/359444.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/b7ac15c609304b878919bacde3b42846.png">
+                        <span style="margin-top:12px">
+                            河南孟电集团引入爱学堂教育资源，2000多学生接轨在线教育
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.thholding.com.cn/News/show/contentid/2191.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-06-14/0924d72fe1544fd682b1df4ffc0b6c1d.png">
+                        <span style="margin-top:12px">
+                            “慕华•南涧互联网学校”启动 探索“互联网+教育”精准扶贫新模式
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://edu.southcn.com/e/2017-12/22/content_179821144.htm">
+                        <img src="/pic//uploads/zxxthomenews/2018-03-16/524253b9e899485ca9c76274760bfb73.png">
+                        <span style="margin-top:12px">
+                            爱学堂参加第二届全球未来教育大会
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://edu.qq.com/a/20161019/031070.htm">
+                        <img src="/pic//uploads/zxxthomenews/2017-03-08/612c31c169514782ac5eed39a147abb9.jpg">
+                        <span style="margin-top:12px">
+                            爱学堂联合清华附小发布中国首个互联网学校
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.mooc-cn.com/archives/69/">
+                        <img src="/pic//uploads/zxxthomenews/2017-04-18/fd9b6a1c49fa4faca45342f91675832e.jpg">
+                        <span style="margin-top:12px">
+                            慕华教育签约河南日报报业集团 战略合作推进区域教育资源共享
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a style="cursor: pointer;" target="_blank" href="http://www.gyzx.org/news/china/2018-04-11/18405.html">
+                        <img src="/pic//uploads/zxxthomenews/2018-04-17/2db2cb2a6a5f4d5694d8cfec184d9753.jpeg">
+                        <span style="margin-top:12px">
+                            国务院参事汤敏做客央视，为爱学堂动漫课程点赞
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 学堂新闻 end-->
+    <!-- 媒体报道 -->
+    <div class="wb100 bg-f5f5f5">
+        <div class="index-media">
+            <h1>媒体报道</h1>
+            <ul>
+                <li><a href="http://jingji.cntv.cn/special/cxzgzt/20150523/103297.shtml" target="_blank"><img src="/images/newIndex/media-logo.jpg"></a></li>
+                <li><a href="http://tv.people.com.cn/n/2015/0527/c222296-27064303.html" target="_blank"><img src="/images/newIndex/media-logo02.jpg"></a></li>
+                <li><a href="http://news.xinhuanet.com/video/2016-03/29/c_128844687.htm" target="_blank"><img src="/images/newIndex/media-logo03.jpg"></a></li>
+                <li><a href="http://money.163.com/15/0120/20/AGE82SP800253B0H.html" target="_blank"><img src="/images/newIndex/media-logo04.jpg"></a></li>
+                <li><a href="http://www.xinhuanet.com/video/2016-03/29/c_128844687.htm" target="_blank"><img src="/images/newIndex/media-logo05.jpg"></a></li>
+                <li><a href="http://edu.qq.com/a/20150119/053633.htm" target="_blank"><img src="/images/newIndex/media-logo06.jpg"></a></li>
+                <li><a href="http://mt.sohu.com/20150620/n415392224.shtml" target="_blank"><img src="/images/newIndex/media-logo07.jpg"></a></li>
+                <li><a href="http://finance.sina.com.cn/roll/20150608/005922369438.shtml" target="_blank"><img src="/images/newIndex/media-logo08.jpg"></a></li>
+                <li><a href="http://finance.china.com/fin/xf/201501/05/1363103.html" target="_blank"><img src="/images/newIndex/media-logo09.jpg"></a></li>
+                <li><a href="http://finance.jrj.com.cn/biz/2015/01/23114718756730.shtml" target="_blank"><img src="/images/newIndex/media-logo10.jpg"></a></li>
+                <li><a href="http://36kr.com/p/218237.html" target="_blank"><img src="/images/newIndex/media-logo11.jpg"></a></li>
+                <li><a href="http://tech.ifeng.com/a/20150608/41103529_0.shtml" target="_blank"><img src="/images/newIndex/media-logo12.jpg"></a></li>
+                <li><a href="http://www.cyzone.cn/a/20150522/275249.html" target="_blank"><img src="/images/newIndex/media-logo13.jpg"></a></li>
+                <li><a href="http://www.morningpost.com.cn/2018/0103/1682103.shtml" target="_blank"><img src="/images/newIndex/media-logo-cb.png"></a></li>
+                <li><a href="http://edu.china.com.cn/2015-05/26/content_35660921.htm" target="_blank"><img src="/images/newIndex/media-logo15.jpg"></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 媒体报道 end -->
+    <!-- 合作学校 -->
+    <!-- 合作学校 -->
+    <div class="index_jpin">
+        <h1>MOOCAP合作学校</h1>
+        <div class="school index-school">
+            <ul>
+                <li id="hz_li1" style="display:block;">
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="清华附中"><img src="/images/newIndex/school/school-qhfz.jpg"><br />清华附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北大附中"><img src="/images/newIndex/school/school-bdfz.jpg"><br />北大附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北京师范大学第二附属中学"><img src="/images/newIndex/school/school-bsd2.jpg"><br />北京师范大学第二附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="人大附中"><img src="/images/newIndex/school/school-rdfz.jpg"><br />人大附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="河北衡水中学"><img src="/images/newIndex/school/school-hbhszx.jpg"><br />河北衡水中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北京十一中学"><img src="/images/newIndex/school/school-bjsyzx.jpg"><br />北京十一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="复旦大学附属中学"><img src="/images/newIndex/school/school-fdfz.jpg"><br />复旦大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="华中师大一附中"><img src="/images/newIndex/school/school-hzsdy.jpg"><br />华中师大一附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北京市第四中学"><img src="/images/newIndex/school/school-bjsz.jpg"><br />北京市第四中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="上海交通大学附属中学"><img src="/images/newIndex/school/school-shjtfz.jpg"><br />上海交通大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="东北育才学校"><img src="/images/newIndex/school/school-dbyc.jpg"><br />东北育才学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="成都外国语学校"><img src="/images/newIndex/school/school-cdwgy.jpg"><br />成都外国语学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="成都市树德中学"><img src="/images/newIndex/school/school-cdsdzx.jpg"><br />成都市树德中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="成都七中嘉祥外国语学校"><img src="/images/newIndex/school/school-cdqz.jpg"><br />成都七中嘉祥外国语学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="重庆市南开中学"><img src="/images/newIndex/school/school-cqnkzx.jpg"><br />重庆市南开中学</a>
+                </li>
+                <li id="hz_li2" style="display:none;">
+                    <a style="cursor:default" style="cursor:default" href="javascript:void(0);" hideFocus="true" title="大连市第二十四中学"><img src="/images/newIndex/school/school-dlessz.jpg"><br />大连市第二十四中学</a>
+                    <a style="cursor:default" style="cursor:default" href="javascript:void(0);" hideFocus="true" title="东北师范大学附属中学校"><img src="/images/newIndex/school/school-dbsffz.jpg"><br />东北师范大学附属中学校</a>
+                    <a style="cursor:default" style="cursor:default" href="javascript:void(0);" hideFocus="true" title="福州第一中学"><img src="/images/newIndex/school/school-fzyz.jpg"><br />福州第一中学</a>
+                    <a style="cursor:default" style="cursor:default" href="javascript:void(0);" hideFocus="true" title="哈尔滨市第三中学"><img src="/images/newIndex/school/school-hebsz.jpg"><br />哈尔滨市第三中学</a>
+                    <a style="cursor:default" style="cursor:default" href="javascript:void(0);" hideFocus="true" title="海南中学"><img src="/images/newIndex/school/school-hnzx.jpg"><br />海南中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="湖南师范大学附属中学"><img src="/images/newIndex/school/school-hnsffz.jpg"><br />湖南师范大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="河南省实验中学"><img src="/images/newIndex/school/school-hnsyzx.jpg"><br />河南省实验中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="呼和浩特市第二中学"><img src="/images/newIndex/school/school-hhhtez.jpg"><br />呼和浩特市第二中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="华东师范大学第二附属中学"><img src="/images/newIndex/school/school-hdsfefz.jpg"><br />华东师范大学第二附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="华南师范大学附中"><img src="/images/newIndex/school/school-hnsffz.jpg"><br />华南师范大学附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="江苏省天一中学"><img src="/images/newIndex/school/school-jstyzx.jpg"><br />江苏省天一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="江苏省锡山高级中学"><img src="/images/newIndex/school/school-jsxsgjzx.jpg"><br />江苏省锡山高级中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="柳州高级中学"><img src="/images/newIndex/school/school-lzgjzx.jpg"><br />柳州高级中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="南京师范大学附属中学"><img src="/images/newIndex/school/school-njsffz.jpg"><br />南京师范大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="南宁市第二中学"><img src="/images/newIndex/school/school-njez.jpg"><br />南宁市第二中学</a>
+                </li>
+                <li id="hz_li3" style="display:none;">
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="宁夏银川第二高级中学"><img src="/images/newIndex/school/school-nxycezx.jpg"><br />宁夏银川第二高级中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="山东省青岛第二中学"><img src="/images/newIndex/school/school-sdqdez.jpg"><br />山东省青岛第二中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="山西大学附属中学校"><img src="/images/newIndex/school/school-sxdxfz.jpg"><br />山西大学附属中学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="上海中学"><img src="/images/newIndex/school/school-shzx.jpg"><br />上海中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="石家庄二中"><img src="/images/newIndex/school/school-sjzez.jpg"><br />石家庄二中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="石家庄市第一中学"><img src="/images/newIndex/school/school-sjzyz.jpg"><br />石家庄市第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="天津市实验中学"><img src="/images/newIndex/school/school-tjsyzx.jpg"><br />天津市实验中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="天津市耀华中学"><img src="/images/newIndex/school/school-tjyhzx.jpg"><br />天津市耀华中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="西安交通大学附属中学"><img src="/images/newIndex/school/school-xajdfz.jpg"><br />西安交通大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="西安市铁一中学"><img src="/images/newIndex/school/school-xatyz.jpg"><br />西安市铁一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="西北工业大学附属中学"><img src="/images/newIndex/school/school-xbgydxfz.jpg"><br />西北工业大学附属中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="西北师大附中"><img src="/images/newIndex/school/school-xbsdfz.jpg"><br />西北师大附中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="新疆兵团第二师华山中学"><img src="/images/newIndex/school/school-xjbteshszx.jpg"><br />新疆兵团第二师华山中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="学军中学"><img src="/images/newIndex/school/school-xjzx.jpg"><br />学军中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="银川康徕回民中学"><img src="/images/newIndex/school/school-ycklhmzx.jpg"><br />银川康徕回民中学</a>
+                </li>
+                <li id="hz_li4" style="display:none;">
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="长沙市长郡中学"><img src="/images/newIndex/school/school-cscjzx.jpg"><br />长沙市长郡中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="郑州市第一中学"><img src="/images/newIndex/school/school-zxyzx.jpg"><br />郑州市第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="郑州外国语学校"><img src="/images/newIndex/school/school-zzwgyxx.jpg"><br />郑州外国语学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="重庆市巴蜀中学校"><img src="/images/newIndex/school/school-cqbszx.jpg"><br />重庆市巴蜀中学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="重庆市第八中学"><img src="/images/newIndex/school/school-cqbz.jpg"><br />重庆市第八中学</a>
+
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="成都实验外国语学校"><img src="/images/newIndex/school/school-cdsywgy.jpg"><br />成都实验外国语学校</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北京市第一中学"><img src="/images/newIndex/school/school-bjdiz.jpg"><br />北京市第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="福建省厦门第一中学"><img src="/images/newIndex/school/school-dyzx.jpg"><br />福建省厦门第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="合肥市第一中学"><img src="/images/newIndex/school/school-hfdyz.jpg"><br />合肥市第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="南昌二中"><img src="/images/newIndex/school/school-ncez.jpg"><br />南昌二中</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="泉州第五中学"><img src="/images/newIndex/school/school-qzdwz.jpg"><br />泉州第五中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="浙江省温州中学"><img src="/images/newIndex/school/school-zjwzz.jpg"><br />浙江省温州中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="重庆市第一中学"><img src="/images/newIndex/school/school-cqdyz.jpg"><br />重庆市第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="珠海第一中学"><img src="/images/newIndex/school/school-zhdyz.jpg"><br />珠海第一中学</a>
+                    <a style="cursor:default" href="javascript:void(0);" hideFocus="true" title="北京师范大学附属中学"><img src="/images/newIndex/school/school-bjsffz.jpg"><br />北京师范大学附属中学</a>
+                </li>
+            </ul>
+            <ol>
+                <li id="ol_id1" class="seleted"></li>
+                <li id="ol_id2" class=""></li>
+                <li id="ol_id3" class=""></li>
+                <li id="ol_id4" class=""></li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+$(function()
+{
+	$('#ol_id1').click(function(){
+		$('#ol_id1').addClass('seleted');
+		$('#ol_id2').removeClass();
+		$('#ol_id3').removeClass();
+		$('#ol_id4').removeClass();
+		$('#hz_li1').css({'display':'block'});
+		$('#hz_li2').css({'display':'none'});
+		$('#hz_li3').css({'display':'none'});
+		$('#hz_li4').css({'display':'none'});
+	});
+
+	$('#ol_id2').click(function(){
+		$('#ol_id2').addClass('seleted');
+		$('#ol_id1').removeClass();
+		$('#ol_id3').removeClass();
+		$('#ol_id4').removeClass();
+		$('#hz_li2').css({'display':'block'});
+		$('#hz_li1').css({'display':'none'});
+		$('#hz_li3').css({'display':'none'});
+		$('#hz_li4').css({'display':'none'});
+	});
+
+	$('#ol_id3').click(function(){
+		$('#ol_id3').addClass('seleted');
+		$('#ol_id1').removeClass();
+		$('#ol_id2').removeClass();
+		$('#ol_id4').removeClass();
+		$('#hz_li3').css({'display':'block'});
+		$('#hz_li1').css({'display':'none'});
+		$('#hz_li2').css({'display':'none'});
+		$('#hz_li4').css({'display':'none'});
+	});
+
+	$('#ol_id4').click(function(){
+		$('#ol_id4').addClass('seleted');
+		$('#ol_id1').removeClass();
+		$('#ol_id2').removeClass();
+		$('#ol_id3').removeClass();
+		$('#hz_li4').css({'display':'block'});
+		$('#hz_li1').css({'display':'none'});
+		$('#hz_li2').css({'display':'none'});
+		$('#hz_li3').css({'display':'none'});
+	});
+
+})
+    </script>
+    <!-- 合作学校 end-->
+    <!-- 移动端下载页面 ----start -->
+    <div class="loadBox" style="display:none;">
+        <img style="cursor: pointer;" src="/images/app/icon_close.png" alt="" class="closeBtn" />
+        <a href="/scancode/phoneDownload.jsp">
+            <img src="/images/app/logo_aixuetang_512x512.png" alt="" class="logo2" />
+            <img src="/images/app/pic_xiazai.png" alt="" class="text" />
+            <img style="cursor: pointer;" id="xiazai" src="/images/app/button_download.png" alt="" class="loadBtn" />
+        </a>
+    </div>
+    <!-- 移动端下载页面 ----end -->
+    <!-- 底部导航 -->
+    <div class="index_qita">
+        <div class="qita_cnt">
+            <ul>
+                <li style="margin-bottom: 3px;color: #fff;font-size: 18px;margin-top: 10px;">爱学堂</li>
+                <li><a target="_blank" href="/aboutus/about">关于我们</a></li>
+                <li><a target="_blank" href="http://vip.aixuetang.com/child.html">学员故事</a></li>
+                <li><a target="_blank" href="http://fss.aixuetang.com">未来学校</a></li>
+                <li><a target="_blank" href="http://vip.aixuetang.com">线下VIP</a></li>
+            </ul>
+            <ul>
+                <li style="margin-bottom: 3px;color: #fff;font-size: 18px;margin-top: 10px;">帮助支持</li>
+                <li><a target="_blank" href="http://help.aixuetang.com">帮助中心</a></li>
+                <li><a target="_blank" href="http://weibo.com/aixuetangjy">新浪微博</a></li>
+                <li><a target="_blank" href="/ywxtStudent/toprotocol">隐私政策</a></li>
+                <li><a target="_blank" href="http://js.aixuetang.com/">教师登录</a></li>
+            </ul>
+            <ul>
+                <li style="margin-bottom: 3px;color: #fff;font-size: 18px;margin-top: 10px;">友情链接</li>
+                <li><a target="_blank" href="http://www.xuetangx.com/">学堂在线</a></li>
+                <li><a target="_blank" href="http://www.tsinghua.edu.cn/">清华大学</a></li>
+                <li><a target="_blank" href="http://www.qcloud.com">腾讯云</a></li>
+                <li><a target="_blank" href="http://www.jingmeiti.com">鲸媒体</a></li>
+            </ul>
+            <ul>
+                <li style="margin-bottom: 3px;color: #fff;font-size: 18px;margin-top: 10px;">渠道合作</li>
+                <li><a target="_blank" href="/aboutus/join#zs_company">品牌文化</a></li>
+                <li><a target="_blank" href="/aboutus/join#zs_duty">产品服务</a></li>
+                <li><a target="_blank" href="/aboutus/join#zs_case">服务支持</a></li>
+                <li><a target="_blank" href="/aboutus/join#zs_service">招商代理</a></li>
+            </ul>
+
+            <ul>
+                <li style="color: #fff;font-size: 18px;margin-top: 10px ;margin-left: -300px;">热线电话</li>
+                <span class="f30 c-fff ff-a fl wb100" style="color:#fff;margin-bottom:-8px;margin-top: -3px; line-height: 35px;">010-82151935</span>
+                <li class="fuwuTime">热线服务时间：9：00-21：00</li>
+            </ul>
+            <ul>
+                <li style="color: #fff;font-size: 18px;line-height: 20px;margin-left: -155px;">在线客服</li>
+                <span class="f30 c-fff ff-a f_btn">
+                    <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAwNzU5NV8zMjAxNTFfNDAwOTEwNjU1NV8yXw" target="_blank" class="f_btn" style="color: #fff;">
+                        立即咨询
+                    </a>
+                </span>
+                <li class="fuwuTime">邮箱留言：service@aixuetang.com</li>
+            </ul>
+
+            <!-- 		<ul> -->
+            <!-- 			<li style="color: #fff;font-size: 18px;margin-top: 10px; float:left;">合作热线</li> -->
+            <!-- 			<span class="f30 c-fff ff-a fl wb100" style="color:#fff;letter-spacing:-4px;">4 0 0 9&nbsp;&nbsp;&nbsp;1 0 6&nbsp;&nbsp;&nbsp;5 5 5</span> -->
+            <!-- 		</ul> -->
+            <!-- 		<ul> -->
+            <!-- 			<li style="color: #fff;font-size: 18px;margin-top: 10px; float:left;">服务支持</li> -->
+            <!-- 			<span class="f30 c-fff ff-a fl wb100" style="color:#fff;letter-spacing:-4px;">4 0 0 0&nbsp;&nbsp;&nbsp;8 9 1&nbsp;&nbsp;&nbsp;1 0 0</span> -->
+            <!-- 		</ul> -->
+            <img src="/images/newIndex/code.png" style="float: right;margin-right: 27px; margin-left:-127px; position: absolute; margin-top: 20px;">
+        </div>
+    </div><!-- 底部导航 end-->
+    </div>
+    <style>
+        .footer {
+            width: 100%;
+            height: 73px;
+            background: #21272b;
+            min-width: 1140px;
+        }
+
+        .footer_main2 {
+            width: 980px;
+            margin: 0 auto;
+            height: 72px;
+            line-height: 72px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+            .footer_main2 p {
+                font-size: 14px;
+                color: #f8f8f8;
+                margin-bottom: 0px;
+            }
+
+        .footer_main .ppb {
+            margin: 0 10px;
+        }
+
+            .footer_main .ppb img {
+                width: 52px !important;
+                height: 20px !important;
+            }
+    </style>
+    <div class="footer">
+        <div class="footer_main">
+            <p>
+                ©2018 慕华成志教育科技有限公司 版权所有&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备14027297号-1
+                <a key="5a092dbb0c909608d6b79878" logo_size="124x47" logo_type="business" href="http://www.anquan.org" class="ppb">
+                    <script src="//static.anquan.org/static/outer/js/aq_auth.js"></script>
+                </a>
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254074445'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254074445%26show%3Dpic ' type='text/javascript'%3E%3C/script%3E"));</script>
+            </p>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+/** 进入详情页 */
+function gotoCoursePage(courseId){
+	window.open("/jyxtLecture/playIndex?ID="+courseId);
+}
+
+function selectTagReal(id,selfObj,flag){
+	// 操作标签
+	if(flag=='1'){
+		$("#tagContents1_"+id).css('display','block');
+		$("#tagContents2_"+id).css('display','none');
+		$("#t_li_1_"+id).addClass('selectTag2');
+		$("#t_li_2_"+id).removeClass('selectTag2');
+	}else{
+		$("#tagContents1_"+id).css('display','none');
+		$("#tagContents2_"+id).css('display','block');
+		$("#t_li_1_"+id).removeClass('selectTag2');
+		$("#t_li_2_"+id).addClass('selectTag2');
+	}
+}
+
+    </script>
+
+    <!-- 视频弹窗 -->
+    <link rel="stylesheet" type="text/css" href="/css/newIndex/gs.w3c.css" media=screen,print>
+    <div id="video_iframe_div" style="display:none; overflow:hidden; background:none;">
+        <iframe scrolling="no" src="" width="100%" height="100%" name="video_iframe" id="video_iframe" allowTransparency="true" style=" background:none;"></iframe>
+    </div>
+    <script type="text/javascript">
+	function playVideo(vid){
+		document.getElementById("video_iframe_div").style.display = "block";
+		document.getElementById("video_iframe").src="/newVideo.jsp?vid="+vid;
+	}
+    </script>
+    <!-- 视频弹窗 end-->
+
+    <div class='pop_up2' id="qiandao" style="display: none">
+        <img src="/images/common/jinbi.png">
+    </div>
+    <div class='pop_up2' id="vipQianDao" style="display: none">
+        <img src="/images/common/xuebi10.png">
+    </div>
+    <script>
+
+//知识卡加载更多
+var len=$('.dlBox dl').length;
+if(len>5){
+    $('.moreBtn').show()
+}else {
+    $('.moreBtn').hide()
+}
+$('.moreBtn').on('click',function(){
+    $('.dlBox').css('height','auto');
+    $(this).hide();
+});
+
+//跳转到知识卡课程页面
+function showCourse(courseId){
+	window.open("/zxxtCuCourse/getCuCourse?courseId="+courseId);
+}
+
+function myUserGe(){
+	window.location.href="/info/toPersionFile";
+}
+
+function showBuyVip(){
+	window.open("/zxxtStudentVip/buyvip");
+}
+	$('.closeBtn').on('click',function(){
+	    $('.loadBox').hide();
+	})
+	$('#xiazai').on('click',function(){
+	   window.location.href="/scancode/phoneDownload.jsp";
+	});
+	function getCoinDetil(){
+		window.location.href="/coins/detail";
+	}
+$(document).ready(function(){
+
+		if(browser.versions.android){//安卓
+			goDownload(1);
+		}else if(browser.versions.ios){//ios
+			goDownload(2);
+		}else{//可以是官网
+			goDownload(3);
+		}
+	});
+	function goDownload(num){
+		if(num == '1'){//安卓
+			$('.loadBox').show();
+		}else if(num == '2'){//IOS
+			$('.loadBox').show();
+		}else{//其他
+			$('.loadBox').hide();
+		}
+	}
+	var browser={
+	    versions:function(){
+           var u = navigator.userAgent, app = navigator.appVersion;
+           return {//移动终端浏览器版本信息
+               trident: u.indexOf('Trident') > -1, //IE内核
+               presto: u.indexOf('Presto') > -1, //opera内核
+               webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+               gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+               mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+               ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+               android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+               iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
+               iPad: u.indexOf('iPad') > -1, //是否iPad
+               webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+           };
+        }(),
+	    language:(navigator.browserLanguage || navigator.language).toLowerCase()
+	}
+function signIn(){
+	var tagId = $(".b").attr("id");
+	$.get("/index/signIn",function(data,status){
+		var json=eval("("+data+")");
+		if(json.message=="ok"){
+			if(json.data=="success"){
+				var user=$("#vipIsUser").val();
+				var vipOver=$("#vipIsOver").val();
+				if(user!=null&&vipOver=='1'){
+					anmteImg("#vipQianDao")
+				}else{
+					anmteImg("#qiandao");
+				}
+			}
+		}else if(json.message=="signed"){
+			window.location.href="/zxxtMyCourse/index";
+		}
+	});
+}
+	var _phone_tag =0;
+    $('#phone').on('mouseover',function(){
+       $('.h-phone').show();
+        $('#header_alert').hide();
+    });
+    $('#phone').on('mouseout',function(){
+
+        if(_phone_tag!=1){
+            $('.h-phone').hide();
+            _phone_tag=0;
+        }
+    });
+    $('.h-phone').on('mouseover',function(){
+        _phone_tag=1;
+        $('.h-phone').show();
+    });
+    $('.h-phone').on('mouseenter',function(){
+        _phone_tag=1;
+        $('.h-phone').show();
+    });
+    $('.h-phone').on('mouseout',function(){
+        _phone_tag=0;
+        $('.h-phone').hide();
+    });
+
+
+    var _tx_tag =2;
+    $('.touxiangs').on('mouseover',function(){
+        $('#header_alert').show();
+        $('.h-phone').hide();
+    });
+    $('.touxiangs').on('mouseout',function(){
+        if(_tx_tag!=3){
+            $('#header_alert').hide();
+            _tx_tag=2;
+        }
+    });
+    $('#header_alert').on('mouseover',function(){
+        _tx_tag=3;
+        $('#header_alert').show();
+    });
+    $('#header_alert').on('mouseenter',function(){
+        _tx_tag=3;
+        $('#header_alert').show();
+    });
+    $('#header_alert').on('mouseout',function(){
+        _tx_tag=2;
+        $('#header_alert').hide();
+    });
+$(function(){
+
+
+	$('.xinfen').hover( function (){
+		$(this).attr("src","/images/new/xinfengs.png");
+	},function (){
+		$(this).attr("src","/images/new/xinfeng1.png");
+	});
+	$('.gouwu').hover( function (){
+		$(this).attr("src","/images/new/gouwus.png");
+	},function (){
+		$(this).attr("src","/images/new/gouwu.png");
+	});
+	$('.phone').hover( function (){
+		$(this).attr("src","/images/new/phones.png");
+	},function (){
+		$(this).attr("src","/images/new/phone.png");
+	});
+	$('.zhifu').hover( function (){
+		$(this).attr("src","/images/new/chongzhis.png");
+	},function (){
+		$(this).attr("src","/images/new/chongzhi.png");
+	});
+});
+$(function(){
+
+	$('.ipad').hover(function(){
+		$(this).addClass('current');
+		$(this).find('.hover').css({'display':'block'});
+	},function(){
+		$(this).removeClass('current');
+		$(this).find('.hover').css({'display':'none'});
+	});
+
+});
+
+function gotoFirstPage(){
+	window.location.href="/indexNew";
+}
+function myCourse(){
+	window.location.href="/zxxtMyCourse/index";
+}
+function myOrder(){
+	window.location.href="/order/my";
+}
+function myUser(){
+	window.location.href="/info/my";
+}
+function myTui(){
+	window.location.href="/ywxtStudent/loginOut";
+}
+function myRecharge(){
+	window.location.href="/recharge/records";
+}
+
+function keyDown(e) {
+	var event_e = window.event||e;
+	var int_keycode = event_e.charCode||event_e.keyCode;
+    if(int_keycode ==13){ //回车键的键值为13
+    	var coursename =  $.trim($("#searchContext").val());
+    	if(coursename=="搜索你感兴趣的课程～～"||coursename==""){
+    		//$(".pop_up").show();
+			//$("#msg").text("请输入搜索内容");
+			//setTimeout(function(){$(".pop_up").hide();}, 1000);
+    	}else{
+			window.location.href="/zxxtCourseModule/searchCourseByModel?coursename="+toUnicode(coursename);
+    	}
+	}
+}
+
+function search1(){
+	var coursename =  $.trim($("#searchContext").val());
+	if(coursename=="搜索你感兴趣的课程～～"||coursename==""){
+		//$(".pop_up").show();
+		//$("#msg").text("请输入搜索内容");
+		//setTimeout(function(){$(".pop_up").hide();}, 1000);
+	}else{
+		window.location.href="/zxxtCourseModule/searchCourseByModel?coursename="+toUnicode(coursename);
+	}
+}
+
+function toUnicode(str) {
+	var temp,
+	i = 0,
+	r = '',
+	len = str.length;
+
+	for (; i < len; i++) {
+	temp = str.charCodeAt(i).toString(16);
+
+	while ( temp.length < 4 )
+	temp = '0' + temp;
+
+	r += '\\u' + temp;
+	};
+
+	return r;
+}
+$('.touxiangs').on('mouseover',function(){
+	$('#header_alert').show();
+	$('.h-phone').hide();
+
+})
+ $('#header_alert').on('mouseover',function(){
+	$('#header_alert').show();
+})
+ $('#header_alert').on('mouseout',function(){
+	$('#header_alert').hide();
+})
+function anmteImg(id) {
+	$(id).show();
+	setTimeout(function(){$(id).hide(),location.reload();}, 1000);
+}
+function toBang(){
+	window.location.href="/ywxtStudent/tomobile";
+}
+$('#closeBtn').on('click',function(){
+    $('#bangDingShow').hide();
+
+});
+$(document).ready(function(){
+	var student=$("#admin_user_id").val();
+	if(student!=null&&student!=''){
+		$.post('/order/cartpoint',{},function(data){
+			var result = eval('('+data+')');
+			if(result.code=='1'){
+				$("#redpoint").show();
+			}
+		});
+		$.post('/message/checkExistNotReadMessage',{},function(data){
+			var result = eval('('+data+')');
+			if(result.code=='1'){
+				$("#messageredpoint").show();
+			}
+		});
+		$.post('/ywxtStudent/getMoney',{},function(data){
+			var json = eval('('+data+')');
+			var jsondata = json.data;
+			if(json.message=="ok"){
+				 $("#money").html(jsondata.accountMoney);
+				 $("#studyCoin").html(jsondata.totalCoin);
+				 $("#bangdingshow").show();
+				 if(jsondata.isComplate){
+					 $("#yiLing").show();
+					 $("#weiLing").hide();
+				 }else{
+					 $("#weiLing").show();
+					 $("#yiLing").hide();
+				 }
+				 $("#vipNumber").html(jsondata.zxxtStudyCoin);
+				 $("#vipNumberYi").html(jsondata.zxxtStudyCoin);
+				 /* if(jsondata.number==1){
+
+				 } */
+			}
+		});
+	}
+});
+function huiyuan(){
+	window.location.href="/zxxtStudentVip/index";
+}
+    </script>
+    <!-- <div id="back-to-top" class="arrow" style="display: block;"></div> -->
+    <!-- 返回顶部 -->
+    <!--侧边栏-->
+    <div class="f_slide">
+        <ul>
+            <li class="icon2">
+                <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAwNzU5NV8zMjAxNTFfNDAwOTEwNjU1NV8yXw" target="_blank">
+                    <p class="icon"></p>
+                    <p class="item-hover-text">在线<br>咨询</p>
+                </a>
+            </li>
+
+            <li class="icon1">
+                <p class="icon"></p>
+                <p class="item-hover-text">App<br>下载</p>
+                <div class="app_alert">
+                    <img src="/images/newIndex/ipadhover.png" alt="" />
+                </div>
+            </li>
+
+            <li class="icon3" onclick="showHelp();">
+                <p class="icon"></p>
+                <p class="item-hover-text">帮助<br>中心</p>
+            </li>
+            <li class="icon4">
+                <p class="icon"></p>
+                <p class="item-hover-text">微信<br>关注</p>
+                <div class="weixin_alert">
+                    <img src="/images/newIndex/weixin.png" alt="" />
+                </div>
+            </li>
+            <li class="icon5" onclick="showFankui();">
+                <p class="icon"></p>
+                <p class="item-hover-text">意见<br>反馈</p>
+            </li>
+            <li class="icon6" id="icon6">
+                <p class="icon"></p>
+                <p class="item-hover-text">返回<br>顶部</p>
+            </li>
+        </ul>
+    </div>
+    <!--侧边栏End-->
+    <script>
+    /*app弹窗*/
+    var _tx_tag =2;
+    $('.icon1').on('mouseover',function(){
+        $('.app_alert').show();
+    });
+    $('.icon1').on('mouseout',function(){
+        if(_tx_tag!=3){
+            $('.app_alert').hide();
+            _tx_tag=2;
+        }
+    });
+    $('.t_alert').on('mouseover',function(){
+        _tx_tag=3;
+        $('.app_alert').show();
+    });
+    $('.t_alert').on('mouseenter',function(){
+        _tx_tag=3;
+        $('.app_alert').show();
+    });
+    $('.t_alert').on('mouseout',function(){
+        _tx_tag=2;
+        $('.app_alert').hide();
+    });
+    /*微信*/
+    var _tx_tag =2;
+    $('.icon4').on('mouseover',function(){
+        $('.weixin_alert').show();
+    });
+    $('.icon4').on('mouseout',function(){
+        if(_tx_tag!=3){
+            $('.weixin_alert').hide();
+            _tx_tag=2;
+        }
+    });
+    $('.t_alert').on('mouseover',function(){
+        _tx_tag=3;
+        $('.weixin_alert').show();
+    });
+    $('.t_alert').on('mouseenter',function(){
+        _tx_tag=3;
+        $('.weixin_alert').show();
+    });
+    $('.t_alert').on('mouseout',function(){
+        _tx_tag=2;
+        $('.weixin_alert').hide();
+    });
+    /*返回顶部*/
+    jQuery(document).ready(function($){
+        // browser window scroll (in pixels) after which the "back to top" link is shown
+        var offset = 300,
+        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                offset_opacity = 1200,s
+        //duration of the top scrolling animation (in ms)
+        scroll_top_duration = 700,
+            //grab the "back to top" link
+        $back_to_top = $('.icon6');
+
+        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+        if( $(this).scrollTop() > offset_opacity ) {
+            $back_to_top.addClass('cd-fade-out');
+        }
+        //hide or show the "back to top" link
+        $(window).scroll(function(){
+            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if( $(this).scrollTop() > offset_opacity ) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+        });
+        //smooth scroll to top
+        $back_to_top.on('click', function(event){
+            event.preventDefault();
+            $('body,html').animate({
+                        scrollTop: 0
+                    }, scroll_top_duration
+            );
+        });
+    });
+    function showFankui(){
+    	window.open("http://help.aixuetang.com/helpFeedback/toFeelback");
+    }
+    function showHelp(){
+    	window.open("http://help.aixuetang.com/");
+    }
+    </script><!-- 返回顶部 end-->
+
+    <script type="text/javascript">jQuery.noConflict(); //多库共存 </script>
+    <script type="text/javascript" src="/js/newIndex/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/js/newIndex/jquery.luara.0.0.1.js"></script>
+</body>
+</html>
