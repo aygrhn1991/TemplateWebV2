@@ -1141,21 +1141,44 @@ namespace TemplateWeb.Controllers
         }
         public ActionResult ProductList_Get()
         {
-            var query = entity.module_product.Where(p => p.delete == false).OrderBy(p => p.id).ToArray().Join(entity.module_product_type, a => a.type_id, b => b.id, (a, b) => new
-            {
-                a.content,
-                a.description,
-                a.id,
-                a.name,
-                a.path,
-                a.sys_datetime,
-                a.top,
-                a.type_id,
-                a.price,
-                a.delete,
-                a.attachment,
-                type = b.name,
-            });
+            //var query = entity.module_product.Where(p => p.delete == false).OrderBy(p => p.id).ToArray().Join(entity.module_product_type, a => a.type_id, b => b.id, (a, b) => new
+            //{
+            //    a.content,
+            //    a.description,
+            //    a.id,
+            //    a.name,
+            //    a.path,
+            //    a.sys_datetime,
+            //    a.top,
+            //    a.type_id,
+            //    a.price,
+            //    a.delete,
+            //    a.attachment,
+            //    type = b.name,
+            //});
+            var query = from product in entity.module_product
+                        join grade in entity.divide_grade on product.grade_id equals grade.id
+                        join subject in entity.divide_subject on product.subject_id equals subject.id
+                        join edition in entity.divide_edition on product.edition_id equals edition.id
+                        select new
+                        {
+                            product.content,
+                            product.description,
+                            product.id,
+                            product.name,
+                            product.path,
+                            product.sys_datetime,
+                            product.top,
+                            product.price,
+                            product.delete,
+                            product.attachment,
+                            product.grade_id,
+                            product.subject_id,
+                            product.edition_id,
+                            grade = grade.name,
+                            subject = subject.name,
+                            edition = edition.name,
+                        };
             return Json(query, JsonRequestBehavior.AllowGet);
         }
         public ActionResult Product_Add_Edit(module_product productModel)
@@ -1170,11 +1193,13 @@ namespace TemplateWeb.Controllers
                     description = productModel.description,
                     path = productModel.path,
                     top = productModel.top,
-                    type_id = productModel.type_id,
                     sys_datetime = DateTime.Now,
                     delete = productModel.delete,
                     price = productModel.price,
                     attachment = productModel.attachment,
+                    grade_id = productModel.grade_id,
+                    subject_id = productModel.subject_id,
+                    edition_id = productModel.edition_id,
                 };
                 entity.module_product.Add(product);
             }
@@ -1188,8 +1213,10 @@ namespace TemplateWeb.Controllers
                 query.path = productModel.path;
                 query.price = productModel.price;
                 query.top = productModel.top;
-                query.type_id = productModel.type_id;
                 query.attachment = productModel.attachment;
+                query.grade_id = productModel.grade_id;
+                query.subject_id = productModel.subject_id;
+                query.edition_id = productModel.edition_id;
             }
             return Json(entity.SaveChanges() > 0, JsonRequestBehavior.AllowGet);
         }
@@ -1235,6 +1262,25 @@ namespace TemplateWeb.Controllers
             query.password = DESTool.Encrypt("1");
             return Json(entity.SaveChanges() > 0, JsonRequestBehavior.AllowGet);
         }
+        #endregion
+
+
+        #region 课程管理
+        #region 分类接口
+        public ActionResult Divide_Get()
+        {
+            var grade = entity.divide_grade;
+            var subject = entity.divide_subject;
+            var edition = entity.divide_edition;
+            return Json(new
+            {
+                grade,
+                subject,
+                edition
+            }, JsonRequestBehavior.AllowGet);
+        }
+        #endregion
+
         #endregion
     }
 }

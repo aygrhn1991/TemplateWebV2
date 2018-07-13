@@ -112,10 +112,23 @@ namespace TemplateWeb.Controllers
             {
                 p.id,
                 p.name,
-                product = entity.module_product.Where(q => q.type_id == p.id && q.delete == false).OrderByDescending(q => q.top).ThenBy(q => q.id).Take(4).Select(q => new
+                //product = entity.module_product.Where(q => q.type_id == p.id && q.delete == false).OrderByDescending(q => q.top).ThenBy(q => q.id).Take(4).Select(q => new
+                //{
+                //    q.id,
+                //    q.type_id,
+                //    q.name,
+                //    q.path,
+                //    q.description,
+                //    q.top,
+                //    q.price,
+                //    q.delete,
+                //}),
+                product = entity.module_product.OrderByDescending(q => q.top).ThenBy(q => q.id).Take(4).Select(q => new
                 {
                     q.id,
-                    q.type_id,
+                    q.grade_id,
+                    q.subject_id,
+                    q.edition_id,
                     q.name,
                     q.path,
                     q.description,
@@ -221,10 +234,23 @@ namespace TemplateWeb.Controllers
         }
         public ActionResult ProductList_Get(int id)
         {
-            var query = entity.module_product.Where(p => p.type_id == id && p.delete == false).OrderByDescending(p => p.top).ThenBy(p => p.id).Select(q => new
+            //var query = entity.module_product.Where(p => p.type_id == id && p.delete == false).OrderByDescending(p => p.top).ThenBy(p => p.id).Select(q => new
+            //{
+            //    q.id,
+            //    q.type_id,
+            //    q.name,
+            //    q.path,
+            //    q.description,
+            //    q.top,
+            //    q.price,
+            //    q.delete,
+            //});
+            var query = entity.module_product.OrderByDescending(p => p.top).ThenBy(p => p.id).Select(q => new
             {
                 q.id,
-                q.type_id,
+                q.grade_id,
+                q.subject_id,
+                q.edition_id,
                 q.name,
                 q.path,
                 q.description,

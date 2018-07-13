@@ -26,7 +26,9 @@
                     <i class="fa fa-fw fa-send-o tp-table-fa" ng-if="!d.top" ng-click="SetTop(d)"></i>
                 </td>
                 <td title="'图片'"><img ng-src="{{d.path}}" class="tp-table-img" /></td>
-                <td title="'产品分类'" sortable="'type'" filter="{type:'text'}">{{d.type}}</td>
+                <td title="'年级'" sortable="'grade'" filter="{type:'text'}">{{d.grade}}</td>
+                <td title="'科目'" sortable="'subject'" filter="{type:'text'}">{{d.subject}}</td>
+                <td title="'版本'" sortable="'edition'" filter="{type:'text'}">{{d.edition}}</td>
                 <td title="'产品名称'" sortable="'name'" filter="{name:'text'}">{{d.name}}</td>
                 <td title="'价格'" sortable="'price'">{{d.price}}</td>
                 <td title="'操作'">

@@ -597,6 +597,9 @@
     <Compile Include="Models\DB\account_admin.cs" />
     <Compile Include="Models\DB\account_code.cs" />
     <Compile Include="Models\DB\account_member.cs" />
+    <Compile Include="Models\DB\divide_edition.cs" />
+    <Compile Include="Models\DB\divide_grade.cs" />
+    <Compile Include="Models\DB\divide_subject.cs" />
     <Compile Include="Models\DB\EntityDB.cs" />
     <Compile Include="Models\DB\lay_banner.cs" />
     <Compile Include="Models\DB\lay_link_link.cs" />
@@ -608,12 +611,14 @@
     <Compile Include="Models\DB\lay_partner.cs" />
     <Compile Include="Models\DB\lay_setting.cs" />
     <Compile Include="Models\DB\member_message.cs" />
+    <Compile Include="Models\DB\module_course.cs" />
     <Compile Include="Models\DB\module_employ.cs" />
     <Compile Include="Models\DB\module_employ_type.cs" />
     <Compile Include="Models\DB\module_messageaboard.cs" />
     <Compile Include="Models\DB\module_news.cs" />
     <Compile Include="Models\DB\module_news_type.cs" />
     <Compile Include="Models\DB\module_product.cs" />
+    <Compile Include="Models\DB\module_product_subtype.cs" />
     <Compile Include="Models\DB\module_product_type.cs" />
     <Compile Include="Models\DB\pay_order.cs" />
     <Compile Include="Plugin\easyupload\handler\UploadHandler.ashx.cs">

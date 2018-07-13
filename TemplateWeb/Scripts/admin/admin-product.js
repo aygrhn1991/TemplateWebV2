@@ -76,8 +76,8 @@ app.controller('productTypeAdd', function ($scope, $http) {
 app.controller('productAdd', function ($scope, $http) {
     $scope.Init = function () {
         window.LayerOpen();
-        $http.post('/Admin/ProductTypeList_Get').success(function (d) {
-            $scope.productType = d;
+        $http.post('/Admin/Divide_Get').success(function (d) {
+            $scope.divide = d;
             window.LayerClose();
         }).error(function () {
             console.log('http错误');
@@ -87,7 +87,9 @@ app.controller('productAdd', function ($scope, $http) {
         if ($scope.id == 0) {
             $scope.productModel = {
                 id: 0,
-                type_id: 0,
+                grade_id: 0,
+                subject_id: 0,
+                edition_id: 0,
                 name: null,
                 path: null,
                 description: null,

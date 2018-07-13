@@ -33,14 +33,26 @@
     <div class="row">
         <div class="col-xs-4">
             <div class="form-group">
-                <label>分类：</label>
-                <select class="form-control" ng-options="t.id as t.name for t in productType" ng-model="productModel.type_id"></select>
+                <label>年级：</label>
+                <select class="form-control" ng-options="g.id as g.name for g in divide.grade" ng-model="productModel.grade_id"></select>
             </div>
         </div>
         <div class="col-xs-4">
             <div class="form-group">
-                <label>产品名称：</label>
-                <input type="text" class="form-control" placeholder="请输入产品名称..." ng-model="productModel.name">
+                <label>科目：</label>
+                <select class="form-control" ng-options="s.id as s.name for s in divide.subject" ng-model="productModel.subject_id"></select>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>版本：</label>
+                <select class="form-control" ng-options="e.id as e.name for e in divide.edition" ng-model="productModel.edition_id"></select>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="form-group">
+                <label>课程名称：</label>
+                <input type="text" class="form-control" placeholder="请输入课程名称..." ng-model="productModel.name">
             </div>
         </div>
         <div class="col-xs-4">
