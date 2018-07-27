@@ -1,0 +1,92 @@
+body{
+    font-family: 'microsoft yahei';
+    background: #fff;
+}
+.cardMain{
+    width: 100%;
+}
+.cardMainBox{
+    width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.cardMainBox h2 {
+    color: #4d4d4d;
+    font-size: 20px;
+    padding: 30px 0 0 0;
+    font-weight: normal;
+}
+.cardMainBox dl{
+    width: 204px;
+    height:336px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+    margin-right: 20px;
+    float: left;
+    cursor: pointer;
+}
+.cardMainBox dl dt img{
+    width: 204px;
+    height:336px;
+}
+.cardMainBox dl dd{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    text-align: center;
+    background:rgba(0,0,0,0.4);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);
+}
+.cardMainBox dl dd h6{
+	margin-top: 9px;
+	font-size: 16px;
+    color: #fff;
+}
+.cardMainBox dl dd p{
+   margin-top: 10px;
+	line-height: 12px;
+	font-size: 13px;
+	color: #fff;
+}
+.cardMainBox dl dd p img{
+    vertical-align: bottom;
+    padding-right: 10px;
+}
+.cardMainBox dl span{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 68px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    background: #ee6448;
+}
+
+.moreBtn{
+    height: 40px;
+    width: 202px;
+    margin: 20px auto 0 auto;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+.moreBtn:hover{
+    color: #333;
+    border: 1px solid #d2d2d2;
+}
+.dlBox{
+    height:370px;
+    overflow: hidden;
+    margin-top:-20px;
+}

@@ -23,10 +23,6 @@ namespace TemplateWeb.Controllers
         {
             return View();
         }
-        public ActionResult Default()
-        {
-            return View();
-        }
         public ActionResult Layout_Get()
         {
             var nav = entity.lay_nav_nav.Where(p => p.enable == true).OrderBy(p => p.sort).ToArray().Select(p => new

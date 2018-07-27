@@ -3,270 +3,28 @@
     Layout = null;
 }
 
-
 <!DOCTYPE html>
+
 <html>
 <head>
-    <title>同歌教育</title>
-    <meta name="description" content="爱学堂是国内领先的K12教育、中小学MOOC平台,教育部在线教育研究中心基础教育频道，打造一种中小学在线“同步教材+趣味+动漫+个性”的学习视频，给孩子优质的在线学习体验，从此让学习更美好！咨询：4009106555" />
-    <meta name="keywords" content="爱学堂,爱学堂教育,网络教育,同步课程，初中、高中课程在线学习，学堂在线，在线免费学习，趣味学习，动漫视频，中小学教育，中小学MOOC" />
-    <meta content="text/html;charset=utf-8" http-equiv="content-type">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="webkit|ie-comp|ie-stand" name="renderer">
-    <meta content="" name="protocol">
+    <meta name="viewport" content="width=device-width" />
+    <title>Test</title>
     <link rel="shortcut icon" href="/images/newIndex/ico.png">
-    <script type="text/javascript" src='/js/common/jquery-1.8.0.js'></script>
-    <script type="text/javascript" src='/js/common/jquery.slimscroll.js'></script>
+    <script type="text/javascript" src='/axt/jquery-1.8.0.js'></script>
+    <script type="text/javascript" src='/axt/jquery.slimscroll.js'></script>
 
     <link href="/css/newIndex/favicon.ico" rel="shortcut icon">
-    <link href="/css/newIndex/banner.css" rel="stylesheet" type="text/css" />
-    <link href="/css/newIndex/index.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/css/knowledgeCard/index.css">
-    <link rel="stylesheet" href="/css/newIndex/load.css" />
+    <link href="/axt/banner.css" rel="stylesheet" type="text/css" />
+    <link href="/axt/index.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/axt/index2.css">
+    <link rel="stylesheet" href="/axt/load.css" />
 
-    <style>
-        .pop_up2 {
-            width: 400px;
-            height: 60px;
-            border-radius: 10px;
-            position: fixed;
-            left: 50%;
-            margin-left: -200px;
-            top: 45%;
-            font-size: 16px;
-            color: #fff;
-            text-align: center;
-            line-height: 60px;
-            z-index: 99999999;
-        }
+    <link href="/axt/axt.css" rel="stylesheet" />
 
-
-
-        .h-phone {
-            position: absolute;
-            top: 10px !important;
-            right: -94px !important;
-            z-index: 1000;
-            width: 362px;
-            height: 291px !important;
-            background: url("../../images/new/phonebg.png") no-repeat;
-        }
-
-        .head-right span {
-            display: inline-block;
-        }
-
-        .h-phone h1 {
-            padding-bottom: 15px !important;
-            padding-top: 50px !important;
-            font-size: 14px;
-            color: #474e5d;
-            font-weight: normal;
-            text-align: center;
-        }
-
-        .alert_dd {
-            margin-top: -11px !important;
-        }
-
-        .header_alert .alert_dd h4 a {
-            font-size: 1px !important;
-        }
-
-        .header_alert .alert_b {
-            height: 83px;
-            margin-top: -17px;
-            background: #f5f5f5;
-        }
-
-        .header_alert .alert_c h3 {
-            font-size: 12px;
-            color: #ea544a;
-            text-align: center;
-            margin-top: 10px !important;
-            padding-bottom: 0 !important;
-            margin-bottom: -3px !important;
-            height: 35px;
-        }
-
-        .header_alert .alert_dd h4 a {
-            font-size: 14px !important;
-            color: #428bca !important;
-            text-decoration: none;
-        }
-
-            .header_alert .alert_dd h4 a:hover {
-                text-decoration: none;
-                color: red !important
-            }
-
-        .header_alert .alert_b ol li span {
-            margin-bottom: 13px !important;
-        }
-
-        .header_alert .alert_dd h4 a {
-            display: block;
-            width: 80px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-
-        .header_alert .alert_dd h4 .close {
-            right: 45px !important;
-        }
-
-        .header_alert .alert_b ol li:hover a {
-            text-decoration: none;
-        }
-
-        .header_alert .alert_b {
-            height: 83px;
-            background: #f5f5f5;
-            margin-top: -5px !important;
-        }
-
-        .head-right .cart {
-            margin: 12px 7px;
-        }
-
-        .header_alert .sanjiao {
-            right: 45px !important;
-        }
-
-        .icons {
-            margin-top: -1px;
-        }
-
-        .header_alert .alert_c ul li span {
-            font-size: 14px;
-        }
-
-        .header_alert .alert_c button.lingqu span {
-            font-size: 14px;
-        }
-
-        .index-main dl dt span a, .index-jp dl dt .bt a {
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .xinfen {
-            position: relative;
-        }
-
-        .index-news li {
-            height: 200px !important;
-        }
-
-            .index-news li span {
-                display: inline-block;
-                margin-top: 5px !important;
-                line-height: 20px;
-                font-size: 16px;
-            }
-
-                .index-news li span:hover {
-                    color: #f75d5d;
-                }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .zt_top {
-            cursor: pointer;
-            width: 100%;
-            min-width: 1100px;
-            height: 80px;
-            background: #3d9bff url("/images/ad/tbgg.jpg") no-repeat center center;
-        }
-
-        .z_close {
-            cursor: pointer;
-            display: inline-block;
-            width: 32px;
-            height: 32px;
-            background: url("/images/ad/close.png") no-repeat center center;
-            position: absolute;
-            right: 0px;
-            top: 0px;
-        }
-
-            .z_close:hover {
-                background: url("/images/ad/close_hover.png") no-repeat center center;
-            }
-
-        .head-right .cart {
-            margin: 12px 5px;
-        }
-
-        .index-news li {
-            height: 175px;
-        }
-
-            .index-news li a {
-                text-decoration: none;
-                display: block;
-                width: 204px;
-                height: 139px;
-                color: #565a5c;
-                font-size: 16px;
-                cursor: default;
-            }
-
-            .index-news li span {
-                font-size: 16px;
-            }
-
-            .index-news li a img {
-                width: 100% !important;
-                height: 100%;
-            }
-
-        .nav-link-nav-third {
-            width: auto;
-        }
-
-        .nav-li {
-            height: 59px
-        }
-
-        .nav-link-nav-first {
-            padding-top: 6px;
-        }
-
-        .nav-hot {
-            padding-top: 3px
-        }
-
-        .nav-side-li {
-            padding: 22px 0 7px;
-        }
-
-        .logo {
-            height: 46px;
-            margin-top: 15px;
-            width: 276px;
-        }
-
-        .search {
-            margin-left: 100px !important;
-        }
-
-        .tab {
-            float: left;
-            width: 204px;
-            height: 465px;
-            overflow: hidden;
-        }
-    </style>
-    <!-- <script type="text/javascript" src="/js/newIndex/jquery.js"></script> -->
-    <script src="/js/newIndex/arrow.js"></script>
-    <script type="text/javascript" src="/js/newIndex/lrtk.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/common/indexNew.css">
-    <link rel="stylesheet" type="text/css" href="/css/padAlert/pad.css">
+    <script src="/axt/arrow.js"></script>
+    <script type="text/javascript" src="/axt/lrtk.js"></script>
+    <link rel="stylesheet" type="text/css" href="/axt/indexNew.css">
+    <link rel="stylesheet" type="text/css" href="/axt/pad.css">
     <script>
 
 $(function()
@@ -320,11 +78,6 @@ $(function()
     </script>
 </head>
 <body>
-    <!--头部广告-->
-    <!--   <div class="zt_top"> -->
-    <!--   </div> -->
-    <!--   <span class="z_close"></span> -->
-    <!--头部广告End-->
     <div class="header">
         <div class="head">
             <input type="hidden" id="vipIsUser" value="">
@@ -401,7 +154,7 @@ $(function()
                     <div class="alert_h">
                         <dl>
                             <dt>
-                                <img style='width:50px;height:50px;border-radius:50%;' src="/images/head/man.png" onerror="javascript:this.src='/images/head/man.png'">
+                                <img style='width:50px;height:50px;border-radius:50%;' src="/axt/images/head/man.png" onerror="javascript:this.src='/axt/images/head/man.png'">
                             </dt>
                             <dd class="alert_dd">
                                 <h4><em class="close" onclick="myTui()">退出</em><a>新学员</a></h4>
@@ -592,7 +345,7 @@ $(function()
                                                 <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=9&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">数学</a>
                                                 <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=10&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">英语</a>
                                                 <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=16&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">政治</a>
-                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=14&versionId=&sosort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
+                                                <a class="nav-link-nav-third nav-third-line" target="_blank" href="http://www.aixuetang.com/zxxtCourseModule/getCourseByModel.do?gradeId=26&subjectId=14&versionId=&sort_name=&card_discount=&startDate=&endDate=&is_live=&courseFlag=true">历史</a>
                                             </div>
                                         </li>
                                         <li class="nav-side-li">
@@ -747,6 +500,7 @@ $(function()
             <!-- 焦点图 -->
             <div class="example" luara="yes" width="100%" height="300" select="seleted" onbg="true">
                 <ul>
+                    <li style="cursor: pointer;" onclick="window.open('http://qhfx.aixuetang.com/liveShow.html')"><img src="/pic//courseAndGuide/course/2018-07-17/907a03210e5e4dc191b9390b463de27a.png" /></li>
                     <li style="cursor: pointer;" onclick="window.open('http://js.aixuetang.com/')"><img src="/pic//courseAndGuide/course/2017-06-14/cdd4378bfea94a4a9a05b1a78b57fed1.jpg" /></li>
                     <li style="cursor: pointer;" onclick="window.open('http://qhfx.aixuetang.com')"><img src="/pic//courseAndGuide/course/2016-10-18/09e076a66ce74c75944a95ef98d42466.jpg" /></li>
                     <li style="cursor: pointer;" onclick="window.open('http://www.aixuetang.com/fupin/index.html')"><img src="/pic//courseAndGuide/course/2016-12-26/ac334117995e42c9969fc3adca5fef06.jpg" /></li>
@@ -763,12 +517,13 @@ $(function()
                     <li style="cursor: pointer;"></li>
                     <li style="cursor: pointer;"></li>
                     <li style="cursor: pointer;"></li>
+                    <li style="cursor: pointer;"></li>
                 </ol>
             </div>
             <script>
-$(function(){
-	<!--调用Luara示例-->
- 	/* $(".example").luara({width:"100%",height:"300",interval:5000,selected:"seleted"}); */
+                $(function () {
+                
+                /* $(".example").luara({width:"100%",height:"300",interval:5000,selected:"seleted"}); */
 });
             </script>
             <!-- 滚动图 end -->
@@ -916,74 +671,74 @@ $(function(){
                 <h1>小学精品</h1>
                 <div style="min-height:430px">
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2017-10-17/be220a0f6f314cd388f0696abb16b65b.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2017-10-17/be220a0f6f314cd388f0696abb16b65b.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>          
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(889)" target="_blank">清华附小阅读类课程赏析</a></div>
                             <span>小学动画</span>
-                            <i></i><p>85852</p>
+                            <i></i><p>85915</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(889)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2016-10-31/45fc736ccc0d476eb0803500bce00c2f.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2016-10-31/45fc736ccc0d476eb0803500bce00c2f.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(893)" target="_blank">语文二年级下册（苏教版）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>34764</p>
+                            <i></i><p>34774</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(893)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2017-03-20/37607748995648b1ae3cbf4d47b6ab47.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-20/37607748995648b1ae3cbf4d47b6ab47.png" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(908)" target="_blank">数学三年级下册（人教版）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>42795</p>
+                            <i></i><p>42811</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(908)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/4bed6e669a034e69b817dd7067e72c7b.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/4bed6e669a034e69b817dd7067e72c7b.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(860)" target="_blank">英语四年级下册（人教版·三年级起点）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>35231</p>
+                            <i></i><p>35244</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(860)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2016-05-18/54387cea444542499ec6145041426ed8.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2016-05-18/54387cea444542499ec6145041426ed8.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(821)" target="_blank">数学四年级上册（北师版）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>44909</p>
+                            <i></i><p>44934</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(821)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/a786b63e79fa48e2a9f7ecb13f6f0cb8.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2017-03-09/a786b63e79fa48e2a9f7ecb13f6f0cb8.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(862)" target="_blank">英语五年级下册（人教版·三年级起点）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>35300</p>
+                            <i></i><p>35317</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(862)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2017-11-08/d55c47dc1dd04e479c84f23b2d1a5f2c.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2017-11-08/d55c47dc1dd04e479c84f23b2d1a5f2c.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(977)" target="_blank">语文五年级上册（北师版）</a></div>
                             <span>小学动画</span>
-                            <i></i><p>39378</p>
+                            <i></i><p>39389</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(977)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2016-06-30/487238931b174d0dbbc0935c860d138a.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2016-06-30/487238931b174d0dbbc0935c860d138a.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(854)" target="_blank">F博士足球大讲堂（第一学期）</a></div>
                             <span>足球动画</span>
-                            <i></i><p>32221</p>
+                            <i></i><p>32261</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(854)" type="button"></div>
                     </dl>
@@ -1001,67 +756,67 @@ $(function(){
                             <li class="rank-item rank-item_fi">
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1135')">小学语文传统文化系列</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('1135')"><img class="course-img" src="/pic//courseAndGuide/course/2018-06-01/c857e910a29f44d994157eb881eb96a5.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('729')">语文五年级上册（人教版）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('729')"><img class="course-img" src="/pic//courseAndGuide/course/2016-06-06/13093bd6c6284ebc8a2ce552c1c366e3.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">5630人在学</span>
+                                        <span class="course-price">44205人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
-                                    <span class="rank-agency-name">82456人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1135')">小学语文传统文化系列</a>
+                                    <span class="rank-agency-name">5737人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('854')">F博士足球大讲堂（第一学期）</a>
-                                    <span class="rank-agency-name">32221人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('866')">语文二年级上册（人教版）</a>
+                                    <span class="rank-agency-name">42954人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1067')">清华附小经典名师课程之科学</a>
-                                    <span class="rank-agency-name">34279人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
+                                    <span class="rank-agency-name">82534人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1134')">小学语文写作小灵通系列</a>
-                                    <span class="rank-agency-name">5732人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('731')">语文六年级上册（人教版）</a>
+                                    <span class="rank-agency-name">44097人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1133')">小学语文妙解古诗文系列</a>
-                                    <span class="rank-agency-name">5636人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('887')">数学五年级上册（人教版）</a>
+                                    <span class="rank-agency-name">45002人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('855')">F博士足球大讲堂（第二学期）</a>
-                                    <span class="rank-agency-name">37007人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1134')">小学语文写作小灵通系列</a>
+                                    <span class="rank-agency-name">5806人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1132')">小学语文妙解成语系列</a>
-                                    <span class="rank-agency-name">10193人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('889')">清华附小阅读类课程赏析</a>
+                                    <span class="rank-agency-name">85914人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1130')">小学语文汉字系列</a>
-                                    <span class="rank-agency-name">10238人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('888')">数学六年级上册（人教版）</a>
+                                    <span class="rank-agency-name">42389人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1072,66 +827,66 @@ $(function(){
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('1135')">小学语文传统文化系列</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('1135')"><img class="course-img" src="/pic//courseAndGuide/course/2018-06-01/c857e910a29f44d994157eb881eb96a5.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('1135')"><img class="course-img" src="/pic//courseAndGuide/course/2018-06-01/c857e910a29f44d994157eb881eb96a5.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">5630人在学</span>
+                                        <span class="course-price">5737人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('855')">F博士足球大讲堂（第二学期）</a>
-                                    <span class="rank-agency-name">37007人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
+                                    <span class="rank-agency-name">82534人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('1134')">小学语文写作小灵通系列</a>
-                                    <span class="rank-agency-name">5732人在学</span>
+                                    <span class="rank-agency-name">5806人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('1067')">清华附小经典名师课程之科学</a>
-                                    <span class="rank-agency-name">34279人在学</span>
+                                    <span class="rank-agency-name">34334人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('854')">F博士足球大讲堂（第一学期）</a>
-                                    <span class="rank-agency-name">32221人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1132')">小学语文妙解成语系列</a>
+                                    <span class="rank-agency-name">10259人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1066')">清华附小素养类课程赏析</a>
-                                    <span class="rank-agency-name">82456人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1133')">小学语文妙解古诗文系列</a>
+                                    <span class="rank-agency-name">5689人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1133')">小学语文妙解古诗文系列</a>
-                                    <span class="rank-agency-name">5636人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1130')">小学语文汉字系列</a>
+                                    <span class="rank-agency-name">10297人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1132')">小学语文妙解成语系列</a>
-                                    <span class="rank-agency-name">10193人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('889')">清华附小阅读类课程赏析</a>
+                                    <span class="rank-agency-name">85914人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('728')">语文四年级下册（人教版）</a>
-                                    <span class="rank-agency-name">34295人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('855')">F博士足球大讲堂（第二学期）</a>
+                                    <span class="rank-agency-name">37045人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1146,74 +901,74 @@ $(function(){
                 <h1>初中精品</h1>
                 <div style="min-height:430px">
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-12-23/b6e8897cba8e4b8c9e047c1e417cc0fb.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-12-23/b6e8897cba8e4b8c9e047c1e417cc0fb.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(648)" target="_blank">英语六年级下册（鲁教新版）</a></div>
                             <span>初中动画</span>
-                            <i></i><p>81775</p>
+                            <i></i><p>81779</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(648)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2016-01-14/7cca13e8db854c97957d620d47196252.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2016-01-14/7cca13e8db854c97957d620d47196252.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(675)" target="_blank">数学七年级下册网络版（华师版） </a></div>
                             <span>初中动画</span>
-                            <i></i><p>84333</p>
+                            <i></i><p>84344</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(675)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/9fce47f1ea6b4b938f99ab560d2a1937.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/9fce47f1ea6b4b938f99ab560d2a1937.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(310)" target="_blank">英语七年级下册（人教版）</a></div>
                             <span>初中动画</span>
-                            <i></i><p>118057</p>
+                            <i></i><p>118112</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(310)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-10-13/16f82e5f2da9469db80c226aa01589d0.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-10-13/16f82e5f2da9469db80c226aa01589d0.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(579)" target="_blank">数学八年级下册网络版（青岛版）</a></div>
                             <span>初中动画</span>
-                            <i></i><p>85715</p>
+                            <i></i><p>85723</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(579)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-12-09/4a25201d2708472492da3b5513f4bb2e.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-12-09/4a25201d2708472492da3b5513f4bb2e.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(632)" target="_blank">物理八年级下册（北师版） </a></div>
                             <span>物理动画</span>
-                            <i></i><p>113023</p>
+                            <i></i><p>113052</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(632)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/8285d46914464222b341a7ff83ce8e31.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-05-08/8285d46914464222b341a7ff83ce8e31.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(312)" target="_blank">英语九年级全一册（人教版）</a></div>
                             <span>初中动画</span>
-                            <i></i><p>118325</p>
+                            <i></i><p>118553</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(312)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-11-02/221d4bbe81104b7cae9e7562d1e52c82.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-11-02/221d4bbe81104b7cae9e7562d1e52c82.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(590)" target="_blank">化学九年级下册（人教版）</a></div>
                             <span>初中动画</span>
-                            <i></i><p>112191</p>
+                            <i></i><p>112318</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(590)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-10-27/b032942f05c842e9b8a6758777249e0c.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-10-27/b032942f05c842e9b8a6758777249e0c.png" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(588)" target="_blank">初中语文专题精选课程</a></div>
                             <span>初中动画</span>
-                            <i></i><p>99616</p>
+                            <i></i><p>99826</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(588)" type="button"></div>
                     </dl>
@@ -1231,67 +986,67 @@ $(function(){
                             <li class="rank-item rank-item_fi">
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('363')"><img class="course-img" src="/pic//courseAndGuide/course/2015-08-27/37fdf0f6585245fcb429ddae8a10dd9f.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('556')">化学九年级上册（人教版）  </a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('556')"><img class="course-img" src="/pic//courseAndGuide/course/2015-09-01/f9024e1e836543d6b039367b083703fd.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">126631人在学</span>
+                                        <span class="course-price">125896人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
-                                    <span class="rank-agency-name">159343人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('484')">物理九年级全一册（人教版）</a>
+                                    <span class="rank-agency-name">119824人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('556')">化学九年级上册（人教版）  </a>
-                                    <span class="rank-agency-name">125578人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('698')">数学九年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">96204人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('484')">物理九年级全一册（人教版）</a>
-                                    <span class="rank-agency-name">119529人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('312')">英语九年级全一册（人教版）</a>
+                                    <span class="rank-agency-name">118550人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('698')">数学九年级上册网络版（人教版）</a>
-                                    <span class="rank-agency-name">95972人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
+                                    <span class="rank-agency-name">126894人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('359')">英语八年级上册（仁爱版）</a>
-                                    <span class="rank-agency-name">113342人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('311')">英语八年级上册（人教版）</a>
+                                    <span class="rank-agency-name">116820人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('606')">英语八年级上册（仁爱新版）</a>
-                                    <span class="rank-agency-name">80993人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">159571人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('588')">初中语文专题精选课程</a>
-                                    <span class="rank-agency-name">99611人在学</span>
+                                    <span class="rank-agency-name">99825人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('697')">数学八年级下册网络版（人教版）</a>
-                                    <span class="rank-agency-name">111571人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('1080')">初中化学实验系列精选</a>
+                                    <span class="rank-agency-name">6323人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1301,67 +1056,67 @@ $(function(){
                             <li class="rank-item rank-item_fi">
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('696')"><img class="course-img" src="/pic//courseAndGuide/course/2016-01-18/e1861fe5f56142c8b1e6b93d05201e47.jpg" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('363')"><img class="course-img" src="/pic//courseAndGuide/course/2015-08-27/37fdf0f6585245fcb429ddae8a10dd9f.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">159343人在学</span>
+                                        <span class="course-price">126894人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('363')">物理八年级上册（人教版）</a>
-                                    <span class="rank-agency-name">126631人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('696')">数学八年级上册网络版（人教版）</a>
+                                    <span class="rank-agency-name">159571人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('556')">化学九年级上册（人教版）  </a>
-                                    <span class="rank-agency-name">125578人在学</span>
+                                    <span class="rank-agency-name">125896人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('484')">物理九年级全一册（人教版）</a>
-                                    <span class="rank-agency-name">119529人在学</span>
+                                    <span class="rank-agency-name">119824人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('698')">数学九年级上册网络版（人教版）</a>
-                                    <span class="rank-agency-name">95972人在学</span>
+                                    <span class="rank-agency-name">96204人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('695')">数学七年级下册网络版（人教版） </a>
-                                    <span class="rank-agency-name">166874人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('588')">初中语文专题精选课程</a>
+                                    <span class="rank-agency-name">99825人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('359')">英语八年级上册（仁爱版）</a>
-                                    <span class="rank-agency-name">113342人在学</span>
+                                    <span class="rank-agency-name">113465人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('697')">数学八年级下册网络版（人教版）</a>
-                                    <span class="rank-agency-name">111571人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('312')">英语九年级全一册（人教版）</a>
+                                    <span class="rank-agency-name">118550人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('588')">初中语文专题精选课程</a>
-                                    <span class="rank-agency-name">99611人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('697')">数学八年级下册网络版（人教版）</a>
+                                    <span class="rank-agency-name">111724人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1376,74 +1131,74 @@ $(function(){
                 <h1>高中精品</h1>
                 <div style="min-height:430px">
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0b6b43689abb42acbbce966ca8260e05.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0b6b43689abb42acbbce966ca8260e05.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(154)" target="_blank">高一历史人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>81322</p>
+                            <i></i><p>81392</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(154)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/8090d9b96f814005ad11f1c3c6cbea04.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/8090d9b96f814005ad11f1c3c6cbea04.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(158)" target="_blank">高一政治人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>68270</p>
+                            <i></i><p>68326</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(158)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-08-14/1df59d07cb934e64aea44a3c6dec6920.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-08-14/1df59d07cb934e64aea44a3c6dec6920.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(182)" target="_blank">高一语文通用版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>76198</p>
+                            <i></i><p>76311</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(182)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0ca023edb37f4288b4cde8a12b3bc41a.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0ca023edb37f4288b4cde8a12b3bc41a.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(163)" target="_blank">高二地理人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>79922</p>
+                            <i></i><p>79932</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(163)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0eb7e489f8124262807773d8e1c34d9c.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/0eb7e489f8124262807773d8e1c34d9c.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(167)" target="_blank">高二化学人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>100094</p>
+                            <i></i><p>100117</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(167)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/b860417dc21842db8b1dcc1195983011.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/b860417dc21842db8b1dcc1195983011.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(174)" target="_blank">高二物理人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>91204</p>
+                            <i></i><p>91226</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(174)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/c43ddc5e415e4352ba1d81989e4018a2.jpg" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/c43ddc5e415e4352ba1d81989e4018a2.jpg" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(189)" target="_blank">高三数学人教版全年班（理）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>71558</p>
+                            <i></i><p>71573</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(189)" type="button"></div>
                     </dl>
                     <dl>
-                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/f733a5f3e13e4824aeefa594babcdf2b.png" onerror="javascript:this.src='/images/common/mren.jpg'" /></dd>
+                        <dd><img src="/pic//courseAndGuide/course/2015-03-10/f733a5f3e13e4824aeefa594babcdf2b.png" onerror="javascript:this.src='/axt/images/common/mren.jpg'" /></dd>
                         <dt>
                             <div class="bt"><a onclick="gotoCoursePage(168)" target="_blank">高三化学人教版（全年班）</a></div>
                             <span>爱学堂（初高中录播课）</span>
-                            <i></i><p>90168</p>
+                            <i></i><p>90180</p>
                         </dt>
                         <div class="mengban2"><input value="查看课程" onclick="gotoCoursePage(168)" type="button"></div>
                     </dl>
@@ -1462,66 +1217,66 @@ $(function(){
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('186')">高一数学人教版（全年班）</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">62368人在学</span>
+                                        <span class="course-price">62533人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('166')">高一化学人教版（全年班）</a>
-                                    <span class="rank-agency-name">100259人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
+                                    <span class="rank-agency-name">76311人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
-                                    <span class="rank-agency-name">81922人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('178')">高一英语人教版（全年班）</a>
+                                    <span class="rank-agency-name">62244人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('150')">高一生物人教版(全年班)</a>
-                                    <span class="rank-agency-name">60912人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('166')">高一化学人教版（全年班）</a>
+                                    <span class="rank-agency-name">100370人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
-                                    <span class="rank-agency-name">76198人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
+                                    <span class="rank-agency-name">82040人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('178')">高一英语人教版（全年班）</a>
-                                    <span class="rank-agency-name">62129人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('150')">高一生物人教版(全年班)</a>
+                                    <span class="rank-agency-name">60994人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
-                                    <span class="rank-agency-name">89253人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
+                                    <span class="rank-agency-name">81392人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
-                                    <span class="rank-agency-name">81322人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
+                                    <span class="rank-agency-name">89314人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('158')">高一政治人教版（全年班）</a>
-                                    <span class="rank-agency-name">68270人在学</span>
+                                    <span class="rank-agency-name">68326人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1532,66 +1287,66 @@ $(function(){
                                 <span class="rank-number rank-number1">1</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('186')">高一数学人教版（全年班）</a>
-                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/images/common/mren.jpg'"></a>
+                                    <a class="course-rank-img" target="_blank" onclick="gotoCoursePage('186')"><img class="course-img" src="/pic//courseAndGuide/course/2015-03-10/b53b40ae9b944359b48afe5eaf9f9398.png" onerror="javascript:this.src='/axt/images/common/mren.jpg'"></a>
                                     <div class="course-des">
-                                        <span class="course-price">62368人在学</span>
+                                        <span class="course-price">62533人在学</span>
                                     </div>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number2">2</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
-                                    <span class="rank-agency-name">76198人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
+                                    <span class="rank-agency-name">82040人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number3">3</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('175')">高一物理人教版（全年班）</a>
-                                    <span class="rank-agency-name">81922人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('182')">高一语文通用版（全年班）</a>
+                                    <span class="rank-agency-name">76311人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number4">4</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('178')">高一英语人教版（全年班）</a>
-                                    <span class="rank-agency-name">62129人在学</span>
+                                    <span class="rank-agency-name">62244人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number5">5</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('166')">高一化学人教版（全年班）</a>
-                                    <span class="rank-agency-name">100259人在学</span>
+                                    <span class="rank-agency-name">100370人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number6">6</span>
                                 <div class="rank-content">
                                     <a class="course-name" target="_blank" onclick="gotoCoursePage('150')">高一生物人教版(全年班)</a>
-                                    <span class="rank-agency-name">60912人在学</span>
+                                    <span class="rank-agency-name">60994人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number7">7</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
-                                    <span class="rank-agency-name">89253人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
+                                    <span class="rank-agency-name">81392人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number8">8</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('158')">高一政治人教版（全年班）</a>
-                                    <span class="rank-agency-name">68270人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('162')">高一地理人教版（全年班）</a>
+                                    <span class="rank-agency-name">89314人在学</span>
                                 </div>
                             </li>
                             <li class="rank-item rank-item_first">
                                 <span class="rank-number rank-number9">9</span>
                                 <div class="rank-content">
-                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('154')">高一历史人教版（全年班）</a>
-                                    <span class="rank-agency-name">81322人在学</span>
+                                    <a class="course-name" target="_blank" onclick="gotoCoursePage('158')">高一政治人教版（全年班）</a>
+                                    <span class="rank-agency-name">68326人在学</span>
                                 </div>
                             </li>
                         </ul>
@@ -1611,7 +1366,7 @@ $(function(){
                     <dt><img src="/pic//courseAndGuide/course/2016-07-08/5f6b4db57f034f09a92046c4f56f1570.jpg" alt=""></dt>
                     <dd>
                         <h6>酒精灯的使用</h6>
-                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2240</p>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2359</p>
                     </dd>
                 </dl>
                 <dl onclick="showCourse(80);">
@@ -1619,7 +1374,7 @@ $(function(){
                     <dt><img src="/pic//courseAndGuide/course/2016-07-22/26c8c3539515475e92178195a96f1214.jpg" alt=""></dt>
                     <dd>
                         <h6>语法：名词所有格</h6>
-                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1501</p>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1544</p>
                     </dd>
                 </dl>
                 <dl onclick="showCourse(85);">
@@ -1627,7 +1382,7 @@ $(function(){
                     <dt><img src="/pic//courseAndGuide/course/2017-01-03/ed006434a65e4834912d703541b81c74.jpg" alt=""></dt>
                     <dd>
                         <h6>名词辨析</h6>
-                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1714</p>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1753</p>
                     </dd>
                 </dl>
                 <dl onclick="showCourse(88);">
@@ -1635,7 +1390,7 @@ $(function(){
                     <dt><img src="/pic//courseAndGuide/course/2017-01-03/060770ad44914559bc7145bc4f81a336.jpg" alt=""></dt>
                     <dd>
                         <h6>图形变换专题</h6>
-                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1655</p>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">1700</p>
                     </dd>
                 </dl>
                 <dl onclick="showCourse(93);">
@@ -1643,7 +1398,7 @@ $(function(){
                     <dt><img src="/pic//courseAndGuide/course/2017-02-23/00fb2c26e1544e12a9f26a6c125fc7d0.jpg" alt=""></dt>
                     <dd>
                         <h6>中考圆不可不知的那些事儿</h6>
-                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2000</p>
+                        <p><img src="/images/knowledgeCard/eye_03.png" alt="">2037</p>
                     </dd>
                 </dl>
             </div>
@@ -1851,53 +1606,52 @@ $(function(){
     </div>
 
     <script>
-$(function()
-{
-	$('#ol_id1').click(function(){
-		$('#ol_id1').addClass('seleted');
-		$('#ol_id2').removeClass();
-		$('#ol_id3').removeClass();
-		$('#ol_id4').removeClass();
-		$('#hz_li1').css({'display':'block'});
-		$('#hz_li2').css({'display':'none'});
-		$('#hz_li3').css({'display':'none'});
-		$('#hz_li4').css({'display':'none'});
-	});
+        $(function () {
+            $('#ol_id1').click(function () {
+                $('#ol_id1').addClass('seleted');
+                $('#ol_id2').removeClass();
+                $('#ol_id3').removeClass();
+                $('#ol_id4').removeClass();
+                $('#hz_li1').css({ 'display': 'block' });
+                $('#hz_li2').css({ 'display': 'none' });
+                $('#hz_li3').css({ 'display': 'none' });
+                $('#hz_li4').css({ 'display': 'none' });
+            });
 
-	$('#ol_id2').click(function(){
-		$('#ol_id2').addClass('seleted');
-		$('#ol_id1').removeClass();
-		$('#ol_id3').removeClass();
-		$('#ol_id4').removeClass();
-		$('#hz_li2').css({'display':'block'});
-		$('#hz_li1').css({'display':'none'});
-		$('#hz_li3').css({'display':'none'});
-		$('#hz_li4').css({'display':'none'});
-	});
+            $('#ol_id2').click(function () {
+                $('#ol_id2').addClass('seleted');
+                $('#ol_id1').removeClass();
+                $('#ol_id3').removeClass();
+                $('#ol_id4').removeClass();
+                $('#hz_li2').css({ 'display': 'block' });
+                $('#hz_li1').css({ 'display': 'none' });
+                $('#hz_li3').css({ 'display': 'none' });
+                $('#hz_li4').css({ 'display': 'none' });
+            });
 
-	$('#ol_id3').click(function(){
-		$('#ol_id3').addClass('seleted');
-		$('#ol_id1').removeClass();
-		$('#ol_id2').removeClass();
-		$('#ol_id4').removeClass();
-		$('#hz_li3').css({'display':'block'});
-		$('#hz_li1').css({'display':'none'});
-		$('#hz_li2').css({'display':'none'});
-		$('#hz_li4').css({'display':'none'});
-	});
+            $('#ol_id3').click(function () {
+                $('#ol_id3').addClass('seleted');
+                $('#ol_id1').removeClass();
+                $('#ol_id2').removeClass();
+                $('#ol_id4').removeClass();
+                $('#hz_li3').css({ 'display': 'block' });
+                $('#hz_li1').css({ 'display': 'none' });
+                $('#hz_li2').css({ 'display': 'none' });
+                $('#hz_li4').css({ 'display': 'none' });
+            });
 
-	$('#ol_id4').click(function(){
-		$('#ol_id4').addClass('seleted');
-		$('#ol_id1').removeClass();
-		$('#ol_id2').removeClass();
-		$('#ol_id3').removeClass();
-		$('#hz_li4').css({'display':'block'});
-		$('#hz_li1').css({'display':'none'});
-		$('#hz_li2').css({'display':'none'});
-		$('#hz_li3').css({'display':'none'});
-	});
+            $('#ol_id4').click(function () {
+                $('#ol_id4').addClass('seleted');
+                $('#ol_id1').removeClass();
+                $('#ol_id2').removeClass();
+                $('#ol_id3').removeClass();
+                $('#hz_li4').css({ 'display': 'block' });
+                $('#hz_li1').css({ 'display': 'none' });
+                $('#hz_li2').css({ 'display': 'none' });
+                $('#hz_li3').css({ 'display': 'none' });
+            });
 
-})
+        })
     </script>
     <!-- 合作学校 end-->
     <!-- 移动端下载页面 ----start -->
@@ -1943,12 +1697,12 @@ $(function()
             </ul>
 
             <ul>
-                <li style="color: #fff;font-size: 18px;margin-top: 10px ;margin-left: -300px;">热线电话</li>
+                <li style="color: #fff;font-size: 18px;margin-top: 10px ;margin-left: -300px;">招商热线</li>
                 <span class="f30 c-fff ff-a fl wb100" style="color:#fff;margin-bottom:-8px;margin-top: -3px; line-height: 35px;">010-82151935</span>
                 <li class="fuwuTime">热线服务时间：9：00-21：00</li>
             </ul>
             <ul>
-                <li style="color: #fff;font-size: 18px;line-height: 20px;margin-left: -155px;">在线客服</li>
+                <li style="color: #fff;font-size: 18px;line-height: 20px;margin-left: -155px;">产品售后</li>
                 <span class="f30 c-fff ff-a f_btn">
                     <a href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&key=XzkzODAwNzU5NV8zMjAxNTFfNDAwOTEwNjU1NV8yXw" target="_blank" class="f_btn" style="color: #fff;">
                         立即咨询
@@ -2008,32 +1762,32 @@ $(function()
                 <a key="5a092dbb0c909608d6b79878" logo_size="124x47" logo_type="business" href="http://www.anquan.org" class="ppb">
                     <script src="//static.anquan.org/static/outer/js/aq_auth.js"></script>
                 </a>
-                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1254074445'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254074445%26show%3Dpic ' type='text/javascript'%3E%3C/script%3E"));</script>
+                <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1254074445'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254074445%26show%3Dpic ' type='text/javascript'%3E%3C/script%3E"));</script>
             </p>
         </div>
     </div>
 
     <script type="text/javascript">
 
-/** 进入详情页 */
-function gotoCoursePage(courseId){
-	window.open("/jyxtLecture/playIndex?ID="+courseId);
-}
+        /** 进入详情页 */
+        function gotoCoursePage(courseId) {
+            window.open("/jyxtLecture/playIndex?ID=" + courseId);
+        }
 
-function selectTagReal(id,selfObj,flag){
-	// 操作标签
-	if(flag=='1'){
-		$("#tagContents1_"+id).css('display','block');
-		$("#tagContents2_"+id).css('display','none');
-		$("#t_li_1_"+id).addClass('selectTag2');
-		$("#t_li_2_"+id).removeClass('selectTag2');
-	}else{
-		$("#tagContents1_"+id).css('display','none');
-		$("#tagContents2_"+id).css('display','block');
-		$("#t_li_1_"+id).removeClass('selectTag2');
-		$("#t_li_2_"+id).addClass('selectTag2');
-	}
-}
+        function selectTagReal(id, selfObj, flag) {
+            // 操作标签
+            if (flag == '1') {
+                $("#tagContents1_" + id).css('display', 'block');
+                $("#tagContents2_" + id).css('display', 'none');
+                $("#t_li_1_" + id).addClass('selectTag2');
+                $("#t_li_2_" + id).removeClass('selectTag2');
+            } else {
+                $("#tagContents1_" + id).css('display', 'none');
+                $("#tagContents2_" + id).css('display', 'block');
+                $("#t_li_1_" + id).removeClass('selectTag2');
+                $("#t_li_2_" + id).addClass('selectTag2');
+            }
+        }
 
     </script>
 
@@ -2043,10 +1797,10 @@ function selectTagReal(id,selfObj,flag){
         <iframe scrolling="no" src="" width="100%" height="100%" name="video_iframe" id="video_iframe" allowTransparency="true" style=" background:none;"></iframe>
     </div>
     <script type="text/javascript">
-	function playVideo(vid){
-		document.getElementById("video_iframe_div").style.display = "block";
-		document.getElementById("video_iframe").src="/newVideo.jsp?vid="+vid;
-	}
+        function playVideo(vid) {
+            document.getElementById("video_iframe_div").style.display = "block";
+            document.getElementById("video_iframe").src = "/newVideo.jsp?vid=" + vid;
+        }
     </script>
     <!-- 视频弹窗 end-->
 
@@ -2058,305 +1812,305 @@ function selectTagReal(id,selfObj,flag){
     </div>
     <script>
 
-//知识卡加载更多
-var len=$('.dlBox dl').length;
-if(len>5){
-    $('.moreBtn').show()
-}else {
-    $('.moreBtn').hide()
-}
-$('.moreBtn').on('click',function(){
-    $('.dlBox').css('height','auto');
-    $(this).hide();
-});
-
-//跳转到知识卡课程页面
-function showCourse(courseId){
-	window.open("/zxxtCuCourse/getCuCourse?courseId="+courseId);
-}
-
-function myUserGe(){
-	window.location.href="/info/toPersionFile";
-}
-
-function showBuyVip(){
-	window.open("/zxxtStudentVip/buyvip");
-}
-	$('.closeBtn').on('click',function(){
-	    $('.loadBox').hide();
-	})
-	$('#xiazai').on('click',function(){
-	   window.location.href="/scancode/phoneDownload.jsp";
-	});
-	function getCoinDetil(){
-		window.location.href="/coins/detail";
-	}
-$(document).ready(function(){
-
-		if(browser.versions.android){//安卓
-			goDownload(1);
-		}else if(browser.versions.ios){//ios
-			goDownload(2);
-		}else{//可以是官网
-			goDownload(3);
-		}
-	});
-	function goDownload(num){
-		if(num == '1'){//安卓
-			$('.loadBox').show();
-		}else if(num == '2'){//IOS
-			$('.loadBox').show();
-		}else{//其他
-			$('.loadBox').hide();
-		}
-	}
-	var browser={
-	    versions:function(){
-           var u = navigator.userAgent, app = navigator.appVersion;
-           return {//移动终端浏览器版本信息
-               trident: u.indexOf('Trident') > -1, //IE内核
-               presto: u.indexOf('Presto') > -1, //opera内核
-               webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-               gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-               mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-               ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-               android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
-               iPhone: u.indexOf('iPhone') > -1 , //是否为iPhone或者QQHD浏览器
-               iPad: u.indexOf('iPad') > -1, //是否iPad
-               webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-           };
-        }(),
-	    language:(navigator.browserLanguage || navigator.language).toLowerCase()
-	}
-function signIn(){
-	var tagId = $(".b").attr("id");
-	$.get("/index/signIn",function(data,status){
-		var json=eval("("+data+")");
-		if(json.message=="ok"){
-			if(json.data=="success"){
-				var user=$("#vipIsUser").val();
-				var vipOver=$("#vipIsOver").val();
-				if(user!=null&&vipOver=='1'){
-					anmteImg("#vipQianDao")
-				}else{
-					anmteImg("#qiandao");
-				}
-			}
-		}else if(json.message=="signed"){
-			window.location.href="/zxxtMyCourse/index";
-		}
-	});
-}
-	var _phone_tag =0;
-    $('#phone').on('mouseover',function(){
-       $('.h-phone').show();
-        $('#header_alert').hide();
-    });
-    $('#phone').on('mouseout',function(){
-
-        if(_phone_tag!=1){
-            $('.h-phone').hide();
-            _phone_tag=0;
+        //知识卡加载更多
+        var len = $('.dlBox dl').length;
+        if (len > 5) {
+            $('.moreBtn').show()
+        } else {
+            $('.moreBtn').hide()
         }
-    });
-    $('.h-phone').on('mouseover',function(){
-        _phone_tag=1;
-        $('.h-phone').show();
-    });
-    $('.h-phone').on('mouseenter',function(){
-        _phone_tag=1;
-        $('.h-phone').show();
-    });
-    $('.h-phone').on('mouseout',function(){
-        _phone_tag=0;
-        $('.h-phone').hide();
-    });
+        $('.moreBtn').on('click', function () {
+            $('.dlBox').css('height', 'auto');
+            $(this).hide();
+        });
 
+        //跳转到知识卡课程页面
+        function showCourse(courseId) {
+            window.open("/zxxtCuCourse/getCuCourse?courseId=" + courseId);
+        }
 
-    var _tx_tag =2;
-    $('.touxiangs').on('mouseover',function(){
-        $('#header_alert').show();
-        $('.h-phone').hide();
-    });
-    $('.touxiangs').on('mouseout',function(){
-        if(_tx_tag!=3){
+        function myUserGe() {
+            window.location.href = "/info/toPersionFile";
+        }
+
+        function showBuyVip() {
+            window.open("/zxxtStudentVip/buyvip");
+        }
+        $('.closeBtn').on('click', function () {
+            $('.loadBox').hide();
+        })
+        $('#xiazai').on('click', function () {
+            window.location.href = "/scancode/phoneDownload.jsp";
+        });
+        function getCoinDetil() {
+            window.location.href = "/coins/detail";
+        }
+        $(document).ready(function () {
+
+            if (browser.versions.android) {//安卓
+                goDownload(1);
+            } else if (browser.versions.ios) {//ios
+                goDownload(2);
+            } else {//可以是官网
+                goDownload(3);
+            }
+        });
+        function goDownload(num) {
+            if (num == '1') {//安卓
+                $('.loadBox').show();
+            } else if (num == '2') {//IOS
+                $('.loadBox').show();
+            } else {//其他
+                $('.loadBox').hide();
+            }
+        }
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {//移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        }
+        function signIn() {
+            var tagId = $(".b").attr("id");
+            $.get("/index/signIn", function (data, status) {
+                var json = eval("(" + data + ")");
+                if (json.message == "ok") {
+                    if (json.data == "success") {
+                        var user = $("#vipIsUser").val();
+                        var vipOver = $("#vipIsOver").val();
+                        if (user != null && vipOver == '1') {
+                            anmteImg("#vipQianDao")
+                        } else {
+                            anmteImg("#qiandao");
+                        }
+                    }
+                } else if (json.message == "signed") {
+                    window.location.href = "/zxxtMyCourse/index";
+                }
+            });
+        }
+        var _phone_tag = 0;
+        $('#phone').on('mouseover', function () {
+            $('.h-phone').show();
             $('#header_alert').hide();
-            _tx_tag=2;
+        });
+        $('#phone').on('mouseout', function () {
+
+            if (_phone_tag != 1) {
+                $('.h-phone').hide();
+                _phone_tag = 0;
+            }
+        });
+        $('.h-phone').on('mouseover', function () {
+            _phone_tag = 1;
+            $('.h-phone').show();
+        });
+        $('.h-phone').on('mouseenter', function () {
+            _phone_tag = 1;
+            $('.h-phone').show();
+        });
+        $('.h-phone').on('mouseout', function () {
+            _phone_tag = 0;
+            $('.h-phone').hide();
+        });
+
+
+        var _tx_tag = 2;
+        $('.touxiangs').on('mouseover', function () {
+            $('#header_alert').show();
+            $('.h-phone').hide();
+        });
+        $('.touxiangs').on('mouseout', function () {
+            if (_tx_tag != 3) {
+                $('#header_alert').hide();
+                _tx_tag = 2;
+            }
+        });
+        $('#header_alert').on('mouseover', function () {
+            _tx_tag = 3;
+            $('#header_alert').show();
+        });
+        $('#header_alert').on('mouseenter', function () {
+            _tx_tag = 3;
+            $('#header_alert').show();
+        });
+        $('#header_alert').on('mouseout', function () {
+            _tx_tag = 2;
+            $('#header_alert').hide();
+        });
+        $(function () {
+
+
+            $('.xinfen').hover(function () {
+                $(this).attr("src", "/images/new/xinfengs.png");
+            }, function () {
+                $(this).attr("src", "/images/new/xinfeng1.png");
+            });
+            $('.gouwu').hover(function () {
+                $(this).attr("src", "/images/new/gouwus.png");
+            }, function () {
+                $(this).attr("src", "/images/new/gouwu.png");
+            });
+            $('.phone').hover(function () {
+                $(this).attr("src", "/images/new/phones.png");
+            }, function () {
+                $(this).attr("src", "/images/new/phone.png");
+            });
+            $('.zhifu').hover(function () {
+                $(this).attr("src", "/images/new/chongzhis.png");
+            }, function () {
+                $(this).attr("src", "/images/new/chongzhi.png");
+            });
+        });
+        $(function () {
+
+            $('.ipad').hover(function () {
+                $(this).addClass('current');
+                $(this).find('.hover').css({ 'display': 'block' });
+            }, function () {
+                $(this).removeClass('current');
+                $(this).find('.hover').css({ 'display': 'none' });
+            });
+
+        });
+
+        function gotoFirstPage() {
+            window.location.href = "/indexNew";
         }
-    });
-    $('#header_alert').on('mouseover',function(){
-        _tx_tag=3;
-        $('#header_alert').show();
-    });
-    $('#header_alert').on('mouseenter',function(){
-        _tx_tag=3;
-        $('#header_alert').show();
-    });
-    $('#header_alert').on('mouseout',function(){
-        _tx_tag=2;
-        $('#header_alert').hide();
-    });
-$(function(){
+        function myCourse() {
+            window.location.href = "/zxxtMyCourse/index";
+        }
+        function myOrder() {
+            window.location.href = "/order/my";
+        }
+        function myUser() {
+            window.location.href = "/info/my";
+        }
+        function myTui() {
+            window.location.href = "/ywxtStudent/loginOut";
+        }
+        function myRecharge() {
+            window.location.href = "/recharge/records";
+        }
 
+        function keyDown(e) {
+            var event_e = window.event || e;
+            var int_keycode = event_e.charCode || event_e.keyCode;
+            if (int_keycode == 13) { //回车键的键值为13
+                var coursename = $.trim($("#searchContext").val());
+                if (coursename == "搜索你感兴趣的课程～～" || coursename == "") {
+                    //$(".pop_up").show();
+                    //$("#msg").text("请输入搜索内容");
+                    //setTimeout(function(){$(".pop_up").hide();}, 1000);
+                } else {
+                    window.location.href = "/zxxtCourseModule/searchCourseByModel?coursename=" + toUnicode(coursename);
+                }
+            }
+        }
 
-	$('.xinfen').hover( function (){
-		$(this).attr("src","/images/new/xinfengs.png");
-	},function (){
-		$(this).attr("src","/images/new/xinfeng1.png");
-	});
-	$('.gouwu').hover( function (){
-		$(this).attr("src","/images/new/gouwus.png");
-	},function (){
-		$(this).attr("src","/images/new/gouwu.png");
-	});
-	$('.phone').hover( function (){
-		$(this).attr("src","/images/new/phones.png");
-	},function (){
-		$(this).attr("src","/images/new/phone.png");
-	});
-	$('.zhifu').hover( function (){
-		$(this).attr("src","/images/new/chongzhis.png");
-	},function (){
-		$(this).attr("src","/images/new/chongzhi.png");
-	});
-});
-$(function(){
+        function search1() {
+            var coursename = $.trim($("#searchContext").val());
+            if (coursename == "搜索你感兴趣的课程～～" || coursename == "") {
+                //$(".pop_up").show();
+                //$("#msg").text("请输入搜索内容");
+                //setTimeout(function(){$(".pop_up").hide();}, 1000);
+            } else {
+                window.location.href = "/zxxtCourseModule/searchCourseByModel?coursename=" + toUnicode(coursename);
+            }
+        }
 
-	$('.ipad').hover(function(){
-		$(this).addClass('current');
-		$(this).find('.hover').css({'display':'block'});
-	},function(){
-		$(this).removeClass('current');
-		$(this).find('.hover').css({'display':'none'});
-	});
+        function toUnicode(str) {
+            var temp,
+                i = 0,
+                r = '',
+                len = str.length;
 
-});
+            for (; i < len; i++) {
+                temp = str.charCodeAt(i).toString(16);
 
-function gotoFirstPage(){
-	window.location.href="/indexNew";
-}
-function myCourse(){
-	window.location.href="/zxxtMyCourse/index";
-}
-function myOrder(){
-	window.location.href="/order/my";
-}
-function myUser(){
-	window.location.href="/info/my";
-}
-function myTui(){
-	window.location.href="/ywxtStudent/loginOut";
-}
-function myRecharge(){
-	window.location.href="/recharge/records";
-}
+                while (temp.length < 4)
+                    temp = '0' + temp;
 
-function keyDown(e) {
-	var event_e = window.event||e;
-	var int_keycode = event_e.charCode||event_e.keyCode;
-    if(int_keycode ==13){ //回车键的键值为13
-    	var coursename =  $.trim($("#searchContext").val());
-    	if(coursename=="搜索你感兴趣的课程～～"||coursename==""){
-    		//$(".pop_up").show();
-			//$("#msg").text("请输入搜索内容");
-			//setTimeout(function(){$(".pop_up").hide();}, 1000);
-    	}else{
-			window.location.href="/zxxtCourseModule/searchCourseByModel?coursename="+toUnicode(coursename);
-    	}
-	}
-}
+                r += '\\u' + temp;
+            };
 
-function search1(){
-	var coursename =  $.trim($("#searchContext").val());
-	if(coursename=="搜索你感兴趣的课程～～"||coursename==""){
-		//$(".pop_up").show();
-		//$("#msg").text("请输入搜索内容");
-		//setTimeout(function(){$(".pop_up").hide();}, 1000);
-	}else{
-		window.location.href="/zxxtCourseModule/searchCourseByModel?coursename="+toUnicode(coursename);
-	}
-}
+            return r;
+        }
+        $('.touxiangs').on('mouseover', function () {
+            $('#header_alert').show();
+            $('.h-phone').hide();
 
-function toUnicode(str) {
-	var temp,
-	i = 0,
-	r = '',
-	len = str.length;
+        })
+        $('#header_alert').on('mouseover', function () {
+            $('#header_alert').show();
+        })
+        $('#header_alert').on('mouseout', function () {
+            $('#header_alert').hide();
+        })
+        function anmteImg(id) {
+            $(id).show();
+            setTimeout(function () { $(id).hide(), location.reload(); }, 1000);
+        }
+        function toBang() {
+            window.location.href = "/ywxtStudent/tomobile";
+        }
+        $('#closeBtn').on('click', function () {
+            $('#bangDingShow').hide();
 
-	for (; i < len; i++) {
-	temp = str.charCodeAt(i).toString(16);
+        });
+        $(document).ready(function () {
+            var student = $("#admin_user_id").val();
+            if (student != null && student != '') {
+                $.post('/order/cartpoint', {}, function (data) {
+                    var result = eval('(' + data + ')');
+                    if (result.code == '1') {
+                        $("#redpoint").show();
+                    }
+                });
+                $.post('/message/checkExistNotReadMessage', {}, function (data) {
+                    var result = eval('(' + data + ')');
+                    if (result.code == '1') {
+                        $("#messageredpoint").show();
+                    }
+                });
+                $.post('/ywxtStudent/getMoney', {}, function (data) {
+                    var json = eval('(' + data + ')');
+                    var jsondata = json.data;
+                    if (json.message == "ok") {
+                        $("#money").html(jsondata.accountMoney);
+                        $("#studyCoin").html(jsondata.totalCoin);
+                        $("#bangdingshow").show();
+                        if (jsondata.isComplate) {
+                            $("#yiLing").show();
+                            $("#weiLing").hide();
+                        } else {
+                            $("#weiLing").show();
+                            $("#yiLing").hide();
+                        }
+                        $("#vipNumber").html(jsondata.zxxtStudyCoin);
+                        $("#vipNumberYi").html(jsondata.zxxtStudyCoin);
+                        /* if(jsondata.number==1){
 
-	while ( temp.length < 4 )
-	temp = '0' + temp;
-
-	r += '\\u' + temp;
-	};
-
-	return r;
-}
-$('.touxiangs').on('mouseover',function(){
-	$('#header_alert').show();
-	$('.h-phone').hide();
-
-})
- $('#header_alert').on('mouseover',function(){
-	$('#header_alert').show();
-})
- $('#header_alert').on('mouseout',function(){
-	$('#header_alert').hide();
-})
-function anmteImg(id) {
-	$(id).show();
-	setTimeout(function(){$(id).hide(),location.reload();}, 1000);
-}
-function toBang(){
-	window.location.href="/ywxtStudent/tomobile";
-}
-$('#closeBtn').on('click',function(){
-    $('#bangDingShow').hide();
-
-});
-$(document).ready(function(){
-	var student=$("#admin_user_id").val();
-	if(student!=null&&student!=''){
-		$.post('/order/cartpoint',{},function(data){
-			var result = eval('('+data+')');
-			if(result.code=='1'){
-				$("#redpoint").show();
-			}
-		});
-		$.post('/message/checkExistNotReadMessage',{},function(data){
-			var result = eval('('+data+')');
-			if(result.code=='1'){
-				$("#messageredpoint").show();
-			}
-		});
-		$.post('/ywxtStudent/getMoney',{},function(data){
-			var json = eval('('+data+')');
-			var jsondata = json.data;
-			if(json.message=="ok"){
-				 $("#money").html(jsondata.accountMoney);
-				 $("#studyCoin").html(jsondata.totalCoin);
-				 $("#bangdingshow").show();
-				 if(jsondata.isComplate){
-					 $("#yiLing").show();
-					 $("#weiLing").hide();
-				 }else{
-					 $("#weiLing").show();
-					 $("#yiLing").hide();
-				 }
-				 $("#vipNumber").html(jsondata.zxxtStudyCoin);
-				 $("#vipNumberYi").html(jsondata.zxxtStudyCoin);
-				 /* if(jsondata.number==1){
-
-				 } */
-			}
-		});
-	}
-});
-function huiyuan(){
-	window.location.href="/zxxtStudentVip/index";
-}
+                        } */
+                    }
+                });
+            }
+        });
+        function huiyuan() {
+            window.location.href = "/zxxtStudentVip/index";
+        }
     </script>
     <!-- <div id="back-to-top" class="arrow" style="display: block;"></div> -->
     <!-- 返回顶部 -->
@@ -2401,93 +2155,94 @@ function huiyuan(){
     </div>
     <!--侧边栏End-->
     <script>
-    /*app弹窗*/
-    var _tx_tag =2;
-    $('.icon1').on('mouseover',function(){
-        $('.app_alert').show();
-    });
-    $('.icon1').on('mouseout',function(){
-        if(_tx_tag!=3){
-            $('.app_alert').hide();
-            _tx_tag=2;
-        }
-    });
-    $('.t_alert').on('mouseover',function(){
-        _tx_tag=3;
-        $('.app_alert').show();
-    });
-    $('.t_alert').on('mouseenter',function(){
-        _tx_tag=3;
-        $('.app_alert').show();
-    });
-    $('.t_alert').on('mouseout',function(){
-        _tx_tag=2;
-        $('.app_alert').hide();
-    });
-    /*微信*/
-    var _tx_tag =2;
-    $('.icon4').on('mouseover',function(){
-        $('.weixin_alert').show();
-    });
-    $('.icon4').on('mouseout',function(){
-        if(_tx_tag!=3){
-            $('.weixin_alert').hide();
-            _tx_tag=2;
-        }
-    });
-    $('.t_alert').on('mouseover',function(){
-        _tx_tag=3;
-        $('.weixin_alert').show();
-    });
-    $('.t_alert').on('mouseenter',function(){
-        _tx_tag=3;
-        $('.weixin_alert').show();
-    });
-    $('.t_alert').on('mouseout',function(){
-        _tx_tag=2;
-        $('.weixin_alert').hide();
-    });
-    /*返回顶部*/
-    jQuery(document).ready(function($){
-        // browser window scroll (in pixels) after which the "back to top" link is shown
-        var offset = 300,
-        //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
-                offset_opacity = 1200,s
-        //duration of the top scrolling animation (in ms)
-        scroll_top_duration = 700,
-            //grab the "back to top" link
-        $back_to_top = $('.icon6');
-
-        ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-        if( $(this).scrollTop() > offset_opacity ) {
-            $back_to_top.addClass('cd-fade-out');
-        }
-        //hide or show the "back to top" link
-        $(window).scroll(function(){
-            ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
-            if( $(this).scrollTop() > offset_opacity ) {
-                $back_to_top.addClass('cd-fade-out');
+        /*app弹窗*/
+        var _tx_tag = 2;
+        $('.icon1').on('mouseover', function () {
+            $('.app_alert').show();
+        });
+        $('.icon1').on('mouseout', function () {
+            if (_tx_tag != 3) {
+                $('.app_alert').hide();
+                _tx_tag = 2;
             }
         });
-        //smooth scroll to top
-        $back_to_top.on('click', function(event){
-            event.preventDefault();
-            $('body,html').animate({
-                        scrollTop: 0
-                    }, scroll_top_duration
-            );
+        $('.t_alert').on('mouseover', function () {
+            _tx_tag = 3;
+            $('.app_alert').show();
         });
-    });
-    function showFankui(){
-    	window.open("http://help.aixuetang.com/helpFeedback/toFeelback");
-    }
-    function showHelp(){
-    	window.open("http://help.aixuetang.com/");
-    }
+        $('.t_alert').on('mouseenter', function () {
+            _tx_tag = 3;
+            $('.app_alert').show();
+        });
+        $('.t_alert').on('mouseout', function () {
+            _tx_tag = 2;
+            $('.app_alert').hide();
+        });
+        /*微信*/
+        var _tx_tag = 2;
+        $('.icon4').on('mouseover', function () {
+            $('.weixin_alert').show();
+        });
+        $('.icon4').on('mouseout', function () {
+            if (_tx_tag != 3) {
+                $('.weixin_alert').hide();
+                _tx_tag = 2;
+            }
+        });
+        $('.t_alert').on('mouseover', function () {
+            _tx_tag = 3;
+            $('.weixin_alert').show();
+        });
+        $('.t_alert').on('mouseenter', function () {
+            _tx_tag = 3;
+            $('.weixin_alert').show();
+        });
+        $('.t_alert').on('mouseout', function () {
+            _tx_tag = 2;
+            $('.weixin_alert').hide();
+        });
+        /*返回顶部*/
+        jQuery(document).ready(function ($) {
+            // browser window scroll (in pixels) after which the "back to top" link is shown
+            var offset = 300,
+                //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+                offset_opacity = 1200, s
+            //duration of the top scrolling animation (in ms)
+            scroll_top_duration = 700,
+                //grab the "back to top" link
+                $back_to_top = $('.icon6');
+
+            ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+            if ($(this).scrollTop() > offset_opacity) {
+                $back_to_top.addClass('cd-fade-out');
+            }
+            //hide or show the "back to top" link
+            $(window).scroll(function () {
+                ($(this).scrollTop() > offset) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+                if ($(this).scrollTop() > offset_opacity) {
+                    $back_to_top.addClass('cd-fade-out');
+                }
+            });
+            //smooth scroll to top
+            $back_to_top.on('click', function (event) {
+                event.preventDefault();
+                $('body,html').animate({
+                    scrollTop: 0
+                }, scroll_top_duration
+                );
+            });
+        });
+        function showFankui() {
+            window.open("http://help.aixuetang.com/helpFeedback/toFeelback");
+        }
+        function showHelp() {
+            window.open("http://help.aixuetang.com/");
+        }
     </script><!-- 返回顶部 end-->
 
-    <script type="text/javascript">jQuery.noConflict(); //多库共存 </script>
-    <script type="text/javascript" src="/js/newIndex/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="/js/newIndex/jquery.luara.0.0.1.js"></script>
+    <script type="text/javascript">jQuery.noConflict(); //多库共存</script>
+    <script type="text/javascript" src="/axt/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/axt/jquery.luara.0.0.1.js"></script>
+
 </body>
 </html>

@@ -135,6 +135,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="axt\arrow.js" />
+    <Content Include="axt\axt.css" />
+    <Content Include="axt\banner.css" />
+    <Content Include="axt\images\common\mren.jpg" />
+    <Content Include="axt\images\head\man.png" />
+    <Content Include="axt\index.css" />
+    <Content Include="axt\index2.css" />
+    <Content Include="axt\indexNew.css" />
+    <Content Include="axt\jquery-1.8.0.js" />
+    <Content Include="axt\jquery-1.8.3.min.js" />
+    <Content Include="axt\jquery.luara.0.0.1.js" />
+    <Content Include="axt\jquery.slimscroll.js" />
+    <Content Include="axt\load.css" />
+    <Content Include="axt\lrtk.js" />
+    <Content Include="axt\pad.css" />
     <Content Include="Component\PayLogo\alipay\logo.png" />
     <Content Include="Component\PayLogo\wxpay\logo.png" />
     <Content Include="Component\PayLogo\wxpay\tip.png" />
@@ -683,7 +698,7 @@
     <Content Include="Views\Pay\WxPay.cshtml" />
     <Content Include="Views\Member\OrderList.cshtml" />
     <Content Include="Views\Member\ProductList.cshtml" />
-    <Content Include="Views\Home\Default.cshtml" />
+    <Content Include="Views\Home\Test.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

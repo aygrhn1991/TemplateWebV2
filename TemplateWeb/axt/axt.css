@@ -1,0 +1,236 @@
+﻿.pop_up2 {
+    width: 400px;
+    height: 60px;
+    border-radius: 10px;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    top: 45%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+    z-index: 99999999;
+}
+
+
+
+.h-phone {
+    position: absolute;
+    top: 10px !important;
+    right: -94px !important;
+    z-index: 1000;
+    width: 362px;
+    height: 291px !important;
+    background: url("../../images/new/phonebg.png") no-repeat;
+}
+
+.head-right span {
+    display: inline-block;
+}
+
+.h-phone h1 {
+    padding-bottom: 15px !important;
+    padding-top: 50px !important;
+    font-size: 14px;
+    color: #474e5d;
+    font-weight: normal;
+    text-align: center;
+}
+
+.alert_dd {
+    margin-top: -11px !important;
+}
+
+.header_alert .alert_dd h4 a {
+    font-size: 1px !important;
+}
+
+.header_alert .alert_b {
+    height: 83px;
+    margin-top: -17px;
+    background: #f5f5f5;
+}
+
+.header_alert .alert_c h3 {
+    font-size: 12px;
+    color: #ea544a;
+    text-align: center;
+    margin-top: 10px !important;
+    padding-bottom: 0 !important;
+    margin-bottom: -3px !important;
+    height: 35px;
+}
+
+.header_alert .alert_dd h4 a {
+    font-size: 14px !important;
+    color: #428bca !important;
+    text-decoration: none;
+}
+
+    .header_alert .alert_dd h4 a:hover {
+        text-decoration: none;
+        color: red !important
+    }
+
+.header_alert .alert_b ol li span {
+    margin-bottom: 13px !important;
+}
+
+.header_alert .alert_dd h4 a {
+    display: block;
+    width: 80px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.header_alert .alert_dd h4 .close {
+    right: 45px !important;
+}
+
+.header_alert .alert_b ol li:hover a {
+    text-decoration: none;
+}
+
+.header_alert .alert_b {
+    height: 83px;
+    background: #f5f5f5;
+    margin-top: -5px !important;
+}
+
+.head-right .cart {
+    margin: 12px 7px;
+}
+
+.header_alert .sanjiao {
+    right: 45px !important;
+}
+
+.icons {
+    margin-top: -1px;
+}
+
+.header_alert .alert_c ul li span {
+    font-size: 14px;
+}
+
+.header_alert .alert_c button.lingqu span {
+    font-size: 14px;
+}
+
+.index-main dl dt span a, .index-jp dl dt .bt a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.xinfen {
+    position: relative;
+}
+
+.index-news li {
+    height: 200px !important;
+}
+
+    .index-news li span {
+        display: inline-block;
+        margin-top: 5px !important;
+        line-height: 20px;
+        font-size: 16px;
+    }
+
+        .index-news li span:hover {
+            color: #f75d5d;
+        }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.zt_top {
+    cursor: pointer;
+    width: 100%;
+    min-width: 1100px;
+    height: 80px;
+    background: #3d9bff url("/images/ad/tbgg.jpg") no-repeat center center;
+}
+
+.z_close {
+    cursor: pointer;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("/images/ad/close.png") no-repeat center center;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+    .z_close:hover {
+        background: url("/images/ad/close_hover.png") no-repeat center center;
+    }
+
+.head-right .cart {
+    margin: 12px 5px;
+}
+
+.index-news li {
+    height: 175px;
+}
+
+    .index-news li a {
+        text-decoration: none;
+        display: block;
+        width: 204px;
+        height: 139px;
+        color: #565a5c;
+        font-size: 16px;
+        cursor: default;
+    }
+
+    .index-news li span {
+        font-size: 12px;
+    }
+
+    .index-news li a img {
+        width: 100% !important;
+        height: 100%;
+    }
+
+.nav-link-nav-third {
+    width: auto;
+}
+
+.nav-li {
+    height: 59px
+}
+
+.nav-link-nav-first {
+    padding-top: 6px;
+}
+
+.nav-hot {
+    padding-top: 3px
+}
+
+.nav-side-li {
+    padding: 22px 0 7px;
+}
+
+.logo {
+    height: 46px;
+    margin-top: 15px;
+    width: 276px;
+}
+
+.search {
+    margin-left: 100px !important;
+}
+
+.tab {
+    float: left;
+    width: 204px;
+    height: 465px;
+    overflow: hidden;
+}
